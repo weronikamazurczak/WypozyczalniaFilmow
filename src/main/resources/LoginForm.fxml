@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginForm">
+    <children>
+        <Pane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="600.0" prefWidth="450.0">
+                    <children>
+                        <ImageView fitHeight="440.0" fitWidth="450.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/Logowanie.jpg" />
+                            </image>
+                        </ImageView>
+                    </children></Pane>
+                <Label layoutX="457.0" layoutY="65.0" prefHeight="73.0" prefWidth="329.0" text="Zaloguj się" textFill="#642b60">
+                    <font>
+                        <Font size="50.0" />
+                    </font>
+                </Label>
+                <Label layoutX="450.0" layoutY="185.0" text="E-mail" textFill="#1f2060">
+                    <font>
+                        <Font name="Constantia" size="18.0" />
+                    </font>
+                </Label>
+                <TextField id="loginEmailField" layoutX="450.0" layoutY="214.0" prefHeight="25.0" prefWidth="241.0" />
+                <Label layoutX="450.0" layoutY="252.0" text="Hasło" textFill="#1f2060">
+                    <font>
+                        <Font name="Constantia" size="18.0" />
+                    </font></Label>
+                <PasswordField id="loginPasswordField" layoutX="451.0" layoutY="275.0" prefHeight="25.0" prefWidth="241.0" />
+                <Button id="loginButton" layoutX="450.0" layoutY="340.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="241.0" style="-fx-background-color: #A980F8;" text="Zaloguj się">
+                    <font>
+                        <Font name="Constantia" size="18.0" />
+                    </font></Button>
+            <Button id="goToRegisterButton" layoutX="450.0" layoutY="435.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="241.0" style="-fx-background-color: #A980F8;" text="Zarejestruj się">
+               <font>
+                  <Font name="Constantia" size="18.0" />
+               </font>
+            </Button>
+            <Line endX="-65.0" layoutX="577.0" layoutY="410.0" startX="-100.0" />
+            <Label layoutX="528.0" layoutY="402.0" text="Nie masz konta?" />
+            <Line endX="-65.0" layoutX="729.0" layoutY="410.0" startX="-100.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
