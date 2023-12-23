@@ -7,11 +7,11 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MovieDashboard">
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MovieDashboard">
    <children>
       <Pane prefHeight="800.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <TitledPane animated="false" prefHeight="800.0" prefWidth="1200.0" text="Home">
+            <TitledPane animated="false" prefHeight="800.0" prefWidth="1300.0" text="Home">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -167,6 +167,37 @@
                                     <Font size="20.0" />
                                  </font>
                               </Button>
+                              <Button id="settingsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="629.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Settings">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/setting_3019014%20(2).png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D height="40.0" width="40.0" />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
                               <Button id="logoutButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="693.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Log out">
                                  <graphic>
                                     <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
@@ -200,7 +231,47 @@
                               </Button>
                            </children>
                         </Pane>
-                        <Pane layoutX="245.0" prefHeight="775.0" prefWidth="955.0" style="-fx-background-color: #d4eaf7;" />
+                        <Pane layoutX="245.0" prefHeight="775.0" prefWidth="1055.0" style="-fx-background-color: #fff;">
+                           <children>
+                              <ScrollPane layoutY="53.0" prefHeight="725.0" prefWidth="768.0">
+                                 <content>
+                                    <Pane prefHeight="1020.0" prefWidth="738.0">
+                                       <children>
+                                          <Label layoutX="163.0" layoutY="30.0" text="Films popular">
+                                             <font>
+                                                <Font name="Constantia" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="57.0" fitWidth="59.0" layoutX="88.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/fire_445900.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitWidth="65.0" layoutX="86.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/new_1145648.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="163.0" layoutY="568.0" prefHeight="37.0" prefWidth="255.0" text="New Films">
+                                             <font>
+                                                <Font name="Constantia" size="30.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </content>
+                              </ScrollPane>
+                              <ImageView fitHeight="67.0" fitWidth="76.0" layoutX="794.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/podium_7282099.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="885.0" layoutY="174.0" text="Top view">
+                                 <font>
+                                    <Font name="Constantia" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children></Pane>
                      </children>
                   </AnchorPane>
               </content>
