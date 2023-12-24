@@ -43,7 +43,7 @@
                                                 </LinearGradient>
                                             </textFill>
                                         </Label>
-                                        <Button id="homeButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="265.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Home">
+                                        <Button id="homeButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="265.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Strona główna">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
@@ -74,7 +74,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Button>
-                                        <Button id="moviesButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="323.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Movies">
+                                        <Button id="moviesButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="323.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Filmy">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
@@ -105,7 +105,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Button>
-                                        <Button id="serialsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="381.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Serials">
+                                        <Button id="serialsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="381.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Seriale">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
@@ -136,7 +136,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Button>
-                                        <Button id="genreButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="439.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Genres">
+                                        <Button id="genreButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="439.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Gatunki">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
@@ -167,7 +167,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Button>
-                                        <Button id="settingsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="629.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Settings">
+                                        <Button id="settingsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="629.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Ustawienia">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
@@ -198,7 +198,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Button>
-                                        <Button id="logoutButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="693.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Log out">
+                                        <Button id="logoutButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="693.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Wyloguj">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
