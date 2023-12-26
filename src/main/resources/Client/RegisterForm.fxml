@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegisterForm">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.RegisterForm">
    <children>
       <Pane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -13,7 +13,7 @@
                <children>
                   <ImageView fitHeight="440.0" fitWidth="450.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/Rejestracja.jpg" />
+                        <Image url="@../img/Rejestracja.jpg" />
                      </image>
                   </ImageView>
                </children></Pane>
@@ -50,7 +50,7 @@
                </font>
             </Label>
             <PasswordField id="registerRepeatPasswordField" layoutX="451.0" layoutY="423.0" prefHeight="25.0" prefWidth="241.0" />
-            <Button id="createAccountButton" layoutX="450.0" layoutY="491.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="241.0" style="-fx-background-color: #A980F8;" text="Zarejestruj się">
+            <Button id="createAccountButton" layoutX="450.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#onRegisterButtonClicked" prefHeight="25.0" prefWidth="241.0" style="-fx-background-color: #A980F8;" text="Zarejestruj się">
                <font>
                   <Font name="Constantia" size="18.0" />
                </font></Button>
