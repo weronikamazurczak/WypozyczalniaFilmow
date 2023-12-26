@@ -7,19 +7,18 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TVseriesPanel">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.GenresPanel">
     <children>
         <Pane prefHeight="800.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <TitledPane animated="false" prefHeight="800.0" prefWidth="1200.0" text="TV Series">
-                    <content>
+                <Pane prefHeight="800.0" prefWidth="1200.0">
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                             <children>
                                 <Pane layoutX="-5.0" prefHeight="775.0" prefWidth="250.0" style="-fx-background-color: #FFF;">
                                     <children>
                                         <ImageView fitHeight="150.0" fitWidth="146.0" layoutX="52.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/Wavy_Ppl-05_Single-11.jpg" />
+                                                <Image url="@../img/Wavy_Ppl-05_Single-11.jpg" />
                                             </image>
                                         </ImageView>
                                         <Label layoutX="29.0" layoutY="189.0" prefHeight="35.0" prefWidth="193.0" text="Movie APP">
@@ -43,11 +42,11 @@
                                                 </LinearGradient>
                                             </textFill>
                                         </Label>
-                                        <Button id="homeButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="265.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Strona główna">
+                                        <Button fx:id="homeButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#onHomeButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Strona główna">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/home_10263239.png" />
+                                                        <Image url="@../img/homeIcon.png" />
                                                     </image>
                                                     <viewport>
                                                         <Rectangle2D height="40.0" width="40.0" />
@@ -74,11 +73,11 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Button>
-                                        <Button id="moviesButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="323.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Filmy">
+                                        <Button id="moviesButtonMovieDashboard" fx:id="moviesButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#onMoviesButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Filmy">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/video-camera_651712.png" />
+                                                        <Image url="@../img/filmIcon.png" />
                                                     </image>
                                                     <viewport>
                                                         <Rectangle2D height="40.0" width="40.0" />
@@ -105,11 +104,11 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Button>
-                                        <Button id="serialsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="381.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Seriale">
+                                        <Button id="serialsButtonMovieDashboard" fx:id="serialsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="381.0" mnemonicParsing="false" onMouseClicked="#onSerialsButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Seriale">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/clapperboard_4240150.png" />
+                                                        <Image url="@../img/seriesIcon.png" />
                                                     </image>
                                                     <viewport>
                                                         <Rectangle2D height="40.0" width="40.0" />
@@ -136,11 +135,11 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Button>
-                                        <Button id="genreButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="439.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Gatunki">
+                                        <Button id="genreButtonMovieDashboard" fx:id="genreButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="439.0" mnemonicParsing="false" onMouseClicked="#onGenreButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Gatunki">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/film_3985397.png" />
+                                                        <Image url="@../img/seriesIcon.png" />
                                                     </image>
                                                     <viewport>
                                                         <Rectangle2D height="40.0" width="40.0" />
@@ -167,11 +166,11 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Button>
-                                        <Button id="settingsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="629.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Ustawienia">
+                                        <Button id="settingsButtonMovieDashboard" fx:id="settingsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="629.0" mnemonicParsing="false" onMouseClicked="#onSettingsButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Ustawienia">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/setting_3019014%20(2).png" />
+                                                        <Image url="@../img/setting.png" />
                                                     </image>
                                                     <viewport>
                                                         <Rectangle2D height="40.0" width="40.0" />
@@ -198,11 +197,11 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Button>
-                                        <Button id="logoutButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="693.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Wyloguj">
+                                        <Button id="logoutButtonMovieDashboard" fx:id="logoutButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="693.0" mnemonicParsing="false" onMouseClicked="#onLogoutButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Wyloguj">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../../../../../Desktop/Projekt%20PIP%20Wypożyczalnia_filmów/img/log-out_3596149.png" />
+                                                        <Image url="@../img/log-out.png" />
                                                     </image>
                                                     <viewport>
                                                         <Rectangle2D height="40.0" width="40.0" />
@@ -231,18 +230,42 @@
                                         </Button>
                                     </children>
                                 </Pane>
-                                <Pane layoutX="245.0" prefHeight="775.0" prefWidth="955.0" style="-fx-background-color: #d4eaf7;">
-                                    <children>
-                                        <Label layoutX="317.0" layoutY="273.0" text="TV series">
-                                            <font>
-                                                <Font size="72.0" />
-                                            </font>
-                                        </Label>
-                                    </children></Pane>
+                                <Pane layoutX="245.0" prefHeight="775.0" prefWidth="955.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="41.0" text="Odkryj filmowe i serialowe gatunki">
+                                 <font>
+                                    <Font name="Constantia" size="36.0" />
+                                 </font></Label>
+                              <Pane layoutX="14.0" layoutY="90.0" prefHeight="221.0" prefWidth="934.0">
+                                 <children>
+                                    <CheckBox layoutX="14.0" layoutY="56.0" mnemonicParsing="false" fx:id="actionButton" onMouseClicked="#onActionButtonClicked" text="Akcja" />
+                                    <CheckBox fx:id="dramaButton" layoutX="14.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#onDramaButtonClicked" text="Dramat" />
+                                    <CheckBox fx:id="documentaryButton" layoutX="14.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#onDocumentaryButtonClicked" text="Dokumentalny" />
+                                    <CheckBox fx:id="comedyButton" layoutX="14.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#onComedyButtonClicked" text="Komedia" />
+                                    <CheckBox layoutX="135.0" layoutY="56.0" mnemonicParsing="false" fx:id="adventureButton" onMouseClicked="#onAdventureButtonClicked" text="Przygodowy" />
+                                    <CheckBox fx:id="horrorButton" layoutX="135.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#onHorrorButtonClicked" text="Horror" />
+                                    <CheckBox fx:id="kidsButton" layoutX="135.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#onKidsButtonClicked" text="Dla dzieci" />
+                                    <CheckBox layoutX="135.0" layoutY="149.0" mnemonicParsing="false" fx:id="historyButton" onMouseClicked="#onHistoryButtonClciked" text="Historyczny" />
+                                    <Label layoutX="17.0" layoutY="14.0" text="Gatunek">
+                                       <font>
+                                          <Font name="Constantia" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="romanceButton" layoutX="276.0" layoutY="56.0" mnemonicParsing="false" onMouseClicked="#onRomanceButtonClicked" text="Romans" />
+                                    <CheckBox fx:id="commedyOfMannersButton" layoutX="276.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#onCommedyOfMannersButtonClicked" text="Obyczajowy" />
+                                    <CheckBox fx:id="natureButton" layoutX="276.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#onNatureButtonClciked" text="Przyrodniczy" />
+                                    <CheckBox fx:id="fantasyButton" layoutX="276.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#onFantasyButtonClicked" text="Fantasy" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="14.0" layoutY="288.0" prefHeight="426.0" prefWidth="893.0" style="-fx-background-color: #c1c1;">
+                                 <children>
+                                    <Label layoutX="336.0" layoutY="205.0" text="Tu sie beda ywswietlac te wybrane" />
+                                 </children>
+                              </Pane>
+                           </children></Pane>
                             </children>
                         </AnchorPane>
-                    </content>
-                </TitledPane>
+                </Pane>
             </children></Pane>
     </children>
 </AnchorPane>

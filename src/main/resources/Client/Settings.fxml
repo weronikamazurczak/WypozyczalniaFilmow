@@ -11,7 +11,7 @@
     <children>
         <Pane prefHeight="800.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <Pane prefHeight="800.0" prefWidth="1200.0">
+                <Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #f1f1f1;">
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                             <children>
                                 <Pane layoutX="-5.0" prefHeight="800.0" prefWidth="250.0" style="-fx-background-color: #FFF;">
@@ -250,15 +250,13 @@
                                     <Separator layoutX="-1.0" layoutY="16.0" prefHeight="0.0" prefWidth="930.0" />
                                     <Label layoutX="164.0" layoutY="25.0" text="adresemail@gmail.com" />
                                     <Label layoutX="164.0" layoutY="46.0" text="Hasło: *******" />
-                                    <Label id="changeEmailBtn" fx:id="changeEmailBtn" accessibleRole="BUTTON" layoutX="452.0" layoutY="25.0" onMouseClicked="#onChangeEmailBtnClicked" text="Zmień adres email" underline="true" />
-                                    <Label id="changePasswordBtn" fx:id="changePasswordBtn" layoutX="484.0" layoutY="46.0" onMouseClicked="#onChangePasswordBtnClicked" text="Zmeiń hasło" underline="true" />
                                     <Button fx:id="resignSubscriptionButton" layoutX="7.0" layoutY="117.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="109.0" style="-fx-background-color: #EE6C4D;" text="ZREZYGNUJ">
                                        <font>
                                           <Font name="Constantia" size="12.0" />
                                        </font>
                                     </Button>
-                                 <Button fx:id="changeEmailBtn" layoutX="562.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#onChangeEmailBtnClicked" text="Zmień adres email" />
-                                 <Button layoutX="562.0" layoutY="51.0" mnemonicParsing="false" text="Zmeiń hasło" />
+                                 <Button fx:id="changeEmailButton" layoutX="449.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#onChangeEmailButtonClicked" style="-fx-background-color: #f1f1f1;" text="Zmień adres email" underline="true" />
+                                 <Button fx:id="passwordChangeButton" layoutX="481.0" layoutY="42.0" mnemonicParsing="false" onMouseClicked="#onPasswordChangeButtonClicked" style="-fx-background-color: #f1f1f1;" text="Zmeiń hasło" underline="true" />
                                  </children>
                               </Pane>
                               <Pane layoutX="10.0" layoutY="242.0" prefHeight="233.0" prefWidth="932.0">
@@ -304,13 +302,10 @@
                                     <Separator layoutX="-1.0" layoutY="16.0" prefHeight="0.0" prefWidth="930.0" />
                                     <Label layoutX="164.0" layoutY="25.0" text="przeglądaj historię wypożyczeń" />
                                     <Label layoutX="164.0" layoutY="46.0" text="zobacz listę ulubionych" />
-                                    <Label id="changeEmailBtn" accessibleRole="BUTTON" layoutX="512.0" layoutY="25.0" text="Historia" underline="true" wrapText="true" />
-                                    <Label id="viewFavourites" fx:id="viewFavourites" layoutX="464.0" layoutY="46.0" text="Zobacz ulubione" underline="true" />
                                     <Label layoutX="164.0" layoutY="67.0" text="oceń obejrzane filmy" />
-                                    <Label id="changeEmailBtn" fx:id="changeEmailBtn" accessibleRole="BUTTON" layoutX="525.0" layoutY="67.0" text="Oceń" underline="true" wrapText="true" />
-                                 <Button fx:id="changeEmailBtn" layoutX="565.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#onChangeEmailBtnClicked" text="Historia" />
-                                 <Button fx:id="viewFavourites" layoutX="565.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#onViewFavouritesClicked" text="Zobacz ulubione" />
-                                 <Button fx:id="changeEmailBtn" layoutX="568.0" layoutY="84.0" mnemonicParsing="false" onMouseClicked="#onChangeEmailBtnClicked" text="Oceń" />
+                                 <Button fx:id="historySectionButton" layoutX="495.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#onHistorySectionButtonClicked" style="-fx-background-color: #f1f1f1;" text="Historia" underline="true" wrapText="true" />
+                                 <Button fx:id="viewFavourites" layoutX="449.0" layoutY="42.0" mnemonicParsing="false" onMouseClicked="#onViewFavouritesClicked" style="-fx-background-color: #f1f1f1;" text="Zobacz ulubione" underline="true" />
+                                 <Button fx:id="gradeWatchedMoviesButton" layoutX="509.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#onGradeWatchedMoviesButtonClicked" style="-fx-background-color: #f1f1f1;" text="Oceń" underline="true" />
                                  </children>
                               </Pane>
                                     </children></Pane>
