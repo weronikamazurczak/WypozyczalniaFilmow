@@ -8,11 +8,8 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
-public class TVseriesPanel {
+public class DescriptionTopViewFilm3 {
     Account acc = ClientStart.getAcc();
-    public void onFilterButtonRatingClicked(MouseEvent mouseEvent) {
-    }
-
     public void onHomeButtonMovieDashboardClicked(MouseEvent mouseEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("MovieDashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -85,25 +82,12 @@ public class TVseriesPanel {
         PrimaryStageSingleton.INSTANCE.show();
     }
 
-    public void onRentMovieButton1Clicked(MouseEvent mouseEvent) {
-        acc.rentMovie("Serial 1");
+    public void onAddToFavoritesButtonClicked(MouseEvent mouseEvent) {
+        acc.addToFavorites("Film 3");
     }
 
-    public void addToFavoritesButton1Clicked(MouseEvent mouseEvent) {
-        acc.addToFavorites("Serial 1");
-    }
-
-    public void onSeeReviewUsersButton1Clicked(MouseEvent mouseEvent) {
-    }
-
-    public void onRentMovieButton2Clicked(MouseEvent mouseEvent) {
-        acc.rentMovie("Serial 2");
-    }
-
-    public void onAddToFavoritesButton2Clicked(MouseEvent mouseEvent) {
-        acc.addToFavorites("Serial 2");
-    }
-
-    public void onSeeReviewUsersButton2Clicked(MouseEvent mouseEvent) {
+    public void onRentMovieButtonClicked(MouseEvent mouseEvent) {
+        Account acc = ClientStart.getAcc();
+        acc.rentMovie("Film 3");
     }
 }

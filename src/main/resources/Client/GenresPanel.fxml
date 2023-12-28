@@ -14,7 +14,7 @@
                 <Pane prefHeight="800.0" prefWidth="1200.0">
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                             <children>
-                                <Pane layoutX="-5.0" prefHeight="775.0" prefWidth="250.0" style="-fx-background-color: #FFF;">
+                                <Pane layoutX="-5.0" prefHeight="800.0" prefWidth="250.0" style="-fx-background-color: #FFF;">
                                     <children>
                                         <ImageView fitHeight="150.0" fitWidth="146.0" layoutX="52.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
@@ -238,14 +238,14 @@
                                  </font></Label>
                               <Pane layoutX="14.0" layoutY="90.0" prefHeight="221.0" prefWidth="934.0">
                                  <children>
-                                    <CheckBox layoutX="14.0" layoutY="56.0" mnemonicParsing="false" fx:id="actionButton" onMouseClicked="#onActionButtonClicked" text="Akcja" />
+                                    <CheckBox fx:id="actionButton" layoutX="14.0" layoutY="56.0" mnemonicParsing="false" onMouseClicked="#onActionButtonClicked" text="Akcja" />
                                     <CheckBox fx:id="dramaButton" layoutX="14.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#onDramaButtonClicked" text="Dramat" />
                                     <CheckBox fx:id="documentaryButton" layoutX="14.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#onDocumentaryButtonClicked" text="Dokumentalny" />
                                     <CheckBox fx:id="comedyButton" layoutX="14.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#onComedyButtonClicked" text="Komedia" />
-                                    <CheckBox layoutX="135.0" layoutY="56.0" mnemonicParsing="false" fx:id="adventureButton" onMouseClicked="#onAdventureButtonClicked" text="Przygodowy" />
+                                    <CheckBox fx:id="adventureButton" layoutX="135.0" layoutY="56.0" mnemonicParsing="false" onMouseClicked="#onAdventureButtonClicked" text="Przygodowy" />
                                     <CheckBox fx:id="horrorButton" layoutX="135.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#onHorrorButtonClicked" text="Horror" />
                                     <CheckBox fx:id="kidsButton" layoutX="135.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#onKidsButtonClicked" text="Dla dzieci" />
-                                    <CheckBox layoutX="135.0" layoutY="149.0" mnemonicParsing="false" fx:id="historyButton" onMouseClicked="#onHistoryButtonClciked" text="Historyczny" />
+                                    <CheckBox fx:id="historyButton" layoutX="135.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#onHistoryButtonClciked" text="Historyczny" />
                                     <Label layoutX="17.0" layoutY="14.0" text="Gatunek">
                                        <font>
                                           <Font name="Constantia" size="20.0" />

@@ -10,6 +10,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import ClientServer.ClientStart;
+import BaseClasses.Client;
+
 import java.io.IOException;
 
 
@@ -38,10 +41,28 @@ public class LoginForm extends Application {
 
     public void onLoginButtonClicked(MouseEvent mouseEvent) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("MovieDashboard.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        PrimaryStageSingleton.INSTANCE.setScene(scene);
-        PrimaryStageSingleton.INSTANCE.setTitle("MovieDashboard");
-        PrimaryStageSingleton.INSTANCE.show();
+        FXMLLoader fxmlLoader2 = new FXMLLoader(LoginForm.class.getResource("AdminMovieDashboard.fxml"));
+
+        Client client = new Client();
+        if (client.login(loginEmailField.getText(), loginPasswordField.getText())) {
+            ClientStart.main();
+            //client pobierz dane
+            //account pobierz dane
+            Scene scene = new Scene(fxmlLoader.load());
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.setTitle("MovieDashboard");
+            PrimaryStageSingleton.INSTANCE.show();
+        } else if (loginEmailField.getText().equals("admin") && loginPasswordField.getText().equals("admin")) {
+            ClientStart.main();
+            //client pobierz dane
+            //account pobierz dane
+            Scene scene = new Scene(fxmlLoader2.load());
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.setTitle("AdminMovieDashboard");
+            PrimaryStageSingleton.INSTANCE.show();
+        } else {
+            //TU TRZEBA USTAWIC JAKIES POLE CO MOWI ZE ZLE DANE
+        }
     }
 
     public void onRegisterButtonClicked(MouseEvent mouseEvent) throws IOException {
