@@ -5,6 +5,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 
+import BaseClasses.Account;
+
 import java.io.IOException;
 
 public class DescriptionTopViewFilm1 {
@@ -86,5 +88,7 @@ public class DescriptionTopViewFilm1 {
     }
 
     public void onRentMovieButtonClicked(MouseEvent mouseEvent) {
+        Account acc = new Account(false, null, null);
+        acc.rentMovie(PrimaryStageSingleton.INSTANCE.name());
     }
 }

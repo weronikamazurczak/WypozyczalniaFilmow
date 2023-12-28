@@ -11,6 +11,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import ClientServer.ClientStart;
+import BaseClasses.Client;
 
 import java.io.IOException;
 
@@ -40,7 +41,9 @@ public class LoginForm extends Application {
 
     public void onLoginButtonClicked(MouseEvent mouseEvent) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("MovieDashboard.fxml"));
-        if (loginEmailField.getText().equals("student") && loginPasswordField.getText().equals("student")) {
+
+        Client client = new Client();
+        if (client.login(loginEmailField.getText(), loginPasswordField.getText())) {
             ClientStart.main();
             Scene scene = new Scene(fxmlLoader.load());
             PrimaryStageSingleton.INSTANCE.setScene(scene);
