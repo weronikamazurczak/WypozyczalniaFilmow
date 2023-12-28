@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 // Klasa reprezentująca film
-class Movie {
+public class Movie {
     public int id;
     public String title;
     public String genre;
@@ -21,5 +21,27 @@ class Movie {
         this.director = "";
         this.year = 0;
         this.description = "";
+    }
+
+    public Movie(int id1, String title1, String genre1, String director1, List<String> actors1, int year1, String description1) {
+        this.actors = actors1;
+        this.id = id1;
+        this.title = title1;
+        this.genre = genre1;
+        this.director = director1;
+        this.year = year1;
+        this.description = description1;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getGenre() {
+        return genre;
     }
 }
