@@ -1,5 +1,6 @@
 package Client;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
@@ -77,5 +78,50 @@ public class AdminGenresPanel {
         PrimaryStageSingleton.INSTANCE.setScene(scene);
         PrimaryStageSingleton.INSTANCE.setTitle("DescriptionTopViewFilm");
         PrimaryStageSingleton.INSTANCE.show();
+    }
+
+    public void onActionButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onDramaButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onDocumentaryButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onComedyButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onAdventureButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onHorrorButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onKidsButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onHistoryButtonClciked(MouseEvent mouseEvent) {
+    }
+
+    public void historyButton(ActionEvent actionEvent) {
+    }
+
+    public void adventureButton(ActionEvent actionEvent) {
+    }
+
+    public void actionButton(ActionEvent actionEvent) {
+    }
+
+    public void onRomanceButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onCommedyOfMannersButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onNatureButtonClciked(MouseEvent mouseEvent) {
+    }
+
+    public void onFantasyButtonClicked(MouseEvent mouseEvent) {
     }
 }

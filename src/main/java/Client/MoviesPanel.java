@@ -78,4 +78,7 @@ public class MoviesPanel {
         PrimaryStageSingleton.INSTANCE.setTitle("DescriptionTopViewFilm");
         PrimaryStageSingleton.INSTANCE.show();
     }
+
+    public void onManagementButtonMovieDashboardClicked(MouseEvent mouseEvent) {
+    }
 }

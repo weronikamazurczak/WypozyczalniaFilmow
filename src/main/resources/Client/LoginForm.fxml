@@ -46,6 +46,11 @@
             <Line endX="-65.0" layoutX="577.0" layoutY="410.0" startX="-100.0" />
             <Label layoutX="528.0" layoutY="402.0" text="Nie masz konta?" />
             <Line endX="-65.0" layoutX="729.0" layoutY="410.0" startX="-100.0" />
+            <Label fx:id="errorLogin" layoutX="451.0" layoutY="154.0" prefHeight="23.0" prefWidth="378.0" textFill="RED">
+               <font>
+                  <Font name="Constantia" size="18.0" />
+               </font>
+            </Label>
             </children>
         </Pane>
     </children>
