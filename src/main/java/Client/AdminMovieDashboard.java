@@ -78,4 +78,32 @@ public class AdminMovieDashboard {
         PrimaryStageSingleton.INSTANCE.setTitle("DescriptionTopViewFilm");
         PrimaryStageSingleton.INSTANCE.show();
     }
+
+    public void onManagementButtonMovieDashboardClicked(MouseEvent mouseEvent) throws IOException{
+
+    }
+
+    public void onEditMovieCatalogButton(MouseEvent mouseEvent) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("AdminMoviesPanel.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        PrimaryStageSingleton.INSTANCE.setScene(scene);
+        PrimaryStageSingleton.INSTANCE.setTitle("AdminMoviesPanel");
+        PrimaryStageSingleton.INSTANCE.show();
+    }
+
+    public void onEditSeriesCatalogButton(MouseEvent mouseEvent) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("AdminTVseriesPanel.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        PrimaryStageSingleton.INSTANCE.setScene(scene);
+        PrimaryStageSingleton.INSTANCE.setTitle("AdminTVseriesPanel");
+        PrimaryStageSingleton.INSTANCE.show();
+    }
+
+    public void onEditUsersCatalogButton(MouseEvent mouseEvent) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("AdminManagementPanel.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        PrimaryStageSingleton.INSTANCE.setScene(scene);
+        PrimaryStageSingleton.INSTANCE.setTitle("AdminManagementPanel");
+        PrimaryStageSingleton.INSTANCE.show();
+    }
 }
