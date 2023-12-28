@@ -383,7 +383,7 @@
                                                 </ScrollPane>
                                             </children>
                                         </Pane>
-                                        <Button id="addToFavorites" fx:id="addToFavoritesButton" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="755.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
+                                        <Button id="addToFavorites" fx:id="addToFavoritesButton" alignment="BOTTOM_LEFT" blendMode="DARKEN" onMouseClicked="#onAddToFavoritesButtonClicked" layoutX="755.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>

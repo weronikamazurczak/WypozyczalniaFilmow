@@ -1,6 +1,7 @@
 package Client;
 
 import BaseClasses.Account;
+import ClientServer.ClientStart;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
@@ -8,6 +9,7 @@ import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 
 public class DescriptionTopViewFilm2 {
+    Account acc = ClientStart.getAcc();
     public void onHomeButtonMovieDashboardClicked(MouseEvent mouseEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("MovieDashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -80,8 +82,12 @@ public class DescriptionTopViewFilm2 {
         PrimaryStageSingleton.INSTANCE.show();
     }
 
+    public void onAddToFavoritesButtonClicked(MouseEvent mouseEvent) {
+        acc.addToFavorites("Film 2");
+    }
+
     public void onRentMovieButtonClicked(MouseEvent mouseEvent) {
-        Account acc = new Account(false, null, null);
-        acc.rentMovie("Film");
+        Account acc = ClientStart.getAcc();
+        acc.rentMovie("Film 2");
     }
 }

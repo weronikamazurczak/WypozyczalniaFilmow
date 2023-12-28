@@ -16,6 +16,10 @@ public class Account {
         // Implementacja wypożyczania filmu
     }
 
+    public void addToFavorites(String movie) {
+        System.out.println("Dodano do ulubionych film " + movie);
+    }
+
     void returnMovie(Movie movie) {
         // Implementacja zwracania filmu
     }

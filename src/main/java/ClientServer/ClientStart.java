@@ -3,10 +3,18 @@ package ClientServer;
 import BaseClasses.Account;
 
 public class ClientStart {
+    static Account acc;
+
+    public static Account getAcc() {
+        return acc;
+    }
+
     public static void main() {
         // Adres i port serwera
         String serverAddress = "127.0.0.1"; // Możesz zastąpić adresem serwera
         int serverPort = 12345; // Możesz zastąpić numerem portu
+
+        acc = new Account(false, null, null);
 
         // Tworzenie obiektu ClientCommunication i nawiązywanie połączenia
         ClientCommunication clientCommunication = new ClientCommunication(serverAddress, serverPort);

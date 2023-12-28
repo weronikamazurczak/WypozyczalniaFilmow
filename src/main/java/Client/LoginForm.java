@@ -45,6 +45,8 @@ public class LoginForm extends Application {
         Client client = new Client();
         if (client.login(loginEmailField.getText(), loginPasswordField.getText())) {
             ClientStart.main();
+            //client pobierz dane
+            //account pobierz dane
             Scene scene = new Scene(fxmlLoader.load());
             PrimaryStageSingleton.INSTANCE.setScene(scene);
             PrimaryStageSingleton.INSTANCE.setTitle("MovieDashboard");
