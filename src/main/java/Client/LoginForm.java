@@ -10,6 +10,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import ClientServer.ClientStart;
+
 import java.io.IOException;
 
 
@@ -38,10 +40,15 @@ public class LoginForm extends Application {
 
     public void onLoginButtonClicked(MouseEvent mouseEvent) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("MovieDashboard.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        PrimaryStageSingleton.INSTANCE.setScene(scene);
-        PrimaryStageSingleton.INSTANCE.setTitle("MovieDashboard");
-        PrimaryStageSingleton.INSTANCE.show();
+        if (loginEmailField.getText().equals("student") && loginPasswordField.getText().equals("student")) {
+            ClientStart.main();
+            Scene scene = new Scene(fxmlLoader.load());
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.setTitle("MovieDashboard");
+            PrimaryStageSingleton.INSTANCE.show();
+        } else {
+            //TU TRZEBA USTAWIC JAKIES POLE CO MOWI ZE ZLE DANE
+        }
     }
 
     public void onRegisterButtonClicked(MouseEvent mouseEvent) throws IOException {
