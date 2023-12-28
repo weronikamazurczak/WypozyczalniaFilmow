@@ -1,5 +1,7 @@
 package Client;
 
+import BaseClasses.Account;
+import ClientServer.ClientStart;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
@@ -7,6 +9,7 @@ import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 
 public class TVseriesPanel {
+    Account acc = ClientStart.getAcc();
     public void onFilterButtonRatingClicked(MouseEvent mouseEvent) {
     }
 
@@ -83,18 +86,22 @@ public class TVseriesPanel {
     }
 
     public void onRentMovieButton1Clicked(MouseEvent mouseEvent) {
+        acc.rentMovie("Serial 1");
     }
 
     public void addToFavoritesButton1Clicked(MouseEvent mouseEvent) {
+        acc.addToFavorites("Serial 1");
     }
 
     public void onSeeReviewUsersButton1Clicked(MouseEvent mouseEvent) {
     }
 
     public void onRentMovieButton2Clicked(MouseEvent mouseEvent) {
+        acc.rentMovie("Serial 2");
     }
 
     public void onAddToFavoritesButton2Clicked(MouseEvent mouseEvent) {
+        acc.addToFavorites("Serial 2");
     }
 
     public void onSeeReviewUsersButton2Clicked(MouseEvent mouseEvent) {

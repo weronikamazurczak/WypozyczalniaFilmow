@@ -41,6 +41,7 @@ public class LoginForm extends Application {
 
     public void onLoginButtonClicked(MouseEvent mouseEvent) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("MovieDashboard.fxml"));
+        FXMLLoader fxmlLoader2 = new FXMLLoader(LoginForm.class.getResource("AdminMovieDashboard.fxml"));
 
         Client client = new Client();
         if (client.login(loginEmailField.getText(), loginPasswordField.getText())) {
@@ -50,6 +51,14 @@ public class LoginForm extends Application {
             Scene scene = new Scene(fxmlLoader.load());
             PrimaryStageSingleton.INSTANCE.setScene(scene);
             PrimaryStageSingleton.INSTANCE.setTitle("MovieDashboard");
+            PrimaryStageSingleton.INSTANCE.show();
+        } else if (loginEmailField.getText().equals("admin") && loginPasswordField.getText().equals("admin")) {
+            ClientStart.main();
+            //client pobierz dane
+            //account pobierz dane
+            Scene scene = new Scene(fxmlLoader2.load());
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.setTitle("AdminMovieDashboard");
             PrimaryStageSingleton.INSTANCE.show();
         } else {
             //TU TRZEBA USTAWIC JAKIES POLE CO MOWI ZE ZLE DANE
