@@ -231,9 +231,9 @@
                               </Button>
                            </children>
                         </Pane>
-                        <Pane layoutX="245.0" prefHeight="775.0" prefWidth="1055.0" style="-fx-background-color: #fff;">
+                        <Pane id="PaneSV" layoutX="245.0" prefHeight="775.0" prefWidth="1055.0" style="-fx-background-color: #fff;">
                            <children>
-                              <ScrollPane layoutY="53.0" prefHeight="1404.0" prefWidth="768.0" style="-fx-background-color: #f0f8ff;">
+                              <ScrollPane id="ScrollPane" layoutY="53.0" prefHeight="1404.0" prefWidth="768.0" style="-fx-background-color: #f0f8ff;">
                                  <content>
                                     <Pane prefHeight="1429.0" prefWidth="764.0" style="-fx-background-color: #fffafa;">
                                        <children>

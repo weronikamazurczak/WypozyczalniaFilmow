@@ -232,122 +232,13 @@
                                         </Button>
                                     </children>
                                 </Pane>
-                                <Pane id="discoverFilmList" layoutX="245.0" prefHeight="800.0" prefWidth="955.0">
-                           <children>
-                              <MenuButton id="filterButtonRating" layoutX="14.0" layoutY="80.0" mnemonicParsing="false" text="MenuButton">
-                                <items>
-                                  <MenuItem mnemonicParsing="false" text="Action 1" />
-                                  <MenuItem mnemonicParsing="false" text="Action 2" />
-                                </items>
-                              </MenuButton>
-                              <Label layoutX="14.0" layoutY="26.0" text="Odkryj nasz katalog">
-                                 <font>
-                                    <Font name="Constantia" size="36.0" />
-                                 </font>
-                              </Label>
-                           <Pane prefHeight="200.0" prefWidth="200.0" />
-                              <ScrollPane hbarPolicy="NEVER" hmax="0.0" layoutY="130.0" pannable="true" prefHeight="669.0" prefWidth="955.0" vbarPolicy="ALWAYS" vmax="0.0">
-                                <content>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1151.0" prefWidth="941.0">
-                                       <children>
-                                          <Pane prefHeight="297.0" prefWidth="938.0">
-                                             <children>
-                                                <Label layoutX="187.0" layoutY="14.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA">
-                                                   <font>
-                                                      <Font size="24.0" />
-                                                   </font></Label>
-                                                <Button layoutX="-1.0" mnemonicParsing="false">
-                                                   <graphic>
-                                                      <ImageView fitHeight="230.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
-                                                         <image>
-                                                            <Image url="@../img/film2.jpg" />
-                                                         </image>
-                                                         <cursor>
-                                                            <Cursor fx:constant="OPEN_HAND" />
-                                                         </cursor>
-                                                      </ImageView>
-                                                   </graphic>
-                                                </Button>
-                                                 <Button id="rentMovieBtn" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
-                                                     <graphic>
-                                                         <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
-                                                             <image>
-                                                                 <Image url="@../img/play.png" />
-                                                             </image>
-                                                             <viewport>
-                                                                 <Rectangle2D height="40.0" width="40.0" />
-                                                             </viewport>
-                                                         </ImageView>
-                                                     </graphic>
-                                                     <font>
-                                                         <Font name="System Bold Italic" size="16.0" />
-                                                     </font>
-                                                     <effect>
-                                                         <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.0" />
-                                                         </color></DropShadow>
-                                                     </effect>
-                                                 </Button>
-                                                 <Button id="addToFavoritesBtn" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
-                                                     <graphic>
-                                                         <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
-                                                             <image>
-                                                                 <Image url="@../img/favourite.png" />
-                                                             </image>
-                                                             <viewport>
-                                                                 <Rectangle2D height="40.0" width="40.0" />
-                                                             </viewport>
-                                                         </ImageView>
-                                                     </graphic>
-                                                     <textFill>
-                                                         <LinearGradient endX="1.0" endY="1.0">
-                                                             <stops>
-                                                                 <Stop>
-                                                                     <color>
-                                                                         <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
-                                                                     </color>
-                                                                 </Stop>
-                                                                 <Stop offset="1.0">
-                                                                     <color>
-                                                                         <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
-                                                                     </color>
-                                                                 </Stop>
-                                                             </stops>
-                                                         </LinearGradient>
-                                                     </textFill>
-                                                     <font>
-                                                         <Font name="System Bold Italic" size="14.0" />
-                                                     </font>
-                                                     <effect>
-                                                      <DropShadow />
-                                                     </effect>
-                                                 </Button>
-                                                 <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="6,5">
-                                                     <graphic>
-                                                         <ImageView fitHeight="36.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                                                             <image>
-                                                                 <Image url="@../img/star.png" />
-                                                             </image>
-                                                         </ImageView>
-                                                     </graphic>
-                                                     <font>
-                                                         <Font name="System Bold" size="20.0" />
-                                                     </font>
-                                                 </Label>
-                                                <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
-                                                <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="742.0" text="Jest rok 1969. Dwa najpotężniejsze mocarstwa świata - Stany Zjednoczone Ameryki Północnej i Związek Radziecki - rywalizują w wyścigu o podbój kosmosu. Emerytowany poszukiwacz przygód Indiana Jones (Harrison Ford) jest zaniepokojony obrotem spraw, gdy dowiaduje się, że rząd USA werbuje byłych nazistów do pomocy w przedsięwzięciu. Niedługo po tym Jones wraz ze swoją chrześnicą Heleną (Phoebe Waller-Bridge) stawia czoła Vollerowi (Mads Mikkelsen) i jego nazistowskiej organizacji. Grupa ta pragnie zdobyć legendarny artefakt, za pomocą którego chce podporządkować sobie świat według wyznawanych wartości." textAlignment="JUSTIFY" wrapText="true" />
-                                                <Label layoutX="187.0" layoutY="163.0" text="reżyseria" />
-                                                <Label layoutX="297.0" layoutY="163.0" text="James Mangold" />
-                                                <Label layoutX="187.0" layoutY="185.0" text="produkcja" />
-                                                <Label layoutX="297.0" layoutY="185.0" text="USA" />
-                                                <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
-                                                <Label layoutX="297.0" layoutY="210.0" text="Przygodowy" />
-                                                <Button id="seeReviewsBtn" graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
-                                             </children>
-
-                                          </Pane>
-                                          <Pane layoutY="290.0" prefHeight="297.0" prefWidth="952.0">
+                                <Pane id="PanelSV" layoutX="245.0" prefHeight="800.0" prefWidth="955.0" style="-fx-background-color: #fff;">
+                                    <children>
+                                        <ScrollPane id="ScrollPane" layoutY="110.0" prefHeight="1216.0" prefWidth="955.0" style="-fx-background-color: #f0f8ff;">
+                                            <content>
+                                                <Pane prefHeight="1833.0" prefWidth="956.0" style="-fx-background-color: #fffafa;">
+                                                    <children>
+                                          <Pane layoutX="2.0" layoutY="14.0" prefHeight="297.0" prefWidth="939.0">
                                              <children>
                                                 <Label layoutX="187.0" layoutY="14.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA">
                                                    <font>
@@ -445,108 +336,317 @@
                                                 <Button graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
                                              </children>
                                           </Pane>
-                                          <Pane layoutX="-7.0" layoutY="587.0" prefHeight="297.0" prefWidth="952.0">
-                                             <children>
-                                                <Label layoutX="187.0" layoutY="14.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA">
-                                                   <font>
-                                                      <Font size="24.0" />
-                                                   </font>
-                                                </Label>
-                                                <Button layoutX="-1.0" mnemonicParsing="false">
-                                                   <graphic>
-                                                      <ImageView fitHeight="230.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
-                                                         <image>
-                                                            <Image url="@../img/film2.jpg" />
-                                                         </image>
-                                                         <cursor>
-                                                            <Cursor fx:constant="OPEN_HAND" />
-                                                         </cursor>
-                                                      </ImageView>
-                                                   </graphic>
-                                                </Button>
-                                                <Button id="rentMovie" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="800.0" layoutY="202.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
-                                                   <graphic>
-                                                      <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
-                                                         <image>
-                                                            <Image url="@../img/play.png" />
-                                                         </image>
-                                                         <viewport>
-                                                            <Rectangle2D height="40.0" width="40.0" />
-                                                         </viewport>
-                                                      </ImageView>
-                                                   </graphic>
-                                                   <font>
-                                                      <Font name="System Bold Italic" size="16.0" />
-                                                   </font>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.0" />
-                                                         </color>
-                                                      </DropShadow>
-                                                   </effect>
-                                                </Button>
-                                                <Button id="addToFavorites" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="755.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
-                                                   <graphic>
-                                                      <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
-                                                         <image>
-                                                            <Image url="@../img/favourite.png" />
-                                                         </image>
-                                                         <viewport>
-                                                            <Rectangle2D height="40.0" width="40.0" />
-                                                         </viewport>
-                                                      </ImageView>
-                                                   </graphic>
-                                                   <textFill>
-                                                      <LinearGradient endX="1.0" endY="1.0">
-                                                         <stops>
-                                                            <Stop>
-                                                               <color>
-                                                                  <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
-                                                               </color>
-                                                            </Stop>
-                                                            <Stop offset="1.0">
-                                                               <color>
-                                                                  <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
-                                                               </color>
-                                                            </Stop>
-                                                         </stops>
-                                                      </LinearGradient>
-                                                   </textFill>
-                                                   <font>
-                                                      <Font name="System Bold Italic" size="14.0" />
-                                                   </font>
-                                                   <effect>
-                                                      <DropShadow />
-                                                   </effect>
-                                                </Button>
-                                                <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="6,5">
-                                                   <graphic>
-                                                      <ImageView fitHeight="36.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                                                         <image>
-                                                            <Image url="@../img/star.png" />
-                                                         </image>
-                                                      </ImageView>
-                                                   </graphic>
-                                                   <font>
-                                                      <Font name="System Bold" size="20.0" />
-                                                   </font>
-                                                </Label>
-                                                <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
-                                                <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="Jest rok 1969. Dwa najpotężniejsze mocarstwa świata - Stany Zjednoczone Ameryki Północnej i Związek Radziecki - rywalizują w wyścigu o podbój kosmosu. Emerytowany poszukiwacz przygód Indiana Jones (Harrison Ford) jest zaniepokojony obrotem spraw, gdy dowiaduje się, że rząd USA werbuje byłych nazistów do pomocy w przedsięwzięciu. Niedługo po tym Jones wraz ze swoją chrześnicą Heleną (Phoebe Waller-Bridge) stawia czoła Vollerowi (Mads Mikkelsen) i jego nazistowskiej organizacji. Grupa ta pragnie zdobyć legendarny artefakt, za pomocą którego chce podporządkować sobie świat według wyznawanych wartości." textAlignment="JUSTIFY" wrapText="true" />
-                                                <Label layoutX="187.0" layoutY="163.0" text="reżyseria" />
-                                                <Label layoutX="297.0" layoutY="163.0" text="James Mangold" />
-                                                <Label layoutX="187.0" layoutY="185.0" text="produkcja" />
-                                                <Label layoutX="297.0" layoutY="185.0" text="USA" />
-                                                <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
-                                                <Label layoutX="297.0" layoutY="210.0" text="Przygodowy" />
-                                                <Button graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
-                                             </children>
-                                          </Pane>
-                                       </children></AnchorPane>
-                                </content>
-                              </ScrollPane>
-                           </children></Pane>
+                                       <Pane layoutX="2.0" layoutY="311.0" prefHeight="297.0" prefWidth="939.0">
+                                          <children>
+                                             <Label layoutX="187.0" layoutY="14.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA">
+                                                <font>
+                                                   <Font size="24.0" />
+                                                </font>
+                                             </Label>
+                                             <Button layoutX="-1.0" mnemonicParsing="false">
+                                                <graphic>
+                                                   <ImageView fitHeight="230.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../img/film2.jpg" />
+                                                      </image>
+                                                      <cursor>
+                                                         <Cursor fx:constant="OPEN_HAND" />
+                                                      </cursor>
+                                                   </ImageView>
+                                                </graphic>
+                                             </Button>
+                                             <Button id="rentMovie" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                                <graphic>
+                                                   <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                                      <image>
+                                                         <Image url="@../img/play.png" />
+                                                      </image>
+                                                      <viewport>
+                                                         <Rectangle2D height="40.0" width="40.0" />
+                                                      </viewport>
+                                                   </ImageView>
+                                                </graphic>
+                                                <font>
+                                                   <Font name="System Bold Italic" size="16.0" />
+                                                </font>
+                                                <effect>
+                                                   <DropShadow>
+                                                      <color>
+                                                         <Color opacity="0.0" />
+                                                      </color>
+                                                   </DropShadow>
+                                                </effect>
+                                             </Button>
+                                             <Button id="addToFavorites" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
+                                                <graphic>
+                                                   <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../img/favourite.png" />
+                                                      </image>
+                                                      <viewport>
+                                                         <Rectangle2D height="40.0" width="40.0" />
+                                                      </viewport>
+                                                   </ImageView>
+                                                </graphic>
+                                                <textFill>
+                                                   <LinearGradient endX="1.0" endY="1.0">
+                                                      <stops>
+                                                         <Stop>
+                                                            <color>
+                                                               <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                                            </color>
+                                                         </Stop>
+                                                         <Stop offset="1.0">
+                                                            <color>
+                                                               <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                                            </color>
+                                                         </Stop>
+                                                      </stops>
+                                                   </LinearGradient>
+                                                </textFill>
+                                                <font>
+                                                   <Font name="System Bold Italic" size="14.0" />
+                                                </font>
+                                                <effect>
+                                                   <DropShadow />
+                                                </effect>
+                                             </Button>
+                                             <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="6,5">
+                                                <graphic>
+                                                   <ImageView fitHeight="36.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../img/star.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                </graphic>
+                                                <font>
+                                                   <Font name="System Bold" size="20.0" />
+                                                </font>
+                                             </Label>
+                                             <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
+                                             <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="Jest rok 1969. Dwa najpotężniejsze mocarstwa świata - Stany Zjednoczone Ameryki Północnej i Związek Radziecki - rywalizują w wyścigu o podbój kosmosu. Emerytowany poszukiwacz przygód Indiana Jones (Harrison Ford) jest zaniepokojony obrotem spraw, gdy dowiaduje się, że rząd USA werbuje byłych nazistów do pomocy w przedsięwzięciu. Niedługo po tym Jones wraz ze swoją chrześnicą Heleną (Phoebe Waller-Bridge) stawia czoła Vollerowi (Mads Mikkelsen) i jego nazistowskiej organizacji. Grupa ta pragnie zdobyć legendarny artefakt, za pomocą którego chce podporządkować sobie świat według wyznawanych wartości." textAlignment="JUSTIFY" wrapText="true" />
+                                             <Label layoutX="187.0" layoutY="163.0" text="reżyseria" />
+                                             <Label layoutX="297.0" layoutY="163.0" text="James Mangold" />
+                                             <Label layoutX="187.0" layoutY="185.0" text="produkcja" />
+                                             <Label layoutX="297.0" layoutY="185.0" text="USA" />
+                                             <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
+                                             <Label layoutX="297.0" layoutY="210.0" text="Przygodowy" />
+                                             <Button graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
+                                          </children>
+                                       </Pane>
+                                       <Pane layoutX="2.0" layoutY="608.0" prefHeight="297.0" prefWidth="952.0">
+                                          <children>
+                                             <Label layoutX="187.0" layoutY="14.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA">
+                                                <font>
+                                                   <Font size="24.0" />
+                                                </font>
+                                             </Label>
+                                             <Button layoutX="-1.0" mnemonicParsing="false">
+                                                <graphic>
+                                                   <ImageView fitHeight="230.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../img/film2.jpg" />
+                                                      </image>
+                                                      <cursor>
+                                                         <Cursor fx:constant="OPEN_HAND" />
+                                                      </cursor>
+                                                   </ImageView>
+                                                </graphic>
+                                             </Button>
+                                             <Button id="rentMovie" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                                <graphic>
+                                                   <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                                      <image>
+                                                         <Image url="@../img/play.png" />
+                                                      </image>
+                                                      <viewport>
+                                                         <Rectangle2D height="40.0" width="40.0" />
+                                                      </viewport>
+                                                   </ImageView>
+                                                </graphic>
+                                                <font>
+                                                   <Font name="System Bold Italic" size="16.0" />
+                                                </font>
+                                                <effect>
+                                                   <DropShadow>
+                                                      <color>
+                                                         <Color opacity="0.0" />
+                                                      </color>
+                                                   </DropShadow>
+                                                </effect>
+                                             </Button>
+                                             <Button id="addToFavorites" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
+                                                <graphic>
+                                                   <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../img/favourite.png" />
+                                                      </image>
+                                                      <viewport>
+                                                         <Rectangle2D height="40.0" width="40.0" />
+                                                      </viewport>
+                                                   </ImageView>
+                                                </graphic>
+                                                <textFill>
+                                                   <LinearGradient endX="1.0" endY="1.0">
+                                                      <stops>
+                                                         <Stop>
+                                                            <color>
+                                                               <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                                            </color>
+                                                         </Stop>
+                                                         <Stop offset="1.0">
+                                                            <color>
+                                                               <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                                            </color>
+                                                         </Stop>
+                                                      </stops>
+                                                   </LinearGradient>
+                                                </textFill>
+                                                <font>
+                                                   <Font name="System Bold Italic" size="14.0" />
+                                                </font>
+                                                <effect>
+                                                   <DropShadow />
+                                                </effect>
+                                             </Button>
+                                             <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="6,5">
+                                                <graphic>
+                                                   <ImageView fitHeight="36.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../img/star.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                </graphic>
+                                                <font>
+                                                   <Font name="System Bold" size="20.0" />
+                                                </font>
+                                             </Label>
+                                             <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
+                                             <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="Jest rok 1969. Dwa najpotężniejsze mocarstwa świata - Stany Zjednoczone Ameryki Północnej i Związek Radziecki - rywalizują w wyścigu o podbój kosmosu. Emerytowany poszukiwacz przygód Indiana Jones (Harrison Ford) jest zaniepokojony obrotem spraw, gdy dowiaduje się, że rząd USA werbuje byłych nazistów do pomocy w przedsięwzięciu. Niedługo po tym Jones wraz ze swoją chrześnicą Heleną (Phoebe Waller-Bridge) stawia czoła Vollerowi (Mads Mikkelsen) i jego nazistowskiej organizacji. Grupa ta pragnie zdobyć legendarny artefakt, za pomocą którego chce podporządkować sobie świat według wyznawanych wartości." textAlignment="JUSTIFY" wrapText="true" />
+                                             <Label layoutX="187.0" layoutY="163.0" text="reżyseria" />
+                                             <Label layoutX="297.0" layoutY="163.0" text="James Mangold" />
+                                             <Label layoutX="187.0" layoutY="185.0" text="produkcja" />
+                                             <Label layoutX="297.0" layoutY="185.0" text="USA" />
+                                             <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
+                                             <Label layoutX="297.0" layoutY="210.0" text="Przygodowy" />
+                                             <Button graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
+                                          </children>
+                                       </Pane>
+                                       <Pane layoutX="2.0" layoutY="905.0" prefHeight="297.0" prefWidth="952.0">
+                                          <children>
+                                             <Label layoutX="187.0" layoutY="14.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA">
+                                                <font>
+                                                   <Font size="24.0" />
+                                                </font>
+                                             </Label>
+                                             <Button layoutX="-1.0" mnemonicParsing="false">
+                                                <graphic>
+                                                   <ImageView fitHeight="230.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../img/film2.jpg" />
+                                                      </image>
+                                                      <cursor>
+                                                         <Cursor fx:constant="OPEN_HAND" />
+                                                      </cursor>
+                                                   </ImageView>
+                                                </graphic>
+                                             </Button>
+                                             <Button id="rentMovie" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                                <graphic>
+                                                   <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                                      <image>
+                                                         <Image url="@../img/play.png" />
+                                                      </image>
+                                                      <viewport>
+                                                         <Rectangle2D height="40.0" width="40.0" />
+                                                      </viewport>
+                                                   </ImageView>
+                                                </graphic>
+                                                <font>
+                                                   <Font name="System Bold Italic" size="16.0" />
+                                                </font>
+                                                <effect>
+                                                   <DropShadow>
+                                                      <color>
+                                                         <Color opacity="0.0" />
+                                                      </color>
+                                                   </DropShadow>
+                                                </effect>
+                                             </Button>
+                                             <Button id="addToFavorites" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
+                                                <graphic>
+                                                   <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../img/favourite.png" />
+                                                      </image>
+                                                      <viewport>
+                                                         <Rectangle2D height="40.0" width="40.0" />
+                                                      </viewport>
+                                                   </ImageView>
+                                                </graphic>
+                                                <textFill>
+                                                   <LinearGradient endX="1.0" endY="1.0">
+                                                      <stops>
+                                                         <Stop>
+                                                            <color>
+                                                               <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                                            </color>
+                                                         </Stop>
+                                                         <Stop offset="1.0">
+                                                            <color>
+                                                               <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                                            </color>
+                                                         </Stop>
+                                                      </stops>
+                                                   </LinearGradient>
+                                                </textFill>
+                                                <font>
+                                                   <Font name="System Bold Italic" size="14.0" />
+                                                </font>
+                                                <effect>
+                                                   <DropShadow />
+                                                </effect>
+                                             </Button>
+                                             <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="6,5">
+                                                <graphic>
+                                                   <ImageView fitHeight="36.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                      <image>
+                                                         <Image url="@../img/star.png" />
+                                                      </image>
+                                                   </ImageView>
+                                                </graphic>
+                                                <font>
+                                                   <Font name="System Bold" size="20.0" />
+                                                </font>
+                                             </Label>
+                                             <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
+                                             <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="Jest rok 1969. Dwa najpotężniejsze mocarstwa świata - Stany Zjednoczone Ameryki Północnej i Związek Radziecki - rywalizują w wyścigu o podbój kosmosu. Emerytowany poszukiwacz przygód Indiana Jones (Harrison Ford) jest zaniepokojony obrotem spraw, gdy dowiaduje się, że rząd USA werbuje byłych nazistów do pomocy w przedsięwzięciu. Niedługo po tym Jones wraz ze swoją chrześnicą Heleną (Phoebe Waller-Bridge) stawia czoła Vollerowi (Mads Mikkelsen) i jego nazistowskiej organizacji. Grupa ta pragnie zdobyć legendarny artefakt, za pomocą którego chce podporządkować sobie świat według wyznawanych wartości." textAlignment="JUSTIFY" wrapText="true" />
+                                             <Label layoutX="187.0" layoutY="163.0" text="reżyseria" />
+                                             <Label layoutX="297.0" layoutY="163.0" text="James Mangold" />
+                                             <Label layoutX="187.0" layoutY="185.0" text="produkcja" />
+                                             <Label layoutX="297.0" layoutY="185.0" text="USA" />
+                                             <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
+                                             <Label layoutX="297.0" layoutY="210.0" text="Przygodowy" />
+                                             <Button graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
+                                          </children>
+                                       </Pane>
+                                                    </children>
+                                                </Pane>
+                                            </content>
+                                        </ScrollPane>
+                              <Label layoutX="14.0" layoutY="14.0" text="Odkryj nasz katalog">
+                                 <font>
+                                    <Font name="Constantia" size="36.0" />
+                                 </font>
+                              </Label>
+                              <MenuButton id="filterButtonRating" layoutX="14.0" layoutY="69.0" mnemonicParsing="false" text="MenuButton">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                                  <MenuItem mnemonicParsing="false" text="Action 2" />
+                                </items>
+                              </MenuButton>
+
+                                    </children></Pane>
                             </children>
                         </AnchorPane>
                 </Pane>
