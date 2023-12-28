@@ -1,5 +1,6 @@
 package Client;
 
+import BaseClasses.Account;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
@@ -77,5 +78,10 @@ public class DescriptionTopViewFilm2 {
         PrimaryStageSingleton.INSTANCE.setScene(scene);
         PrimaryStageSingleton.INSTANCE.setTitle("DescriptionTopViewFilm");
         PrimaryStageSingleton.INSTANCE.show();
+    }
+
+    public void onRentMovieButtonClicked(MouseEvent mouseEvent) {
+        Account acc = new Account(false, null, null);
+        acc.rentMovie("Film");
     }
 }

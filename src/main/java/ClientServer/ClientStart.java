@@ -1,5 +1,7 @@
 package ClientServer;
 
+import BaseClasses.Account;
+
 public class ClientStart {
     public static void main() {
         // Adres i port serwera
