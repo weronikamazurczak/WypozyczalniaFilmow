@@ -80,6 +80,30 @@ public class AdminGenresPanel {
         PrimaryStageSingleton.INSTANCE.show();
     }
 
+    public void onManagementButtonMovieDashboardClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onEditFlim2Button(MouseEvent mouseEvent) {
+    }
+
+    public void onRemoveFilm2Button(MouseEvent mouseEvent) {
+    }
+
+    public void onEditFlim3Button(MouseEvent mouseEvent) {
+    }
+
+    public void onRemoveFilm3Button(MouseEvent mouseEvent) {
+    }
+
+    public void onEditFlim4Button(MouseEvent mouseEvent) {
+    }
+
+    public void onRemoveFilm4Button(MouseEvent mouseEvent) {
+    }
+
+    public void actionButton(ActionEvent actionEvent) {
+    }
+
     public void onActionButtonClicked(MouseEvent mouseEvent) {
     }
 
@@ -92,6 +116,9 @@ public class AdminGenresPanel {
     public void onComedyButtonClicked(MouseEvent mouseEvent) {
     }
 
+    public void adventureButton(ActionEvent actionEvent) {
+    }
+
     public void onAdventureButtonClicked(MouseEvent mouseEvent) {
     }
 
@@ -101,16 +128,10 @@ public class AdminGenresPanel {
     public void onKidsButtonClicked(MouseEvent mouseEvent) {
     }
 
-    public void onHistoryButtonClciked(MouseEvent mouseEvent) {
-    }
-
     public void historyButton(ActionEvent actionEvent) {
     }
 
-    public void adventureButton(ActionEvent actionEvent) {
-    }
-
-    public void actionButton(ActionEvent actionEvent) {
+    public void onHistoryButtonClciked(MouseEvent mouseEvent) {
     }
 
     public void onRomanceButtonClicked(MouseEvent mouseEvent) {

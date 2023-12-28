@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
@@ -72,6 +73,12 @@
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
+                              <effect>
+                                 <InnerShadow>
+                                    <color>
+                                       <Color opacity="0.6000000238418579" />
+                                    </color></InnerShadow>
+                              </effect>
                                         </Button>
                                         <Button id="moviesButtonMovieDashboard" fx:id="moviesButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#onMoviesButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Filmy">
                                             <graphic>
@@ -103,6 +110,12 @@
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
+                              <effect>
+                                 <InnerShadow>
+                                    <color>
+                                       <Color opacity="0.6000000238418579" />
+                                    </color></InnerShadow>
+                              </effect>
                                         </Button>
                                         <Button id="serialsButtonMovieDashboard" fx:id="serialsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="381.0" mnemonicParsing="false" onMouseClicked="#onSerialsButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Seriale">
                                             <graphic>
@@ -134,6 +147,12 @@
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
+                              <effect>
+                                 <InnerShadow>
+                                    <color>
+                                       <Color opacity="0.6000000238418579" />
+                                    </color></InnerShadow>
+                              </effect>
                                         </Button>
                                         <Button id="genreButtonMovieDashboard" fx:id="genreButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="439.0" mnemonicParsing="false" onMouseClicked="#onGenreButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Gatunki">
                                             <graphic>
@@ -165,8 +184,14 @@
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
+                              <effect>
+                                 <InnerShadow>
+                                    <color>
+                                       <Color opacity="0.6000000238418579" />
+                                    </color></InnerShadow>
+                              </effect>
                                         </Button>
-                                        <Button id="settingsButtonMovieDashboard" fx:id="settingsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="629.0" mnemonicParsing="false" onMouseClicked="#onSettingsButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Ustawienia">
+                                        <Button id="settingsButtonMovieDashboard" fx:id="settingsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="635.0" mnemonicParsing="false" onMouseClicked="#onSettingsButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Ustawienia">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
@@ -196,8 +221,14 @@
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
+                              <effect>
+                                 <InnerShadow>
+                                    <color>
+                                       <Color opacity="0.6000000238418579" />
+                                    </color></InnerShadow>
+                              </effect>
                                         </Button>
-                                        <Button id="logoutButtonMovieDashboard" fx:id="logoutButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="693.0" mnemonicParsing="false" onMouseClicked="#onLogoutButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Wyloguj">
+                                        <Button id="logoutButtonMovieDashboard" fx:id="logoutButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="693.0" mnemonicParsing="false" onMouseClicked="#onLogoutButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Wyloguj">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
@@ -227,8 +258,54 @@
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
+                              <effect>
+                                 <InnerShadow>
+                                    <color>
+                                       <Color opacity="0.6000000238418579" />
+                                    </color></InnerShadow>
+                              </effect>
                                         </Button>
+                           <Button id="genreButtonMovieDashboard" fx:id="genreButtonMovieDashboard1" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#onGenreButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Zarządzaj">
+                              <graphic>
+                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@../img/archive_1774012.png" />
+                                    </image>
+                                    <viewport>
+                                       <Rectangle2D height="40.0" width="40.0" />
+                                    </viewport>
+                                 </ImageView>
+                              </graphic>
+                              <textFill>
+                                 <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                       <Stop>
+                                          <color>
+                                             <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                          </color>
+                                       </Stop>
+                                       <Stop offset="1.0">
+                                          <color>
+                                             <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                          </color>
+                                       </Stop>
+                                    </stops>
+                                 </LinearGradient>
+                              </textFill>
+                              <font>
+                                 <Font size="20.0" />
+                              </font>
+                              <effect>
+                                 <InnerShadow>
+                                    <color>
+                                       <Color opacity="0.6000000238418579" />
+                                    </color></InnerShadow>
+                              </effect>
+                           </Button>
                                     </children>
+                        <effect>
+                           <ColorAdjust contrast="0.1" hue="0.36" saturation="0.06" />
+                        </effect>
                                 </Pane>
                                 <Pane layoutX="245.0" prefHeight="775.0" prefWidth="955.0">
                                     <children>
@@ -250,15 +327,13 @@
                                     <Separator layoutX="-1.0" layoutY="16.0" prefHeight="0.0" prefWidth="930.0" />
                                     <Label layoutX="164.0" layoutY="25.0" text="adresemail@gmail.com" />
                                     <Label layoutX="164.0" layoutY="46.0" text="Hasło: *******" />
-                                    <Label id="changeEmailBtn" fx:id="changeEmailBtn" accessibleRole="BUTTON" layoutX="452.0" layoutY="25.0" onMouseClicked="#onChangeEmailBtnClicked" text="Zmień adres email" underline="true" />
-                                    <Label id="changePasswordBtn" fx:id="changePasswordBtn" layoutX="484.0" layoutY="46.0" onMouseClicked="#onChangePasswordBtnClicked" text="Zmeiń hasło" underline="true" />
                                     <Button fx:id="resignSubscriptionButton" layoutX="7.0" layoutY="117.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="109.0" style="-fx-background-color: #EE6C4D;" text="ZREZYGNUJ">
                                        <font>
                                           <Font name="Constantia" size="12.0" />
                                        </font>
                                     </Button>
-                                 <Button fx:id="changeEmailBtn" layoutX="562.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#onChangeEmailBtnClicked" text="Zmień adres email" />
-                                 <Button layoutX="562.0" layoutY="51.0" mnemonicParsing="false" text="Zmeiń hasło" />
+                                 <Button fx:id="changeEmailBtn" layoutX="436.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#onChangeEmailBtnClicked" style="-fx-background-color: #f1f1f1;" text="Zmień adres email" underline="true" />
+                                 <Button fx:id="passwordChangeButton" layoutX="468.0" layoutY="42.0" mnemonicParsing="false" onMouseClicked="#onPasswordChangeButtonClicked" style="-fx-background-color: #f1f1f1;" text="Zmeiń hasło" underline="true" />
                                  </children>
                               </Pane>
                               <Pane layoutX="10.0" layoutY="242.0" prefHeight="233.0" prefWidth="932.0">
@@ -304,13 +379,10 @@
                                     <Separator layoutX="-1.0" layoutY="16.0" prefHeight="0.0" prefWidth="930.0" />
                                     <Label layoutX="164.0" layoutY="25.0" text="przeglądaj historię wypożyczeń" />
                                     <Label layoutX="164.0" layoutY="46.0" text="zobacz listę ulubionych" />
-                                    <Label id="changeEmailBtn" accessibleRole="BUTTON" layoutX="512.0" layoutY="25.0" text="Historia" underline="true" wrapText="true" />
-                                    <Label id="viewFavourites" fx:id="viewFavourites" layoutX="464.0" layoutY="46.0" text="Zobacz ulubione" underline="true" />
                                     <Label layoutX="164.0" layoutY="67.0" text="oceń obejrzane filmy" />
-                                    <Label id="changeEmailBtn" fx:id="changeEmailBtn" accessibleRole="BUTTON" layoutX="525.0" layoutY="67.0" text="Oceń" underline="true" wrapText="true" />
-                                 <Button fx:id="changeEmailBtn" layoutX="565.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#onChangeEmailBtnClicked" text="Historia" />
-                                 <Button fx:id="viewFavourites" layoutX="565.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#onViewFavouritesClicked" text="Zobacz ulubione" />
-                                 <Button fx:id="changeEmailBtn" layoutX="568.0" layoutY="84.0" mnemonicParsing="false" onMouseClicked="#onChangeEmailBtnClicked" text="Oceń" />
+                                 <Button fx:id="historySectionButton" layoutX="495.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#onHistorySectionButtonClicked" style="-fx-background-color: #f1f1f1;" text="Historia" underline="true" />
+                                 <Button fx:id="viewFavourites" layoutX="449.0" layoutY="42.0" mnemonicParsing="false" onMouseClicked="#onViewFavouritesClicked" style="-fx-background-color: #f1f1f1;" text="Zobacz ulubione" underline="true" />
+                                 <Button fx:id="gradeWatchedMoviesButton" layoutX="509.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#onGradeWatchedMoviesButtonClicked" style="-fx-background-color: #f1f1f1;" text="Oceń" underline="true" />
                                  </children>
                               </Pane>
                                     </children></Pane>
