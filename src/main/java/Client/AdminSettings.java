@@ -78,4 +78,32 @@ public class AdminSettings {
         PrimaryStageSingleton.INSTANCE.setTitle("DescriptionTopViewFilm");
         PrimaryStageSingleton.INSTANCE.show();
     }
+
+    public void onBuySubscriptionButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onChangeEmailBtnClicked(MouseEvent mouseEvent) {
+    }
+
+
+    public void onAddNewAccountClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onRemoveAccountButton1Clicked(MouseEvent mouseEvent) {
+    }
+
+    public void onRemoveAccountButton2Clicked(MouseEvent mouseEvent) {
+    }
+
+    public void onViewFavouritesClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onHistorySectionButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onGradeWatchedMoviesButtonClicked(MouseEvent mouseEvent) {
+    }
+
+    public void onPasswordChangeButtonClicked(MouseEvent mouseEvent) {
+    }
 }

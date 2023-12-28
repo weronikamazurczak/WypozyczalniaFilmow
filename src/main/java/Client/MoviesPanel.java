@@ -82,7 +82,6 @@ public class MoviesPanel {
         PrimaryStageSingleton.INSTANCE.show();
     }
 
-
     public void onAddToFavoritesButtonClicked(MouseEvent mouseEvent) {
         acc.addToFavorites("Film 1");
     }
@@ -90,4 +89,5 @@ public class MoviesPanel {
     public void onRentMovieButtonClicked(MouseEvent mouseEvent) {
         acc.rentMovie("Film 1");
     }
+
 }

@@ -1,5 +1,6 @@
 package Client;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
@@ -47,6 +48,14 @@ public class AdminTVseriesPanel {
         PrimaryStageSingleton.INSTANCE.show();
     }
 
+    public void onManagementButtonMovieDashboardClicked(MouseEvent mouseEvent) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("AdminManagementPanel.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        PrimaryStageSingleton.INSTANCE.setScene(scene);
+        PrimaryStageSingleton.INSTANCE.setTitle("AdminManagementPanel");
+        PrimaryStageSingleton.INSTANCE.show();
+    }
+
     public void onLogoutButtonMovieDashboardClicked(MouseEvent mouseEvent)  throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("LoginForm.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -78,4 +87,31 @@ public class AdminTVseriesPanel {
         PrimaryStageSingleton.INSTANCE.setTitle("DescriptionTopViewFilm");
         PrimaryStageSingleton.INSTANCE.show();
     }
+
+    public void onEditFlim1Button(MouseEvent mouseEvent) {
+    }
+
+    public void onRemoveFilm1Button(MouseEvent mouseEvent) {
+    }
+
+    public void onEditFlim2Button(MouseEvent mouseEvent) {
+    }
+
+    public void onRemoveFilm2Button(MouseEvent mouseEvent) {
+    }
+
+    public void onEditFlim3Button(MouseEvent mouseEvent) {
+    }
+
+    public void onRemoveFilm3Button(MouseEvent mouseEvent) {
+    }
+
+    public void onEditFlim4Button(MouseEvent mouseEvent) {
+    }
+
+    public void onRemoveFilm4Button(MouseEvent mouseEvent) {
+    }
+
+
+
 }

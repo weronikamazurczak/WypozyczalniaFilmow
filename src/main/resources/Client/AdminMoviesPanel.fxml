@@ -9,14 +9,14 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.MoviesPanel">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.AdminMoviesPanel">
     <children>
         <Pane prefHeight="800.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
                 <Pane prefHeight="800.0" prefWidth="1200.0">
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                         <children>
-                            <Pane layoutX="-5.0" prefHeight="800.0" prefWidth="250.0" style="-fx-background-color: #FFF;">
+                            <Pane id="menuSection" layoutX="-5.0" prefHeight="800.0" prefWidth="250.0" style="-fx-background-color: #FFF;">
                                 <children>
                                     <ImageView fitHeight="150.0" fitWidth="146.0" layoutX="52.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                                         <image>
@@ -214,40 +214,6 @@
                                  <InnerShadow />
                               </effect>
                                     </Button>
-                                    <Button id="managementBtn" fx:id="managementButtonMovieDashboard1" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#onManagementButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Zarządzaj">
-                                        <graphic>
-                                            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-                                                <image>
-                                                    <Image url="@../img/archive_1774012.png" />
-                                                </image>
-                                                <viewport>
-                                                    <Rectangle2D height="40.0" width="40.0" />
-                                                </viewport>
-                                            </ImageView>
-                                        </graphic>
-                                        <textFill>
-                                            <LinearGradient endX="1.0" endY="1.0">
-                                                <stops>
-                                                    <Stop>
-                                                        <color>
-                                                            <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
-                                                        </color>
-                                                    </Stop>
-                                                    <Stop offset="1.0">
-                                                        <color>
-                                                            <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
-                                                        </color>
-                                                    </Stop>
-                                                </stops>
-                                            </LinearGradient>
-                                        </textFill>
-                                        <font>
-                                            <Font size="20.0" />
-                                        </font>
-                                        <effect>
-                                            <InnerShadow />
-                                        </effect>
-                                    </Button>
                                     <Button id="logoutButtonMovieDashboard" fx:id="logoutButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="693.0" mnemonicParsing="false" onMouseClicked="#onLogoutButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Wyloguj">
                                         <graphic>
                                             <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
@@ -282,18 +248,55 @@
                                  <InnerShadow />
                               </effect>
                                     </Button>
+                           <Button fx:id="managementButtonMovieDashboardClicked" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#onManagementButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Zarządzaj">
+                              <graphic>
+                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@../img/archive_1774012.png" />
+                                    </image>
+                                    <viewport>
+                                       <Rectangle2D height="40.0" width="40.0" />
+                                    </viewport>
+                                 </ImageView>
+                              </graphic>
+                              <textFill>
+                                 <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                       <Stop>
+                                          <color>
+                                             <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                          </color>
+                                       </Stop>
+                                       <Stop offset="1.0">
+                                          <color>
+                                             <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                          </color>
+                                       </Stop>
+                                    </stops>
+                                 </LinearGradient>
+                              </textFill>
+                              <font>
+                                 <Font size="20.0" />
+                              </font>
+                              <effect>
+                                 <InnerShadow />
+                              </effect>
+                           </Button>
                                 </children>
                         <effect>
                            <ColorAdjust contrast="1.0" hue="0.36" saturation="0.06" />
                         </effect>
                             </Pane>
-                            <Pane id="discoverFilmList" layoutX="245.0" prefHeight="800.0" prefWidth="955.0">
+
+
+
+                            <Pane id="PanelSV" layoutX="245.0" prefHeight="800.0" prefWidth="955.0" style="-fx-background-color: #fff;">
                                 <children>
-                                    <ScrollPane hbarPolicy="NEVER" hmax="0.0" layoutY="130.0" pannable="true" prefHeight="669.0" prefWidth="955.0" vbarPolicy="ALWAYS" vmax="0.0">
+                                    <ScrollPane id="ScrollPane" layoutY="110.0" prefHeight="1216.0" prefWidth="955.0" style="-fx-background-color: #f0f8ff;">
                                         <content>
-                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1024.0" prefWidth="941.0">
-                                                <children>
-                                                    <Pane layoutY="-14.0" prefHeight="297.0" prefWidth="938.0">
+                                            <Pane prefHeight="1833.0" prefWidth="956.0" style="-fx-background-color: #f5f4f1;">
+                                    <children>
+                                                    <Pane prefHeight="297.0" prefWidth="938.0">
                                                         <children>
                                                             <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
                                              <TitledPane animated="false" layoutX="77.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="ID">
@@ -301,7 +304,8 @@
                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
                                                          <Label fx:id="movieIDlabel" layoutX="65.0" layoutY="113.0" text="1" />
-                                                      </children></AnchorPane>
+                                                            </children>
+                                                   </AnchorPane>
                                                </content>
                                              </TitledPane>
                                              <TitledPane animated="false" layoutX="237.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Plakat">
@@ -310,7 +314,7 @@
                                                       <children>
                                                                         <Button layoutX="23.0" layoutY="59.0" mnemonicParsing="false">
                                                                             <graphic>
-                                                                                <ImageView fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                                                                                <ImageView fx:id="posterID1" fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                                                                                     <image>
                                                                                         <Image url="@../img/film2.jpg" />
                                                                                     </image>
@@ -323,12 +327,12 @@
                                                       </children>
                                                    </AnchorPane>
                                                 </content>
-                                             </TitledPane>
+                                                   </TitledPane>
                                              <TitledPane animated="false" layoutX="397.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Nazwa">
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                                        <Label layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
+                                                                        <Label fx:id="movieNameID1" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
                                                                             <font>
                                                                                 <Font size="16.0" />
                                                                             </font>
@@ -341,10 +345,10 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
+                                                         <Label fx:id="genreID1" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
                                                             <font>
                                                                <Font size="16.0" />
-                                                            </font>
+                                                                      </font>
                                                          </Label>
                                                       </children>
                                                    </AnchorPane>
@@ -354,8 +358,8 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Button layoutX="21.0" layoutY="109.0" mnemonicParsing="false" text="Edytuj" />
-                                                         <Button layoutX="92.0" layoutY="109.0" mnemonicParsing="false" text="Usuń" />
+                                                         <Button fx:id="editFlim1Button" layoutX="21.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#onEditFlim1Button" style="-fx-background-color: #61bc84;" text="Edytuj" />
+                                                         <Button fx:id="removeFilm1Button" layoutX="92.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#onRemoveFilm1Button" style="-fx-background-color: #EE6C4D;" text="Usuń" />
                                                       </children>
                                                    </AnchorPane>
                                                 </content>
@@ -363,14 +367,14 @@
                                                         </children>
 
                                                     </Pane>
-                                       <Pane layoutX="2.0" layoutY="269.0" prefHeight="297.0" prefWidth="938.0">
+                                       <Pane layoutY="281.0" prefHeight="297.0" prefWidth="938.0">
                                           <children>
                                              <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
                                              <TitledPane animated="false" layoutX="77.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="ID">
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label fx:id="movieIDlabel1" layoutX="65.0" layoutY="113.0" text="1" />
+                                                         <Label fx:id="movieIDlabel2" layoutX="65.0" layoutY="113.0" text="1" />
                                                       </children>
                                                    </AnchorPane>
                                                 </content>
@@ -380,6 +384,146 @@
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
                                                          <Button layoutX="23.0" layoutY="59.0" mnemonicParsing="false">
+                                                            <graphic>
+                                                               <ImageView fx:id="posterID2" fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                     <Image url="@../img/film2.jpg" />
+                                                                  </image>
+                                                                  <cursor>
+                                                                     <Cursor fx:constant="OPEN_HAND" />
+                                                                  </cursor>
+                                                               </ImageView>
+                                                            </graphic>
+                                                         </Button>
+                                                      </children>
+                                                   </AnchorPane>
+                                                </content>
+                                             </TitledPane>
+                                             <TitledPane animated="false" layoutX="397.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Nazwa">
+                                                <content>
+                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
+                                                      <children>
+                                                         <Label fx:id="movieNameID2" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
+                                                            <font>
+                                                               <Font size="16.0" />
+                                                            </font>
+                                                         </Label>
+                                                      </children>
+                                                   </AnchorPane>
+                                                </content>
+                                             </TitledPane>
+                                             <TitledPane animated="false" layoutX="557.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Gatunki">
+                                                <content>
+                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
+                                                      <children>
+                                                         <Label fx:id="genreID2" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
+                                                            <font>
+                                                               <Font size="16.0" />
+                                                            </font>
+                                                         </Label>
+                                                      </children>
+                                                   </AnchorPane>
+                                                </content>
+                                             </TitledPane>
+                                             <TitledPane animated="false" layoutX="717.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Opcje">
+                                                <content>
+                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
+                                                      <children>
+                                                         <Button fx:id="editFlim2Button" layoutX="21.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#onEditFlim2Button" style="-fx-background-color: #61bc84;" text="Edytuj" />
+                                                         <Button fx:id="removeFilm2Button" layoutX="92.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#onRemoveFilm2Button" style="-fx-background-color: #EE6C4D;" text="Usuń" />
+                                                      </children>
+                                                   </AnchorPane>
+                                                </content>
+                                             </TitledPane>
+                                          </children>
+                                       </Pane>
+                                       <Pane layoutY="564.0" prefHeight="297.0" prefWidth="938.0">
+                                          <children>
+                                             <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
+                                             <TitledPane animated="false" layoutX="77.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="ID">
+                                                <content>
+                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
+                                                      <children>
+                                                         <Label fx:id="movieIDlabel3" layoutX="65.0" layoutY="113.0" text="1" />
+                                                      </children>
+                                                   </AnchorPane>
+                                                </content>
+                                             </TitledPane>
+                                             <TitledPane animated="false" layoutX="237.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Plakat">
+                                                <content>
+                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
+                                                      <children>
+                                                         <Button fx:id="posterID3" layoutX="23.0" layoutY="59.0" mnemonicParsing="false">
+                                                            <graphic>
+                                                               <ImageView fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                     <Image url="@../img/film2.jpg" />
+                                                                  </image>
+                                                                  <cursor>
+                                                                     <Cursor fx:constant="OPEN_HAND" />
+                                                                  </cursor>
+                                                               </ImageView>
+                                                            </graphic>
+                                                         </Button>
+                                                      </children>
+                                                                                     </AnchorPane>
+                                                </content>
+                                             </TitledPane>
+                                             <TitledPane animated="false" layoutX="397.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Nazwa">
+                                                <content>
+                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
+                                                      <children>
+                                                         <Label fx:id="movieNameID3" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
+                                                            <font>
+                                                               <Font size="16.0" />
+                                                            </font>
+                                                         </Label>
+                                                      </children>
+                                                   </AnchorPane>
+                                                </content>
+                                             </TitledPane>
+                                             <TitledPane animated="false" layoutX="557.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Gatunki">
+                                                <content>
+                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
+                                                      <children>
+                                                         <Label fx:id="genreID3" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
+                                                            <font>
+                                                               <Font size="16.0" />
+                                                            </font>
+                                                         </Label>
+                                                      </children>
+                                                   </AnchorPane>
+                                                </content>
+                                             </TitledPane>
+                                             <TitledPane animated="false" layoutX="717.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Opcje">
+                                                <content>
+                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
+                                                      <children>
+                                                         <Button fx:id="editFlim3Button" layoutX="21.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#onEditFlim3Button" style="-fx-background-color: #61bc84;" text="Edytuj" />
+                                                         <Button fx:id="removeFilm3Button" layoutX="92.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#onRemoveFilm3Button" style="-fx-background-color: #EE6C4D;" text="Usuń" />
+                                                      </children>
+                                                   </AnchorPane>
+                                                </content>
+                                             </TitledPane>
+                                          </children>
+                                       </Pane>
+                                       <Pane layoutY="846.0" prefHeight="297.0" prefWidth="938.0">
+                                          <children>
+                                             <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
+                                             <TitledPane animated="false" layoutX="77.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="ID">
+                                                <content>
+                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
+                                                      <children>
+                                                         <Label fx:id="movieIDlabel4" layoutX="65.0" layoutY="113.0" text="1" />
+                                                      </children>
+                                                   </AnchorPane>
+                                                </content>
+                                             </TitledPane>
+                                             <TitledPane animated="false" layoutX="237.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Plakat">
+                                                <content>
+                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
+                                                      <children>
+                                                         <Button fx:id="posterID4" layoutX="23.0" layoutY="59.0" mnemonicParsing="false">
                                                             <graphic>
                                                                <ImageView fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
@@ -399,7 +543,7 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
+                                                         <Label fx:id="movieNameID4" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
                                                             <font>
                                                                <Font size="16.0" />
                                                             </font>
@@ -412,7 +556,7 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
+                                                         <Label fx:id="genreID4" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
                                                             <font>
                                                                <Font size="16.0" />
                                                             </font>
@@ -425,91 +569,23 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Button layoutX="21.0" layoutY="109.0" mnemonicParsing="false" text="Edytuj" />
-                                                         <Button layoutX="92.0" layoutY="109.0" mnemonicParsing="false" text="Usuń" />
+                                                         <Button fx:id="editFlim4Button" layoutX="21.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#onEditFlim4Button" style="-fx-background-color: #61bc84;" text="Edytuj" />
+                                                         <Button fx:id="removeFilm4Button" layoutX="92.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#onRemoveFilm4Button" style="-fx-background-color: #EE6C4D;" text="Usuń" />
                                                       </children>
                                                    </AnchorPane>
                                                 </content>
                                              </TitledPane>
                                           </children>
                                        </Pane>
-                                       <Pane layoutX="2.0" layoutY="553.0" prefHeight="297.0" prefWidth="938.0">
-                                          <children>
-                                             <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
-                                             <TitledPane animated="false" layoutX="77.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="ID">
-                                                <content>
-                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
-                                                      <children>
-                                                         <Label fx:id="movieIDlabel11" layoutX="65.0" layoutY="113.0" text="1" />
-                                                      </children>
-                                                   </AnchorPane>
-                                                </content>
-                                             </TitledPane>
-                                             <TitledPane animated="false" layoutX="237.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Plakat">
-                                                <content>
-                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
-                                                      <children>
-                                                         <Button layoutX="23.0" layoutY="59.0" mnemonicParsing="false">
-                                                            <graphic>
-                                                               <ImageView fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
-                                                                  <image>
-                                                                     <Image url="@../img/film2.jpg" />
-                                                                  </image>
-                                                                  <cursor>
-                                                                     <Cursor fx:constant="OPEN_HAND" />
-                                                                  </cursor>
-                                                               </ImageView>
-                                                            </graphic>
-                                                         </Button>
-                                                      </children>
-                                                   </AnchorPane>
-                                                </content>
-                                             </TitledPane>
-                                             <TitledPane animated="false" layoutX="397.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Nazwa">
-                                                <content>
-                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
-                                                      <children>
-                                                         <Label layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
-                                                            <font>
-                                                               <Font size="16.0" />
-                                                            </font>
-                                                         </Label>
-                                                      </children>
-                                                   </AnchorPane>
-                                                </content>
-                                             </TitledPane>
-                                             <TitledPane animated="false" layoutX="557.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Gatunki">
-                                                <content>
-                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
-                                                      <children>
-                                                         <Label layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
-                                                            <font>
-                                                               <Font size="16.0" />
-                                                            </font>
-                                                         </Label>
-                                                      </children>
-                                                   </AnchorPane>
-                                                </content>
-                                             </TitledPane>
-                                             <TitledPane animated="false" layoutX="717.0" layoutY="14.0" prefHeight="269.0" prefWidth="160.0" text="Opcje">
-                                                <content>
-                                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
-                                                      <children>
-                                                         <Button layoutX="21.0" layoutY="109.0" mnemonicParsing="false" text="Edytuj" />
-                                                         <Button layoutX="92.0" layoutY="109.0" mnemonicParsing="false" text="Usuń" />
-                                                      </children>
-                                                   </AnchorPane>
-                                                </content>
-                                             </TitledPane>
-                                          </children>
-                                       </Pane>
-                                                </children></AnchorPane>
+                                    </children>
+                                            </Pane>
                                         </content>
                                     </ScrollPane>
-                           <Label layoutX="251.0" layoutY="29.0" text="ZARZĄDZAJ FILMAMI W SERWISIE">
+                           <Label layoutX="230.0" layoutY="48.0" text="ZARZĄDZAJ BIBLIOTEKĄ FILMÓW">
                               <font>
-                                 <Font size="30.0" />
-                              </font></Label>
+                                 <Font name="Constantia Bold" size="30.0" />
+                              </font>
+                           </Label>
                                 </children></Pane>
                         </children>
                     </AnchorPane>

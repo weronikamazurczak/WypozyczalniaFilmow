@@ -80,7 +80,11 @@ public class AdminMovieDashboard {
     }
 
     public void onManagementButtonMovieDashboardClicked(MouseEvent mouseEvent) throws IOException{
-
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("AdminManagementPanel.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        PrimaryStageSingleton.INSTANCE.setScene(scene);
+        PrimaryStageSingleton.INSTANCE.setTitle("AdminManagementPanel");
+        PrimaryStageSingleton.INSTANCE.show();
     }
 
     public void onEditMovieCatalogButton(MouseEvent mouseEvent) throws IOException{
