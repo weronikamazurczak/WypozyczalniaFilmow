@@ -89,6 +89,6 @@ public class DescriptionTopViewFilm1 {
 
     public void onRentMovieButtonClicked(MouseEvent mouseEvent) {
         Account acc = new Account(false, null, null);
-        acc.rentMovie(PrimaryStageSingleton.INSTANCE.name());
+        acc.rentMovie("Film");
     }
 }

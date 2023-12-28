@@ -417,7 +417,7 @@
                                     <DropShadow />
                                             </effect>
                                         </Button>
-                                        <Button id="rentMovie" fx:id="rentMovieButton" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="794.0" layoutY="527.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                        <Button id="rentMovie" fx:id="rentMovieButton" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="794.0" layoutY="527.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButtonClicked" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                                                     <image>
