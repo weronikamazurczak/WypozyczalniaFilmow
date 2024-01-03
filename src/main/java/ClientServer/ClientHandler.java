@@ -11,7 +11,11 @@ public class ClientHandler implements Runnable {
     private ObjectInputStream inputStream;
     private ObjectOutputStream outputStream;
 //pole połączenia z bazą danych
-    Connection conn = null;
+    Connection dataBaseConnection = null;
+    QueryHandler queryHandler = null;
+    public Connection getDataBaseConnection() {
+        return dataBaseConnection;
+    }
 
     public ClientHandler(Socket clientSocket) {
         this.clientSocket = clientSocket;
@@ -22,9 +26,10 @@ public class ClientHandler implements Runnable {
             String dbURL2 = "jdbc:oracle:thin:@localhost:1521:xe";
             String username = "test";
             String password = "test";
-            conn = DriverManager.getConnection(dbURL2, username, password);
-            if (conn != null) {
+            dataBaseConnection = DriverManager.getConnection(dbURL2, username, password);
+            if (dataBaseConnection != null) {
                 System.out.println("Connected with connection #");
+                queryHandler = new QueryHandler(dataBaseConnection);
             }
         } catch (IOException | SQLException e) {
             e.printStackTrace();
@@ -54,7 +59,9 @@ public class ClientHandler implements Runnable {
                 inputStream.close();
                 outputStream.close();
                 clientSocket.close();
-                conn.close();
+                if(!dataBaseConnection.isClosed() && dataBaseConnection != null) {
+                    dataBaseConnection.close();
+                }
             } catch (IOException | SQLException e) {
                 e.printStackTrace();
             }

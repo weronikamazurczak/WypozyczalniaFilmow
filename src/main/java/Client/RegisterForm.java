@@ -10,7 +10,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-
 import java.io.IOException;
 
 public class RegisterForm {
@@ -27,6 +26,7 @@ public class RegisterForm {
                 + "\t email: " + registerEmailField.getText()
                 + "\t haslo: " + registerPasswordField.getText()
                 + "\t powtorz haslo: " + registerRepeatPasswordField.getText());
+
         FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("LoginForm.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         PrimaryStageSingleton.INSTANCE.setScene(scene);
