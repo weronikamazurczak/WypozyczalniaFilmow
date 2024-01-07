@@ -2,11 +2,20 @@ package ClientServer;
 
 import java.io.*;
 import java.net.Socket;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class ClientHandler implements Runnable {
     private Socket clientSocket;
     private ObjectInputStream inputStream;
     private ObjectOutputStream outputStream;
+//pole połączenia z bazą danych
+    Connection dataBaseConnection = null;
+    QueryHandler queryHandler = null;
+    public Connection getDataBaseConnection() {
+        return dataBaseConnection;
+    }
 
     public ClientHandler(Socket clientSocket) {
         this.clientSocket = clientSocket;
@@ -14,7 +23,15 @@ public class ClientHandler implements Runnable {
             // Tworzenie strumieni do komunikacji z klientem
             inputStream = new ObjectInputStream(clientSocket.getInputStream());
             outputStream = new ObjectOutputStream(clientSocket.getOutputStream());
-        } catch (IOException e) {
+            String dbURL2 = "jdbc:oracle:thin:@localhost:1521:xe";
+            String username = "test";
+            String password = "test";
+            dataBaseConnection = DriverManager.getConnection(dbURL2, username, password);
+            if (dataBaseConnection != null) {
+                System.out.println("Connected with connection #");
+                queryHandler = new QueryHandler(dataBaseConnection);
+            }
+        } catch (IOException | SQLException e) {
             e.printStackTrace();
         }
     }
@@ -42,7 +59,10 @@ public class ClientHandler implements Runnable {
                 inputStream.close();
                 outputStream.close();
                 clientSocket.close();
-            } catch (IOException e) {
+                if(!dataBaseConnection.isClosed() && dataBaseConnection != null) {
+                    dataBaseConnection.close();
+                }
+            } catch (IOException | SQLException e) {
                 e.printStackTrace();
             }
         }
