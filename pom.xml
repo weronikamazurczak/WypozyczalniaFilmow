@@ -18,6 +18,7 @@
         <junit.version>5.9.2</junit.version>  </properties>
     <dependencies>
         <dependency>
+
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <version>5.9.0</version>
@@ -144,6 +145,7 @@
 
     <build>
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
