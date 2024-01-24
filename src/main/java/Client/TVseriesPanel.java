@@ -89,7 +89,21 @@ public class TVseriesPanel {
     }
 
     public void onRentMovieButton1Clicked(MouseEvent mouseEvent) {
-        acc.rentMovie("Serial 1");
+
+        List<String> actors = new ArrayList<>();
+        actors.add("Harrison Ford");
+        Movie movie = new Movie(0,"PRZYJACIELE","Komedia","David Crane, Marta Kauffman",actors,1981,"");
+        boolean test = false;
+        for (Movie m:acc.rentTVseries) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.rentTVseries.add(movie);
+        else
+            System.out.println("Ten serial został już wypozyczony.");
     }
 
     public void addToFavoritesButton1Clicked(MouseEvent mouseEvent) {
@@ -114,7 +128,21 @@ public class TVseriesPanel {
     }
 
     public void onRentMovieButton2Clicked(MouseEvent mouseEvent) {
-        acc.rentMovie("Serial 2");
+
+        List<String> actors = new ArrayList<>();
+        actors.add("Harrison Ford");
+        Movie movie = new Movie(1,"PSI PATROL","Animacja, Komedia, Przygodowy, Dla dzieci","Spin Master Entertainment Nickelodeon Productions",actors,1981,"");
+        boolean test = false;
+        for (Movie m:acc.rentTVseries) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.rentTVseries.add(movie);
+        else
+            System.out.println("Ten serial został już wypozyczony.");
     }
 
     public void onAddToFavoritesButton2Clicked(MouseEvent mouseEvent) {
@@ -138,6 +166,24 @@ public class TVseriesPanel {
     public void onSeeReviewUsersButton2Clicked(MouseEvent mouseEvent) {
     }
 
+    public void onRentMovieButton3Clicked(MouseEvent mouseEvent) {
+
+        List<String> actors = new ArrayList<>();
+        actors.add("Harrison Ford");
+        Movie movie = new Movie(2,"STRANGER THINGS","Horror, Fantasy","Matt Duffer i Ross Duffer",actors,1981,"");
+        boolean test = false;
+        for (Movie m:acc.rentTVseries) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.rentTVseries.add(movie);
+        else
+            System.out.println("Ten serial został już wypozyczony.");
+    }
+
     public void onAddToFavoritesButton3Clicked(MouseEvent mouseEvent) {
 
         List<String> actors = new ArrayList<>();
@@ -154,6 +200,24 @@ public class TVseriesPanel {
             acc.favouriteTVseries.add(movie);
         else
             System.out.println("Ten serial został już dodany do ulubionych.");
+    }
+
+    public void onRentMovieButton4Clicked(MouseEvent mouseEvent) {
+        List<String> actors = new ArrayList<>();
+        actors.add("Harrison Ford");
+        Movie movie = new Movie(3,"GRA O TRON","Fantasy, Dramat, Przygodowy","David Benioff i Dan Weiss",actors,1981,"");
+        boolean test = false;
+        for (Movie m:acc.rentTVseries) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.rentTVseries.add(movie);
+        else
+            System.out.println("Ten serial został już wypozyczony.");
+
     }
 
     public void onAddToFavoritesButton4Clicked(MouseEvent mouseEvent) {

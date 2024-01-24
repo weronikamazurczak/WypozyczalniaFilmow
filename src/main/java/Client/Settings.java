@@ -280,16 +280,20 @@ public class Settings {
 
         StringBuilder contentTextBuilder = new StringBuilder();
 
-        for (Movie m : ClientStart.getAcc().rentMovies) {
+        List<Movie> allMovies = new ArrayList<>();
+        allMovies.addAll(ClientStart.getAcc().rentMovies);
+        allMovies.addAll(ClientStart.getAcc().rentTVseries);
+
+        for (Movie m : allMovies) {
             contentTextBuilder.append(m.title).append("\n\n");
         }
 
         Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("Wypozyczone filmy");
+        alert.setTitle("Wypozyczone filmy i seriale");
         alert.setHeaderText(null);
 
-        if (ClientStart.getAcc().rentMovies.isEmpty()) {
-            alert.setContentText("Brak wypozyczonych filmów");
+        if (allMovies.isEmpty()) {
+            alert.setContentText("Brak wypozyczonych filmów i seriali");
         } else {
             alert.setContentText(contentTextBuilder.toString());
         }

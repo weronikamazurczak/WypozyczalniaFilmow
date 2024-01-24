@@ -21,6 +21,10 @@ public class Account {
 
     public List<Movie> favouriteTVseries = new ArrayList<>();
 
+    public List<Movie> rentMovies = new ArrayList<>();
+
+    public List<Movie> rentTVseries = new ArrayList<>();
+
     public void addToFavorites(String movie) {
         System.out.println("Dodano do ulubionych film " + movie);
     }
