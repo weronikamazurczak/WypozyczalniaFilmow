@@ -1,5 +1,7 @@
 package ClientServer;
 
+import ClientServer.QueryHandler.QueryHandler;
+
 import java.io.*;
 import java.net.Socket;
 import java.sql.Connection;
@@ -30,6 +32,7 @@ public class ClientHandler implements Runnable {
             if (dataBaseConnection != null) {
                 System.out.println("Connected with connection #");
                 queryHandler = new QueryHandler(dataBaseConnection);
+                queryHandler.getMovieQuery().getAllMoviesByAccountId(1);
             }
         } catch (IOException | SQLException e) {
             e.printStackTrace();
