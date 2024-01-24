@@ -1,5 +1,7 @@
 package Client;
 
+import BaseClasses.Movie;
+import ClientServer.ClientStart;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -184,14 +186,26 @@ public class Settings {
 
     public void onViewFavouritesClicked(MouseEvent mouseEvent) {
         // Pobierz listę ulubionych filmów użytkownika
-        List<String> favouriteMovies = getFavouriteMovies();
+
+
+        StringBuilder contentTextBuilder = new StringBuilder();
+
+        for (Movie m : ClientStart.getAcc().favouriteMovies) {
+            contentTextBuilder.append(m.title).append("\n");
+        }
 
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Ulubione filmy");
         alert.setHeaderText(null);
-        alert.setContentText(String.join("\n", favouriteMovies));
+
+        if (ClientStart.getAcc().favouriteMovies.isEmpty()) {
+            alert.setContentText("Brak ulubionych filmów");
+        } else {
+            alert.setContentText(contentTextBuilder.toString());
+        }
 
         alert.showAndWait();
+
     }
 
     // Metody do implementacji

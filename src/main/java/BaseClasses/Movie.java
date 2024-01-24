@@ -22,4 +22,14 @@ public class Movie {
         this.year = 0;
         this.description = "";
     }
+
+    public Movie(int id, String title, String genre, String director, List<String> actors, int year, String description) {
+        this.id = id;
+        this.title = title;
+        this.genre = genre;
+        this.director = director;
+        this.actors = actors;
+        this.year = year;
+        this.description = description;
+    }
 }

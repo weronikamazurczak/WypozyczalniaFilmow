@@ -1,12 +1,15 @@
 package Client;
 
 import BaseClasses.Account;
+import BaseClasses.Movie;
 import ClientServer.ClientStart;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MoviesPanel {
     Account acc = ClientStart.getAcc();
@@ -82,10 +85,76 @@ public class MoviesPanel {
         PrimaryStageSingleton.INSTANCE.show();
     }
 
-    public void onAddToFavoritesButtonClicked(MouseEvent mouseEvent) {
-        acc.addToFavorites("Film 1");
+    public void onAddToFavoritesButtonClicked(MouseEvent mouseEvent)
+    {
+        List<String> actors = new ArrayList<>();
+        actors.add("Harrison Ford");
+        Movie movie = new Movie(0,"INDIANA JONES I ARTEFAKT PRZEZNACZENIA","Przygodowy","James Mangold",actors,1981,"");
+        boolean test = false;
+        for (Movie m:acc.favouriteMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.favouriteMovies.add(movie);
+        else
+            System.out.println("Ten film został już dodany do ulubionych.");
     }
 
+    public void onAddToFavoritesButtonClicked2(MouseEvent mouseEvent)
+    {
+        List<String> actors = new ArrayList<>();
+        actors.add("Frodo Baggins");
+        Movie movie = new Movie(1,"WŁADCA PIERŚCIENI: POWRÓT KRÓLA","Przygodowy, Fantasy","Peter Jackson",actors,2003,"");
+        boolean test = false;
+        for (Movie m:acc.favouriteMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.favouriteMovies.add(movie);
+        else
+            System.out.println("Ten film został już dodany do ulubionych.");
+    }
+
+    public void onAddToFavoritesButtonClicked3(MouseEvent mouseEvent)
+    {
+        List<String> actors = new ArrayList<>();
+        actors.add("Frodo Baggins");
+        Movie movie = new Movie(2,"GWIEZDNE WOJNY: CZĘŚĆ VI - POWRÓT JEDI","Przygodowy, Sci-Fi","Richard Marquand",actors,1983,"");
+        boolean test = false;
+        for (Movie m:acc.favouriteMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.favouriteMovies.add(movie);
+        else
+            System.out.println("Ten film został już dodany do ulubionych.");
+    }
+    public void onAddToFavoritesButtonClicked4(MouseEvent mouseEvent)
+    {
+        List<String> actors = new ArrayList<>();
+        actors.add("Frodo Baggins");
+        Movie movie = new Movie(3,"TOY STORY","Animacja, Familijny, Komedia","John Lasseter",actors,1995,"");
+        boolean test = false;
+        for (Movie m:acc.favouriteMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.favouriteMovies.add(movie);
+        else
+            System.out.println("Ten film został już dodany do ulubionych.");
+    }
     public void onRentMovieButtonClicked(MouseEvent mouseEvent) {
         acc.rentMovie("Film 1");
     }

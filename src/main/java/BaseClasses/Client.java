@@ -1,6 +1,8 @@
 package BaseClasses;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 // Klasa reprezentująca klienta
 public class Client {
@@ -10,6 +12,8 @@ public class Client {
     String email = "student";
     String password = "student";
     Date birthdate;
+
+
 
     public int getId() {
         return id;

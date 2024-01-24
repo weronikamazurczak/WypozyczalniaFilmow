@@ -1,5 +1,6 @@
 package BaseClasses;
 
+import java.util.ArrayList;
 import java.util.List;
 
 // Klasa reprezentująca konto klienta
@@ -15,6 +16,8 @@ public class Account {
         System.out.println("Wypożyczono film " + movie);
         // Implementacja wypożyczania filmu
     }
+
+   public List<Movie> favouriteMovies = new ArrayList<>();
 
     public void addToFavorites(String movie) {
         System.out.println("Dodano do ulubionych film " + movie);

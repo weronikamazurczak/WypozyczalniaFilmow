@@ -257,7 +257,7 @@
                                                       </ImageView>
                                                    </graphic>
                                                 </Button>
-                                                <Button id="rentMovie" alignment="BOTTOM_LEFT" blendMode="DARKEN" onMouseClicked="#onRentMovieButtonClicked" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                                <Button id="rentMovie1" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButtonClicked" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
                                                    <graphic>
                                                       <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                                                          <image>
@@ -279,7 +279,7 @@
                                                       </DropShadow>
                                                    </effect>
                                                 </Button>
-                                                <Button id="addToFavorites" alignment="BOTTOM_LEFT" blendMode="DARKEN" onMouseClicked="#onAddToFavoritesButtonClicked" layoutX="735.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
+                                                <Button id="addToFavorites" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" onMouseClicked="#onAddToFavoritesButtonClicked" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
                                                    <graphic>
                                                       <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
@@ -338,7 +338,7 @@
                                           </Pane>
                                        <Pane layoutX="2.0" layoutY="311.0" prefHeight="297.0" prefWidth="939.0">
                                           <children>
-                                             <Label layoutX="187.0" layoutY="14.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA">
+                                             <Label layoutX="187.0" layoutY="14.0" text="WŁADCA PIERŚCIENI: POWRÓT KRÓLA">
                                                 <font>
                                                    <Font size="24.0" />
                                                 </font>
@@ -347,7 +347,7 @@
                                                 <graphic>
                                                    <ImageView fitHeight="230.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
-                                                         <Image url="@../img/film2.jpg" />
+                                                         <Image url="@../img/7494142.3.jpg" />
                                                       </image>
                                                       <cursor>
                                                          <Cursor fx:constant="OPEN_HAND" />
@@ -355,7 +355,7 @@
                                                    </ImageView>
                                                 </graphic>
                                              </Button>
-                                             <Button id="rentMovie" alignment="BOTTOM_LEFT" blendMode="DARKEN" onMouseClicked="#onRentMovieButtonClicked" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                             <Button id="rentMovie2" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButtonClicked" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
                                                 <graphic>
                                                    <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                                                       <image>
@@ -377,7 +377,7 @@
                                                    </DropShadow>
                                                 </effect>
                                              </Button>
-                                             <Button id="addToFavorites" alignment="BOTTOM_LEFT" blendMode="DARKEN" onMouseClicked="#onAddToFavoritesButtonClicked" layoutX="735.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
+                                             <Button id="addToFavorites2" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" onMouseClicked="#onAddToFavoritesButtonClicked2" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
                                                 <graphic>
                                                    <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
@@ -411,7 +411,7 @@
                                                    <DropShadow />
                                                 </effect>
                                              </Button>
-                                             <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="6,5">
+                                             <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="8,1">
                                                 <graphic>
                                                    <ImageView fitHeight="36.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
@@ -424,19 +424,19 @@
                                                 </font>
                                              </Label>
                                              <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
-                                             <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="Jest rok 1969. Dwa najpotężniejsze mocarstwa świata - Stany Zjednoczone Ameryki Północnej i Związek Radziecki - rywalizują w wyścigu o podbój kosmosu. Emerytowany poszukiwacz przygód Indiana Jones (Harrison Ford) jest zaniepokojony obrotem spraw, gdy dowiaduje się, że rząd USA werbuje byłych nazistów do pomocy w przedsięwzięciu. Niedługo po tym Jones wraz ze swoją chrześnicą Heleną (Phoebe Waller-Bridge) stawia czoła Vollerowi (Mads Mikkelsen) i jego nazistowskiej organizacji. Grupa ta pragnie zdobyć legendarny artefakt, za pomocą którego chce podporządkować sobie świat według wyznawanych wartości." textAlignment="JUSTIFY" wrapText="true" />
+                                             <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="Wyprawa Drużyny dobiega końca. Armie Saurona zaatakowały stolicę Gondoru, Minas Tirith. Patrząc na upadające królestwo ludzkości, wydaje się, że nigdy nie potrzebowało króla bardziej niż teraz. Ale czy Aragorn (Viggo Mortensen) znajdzie w sobie dość sił, by sięgnąć po należny mu z urodzenia tytuł i by podołać swemu przeznaczeniu?Gandalf (Ian McKellen) desperacko próbuje zebrać rozbite siły Gondoru, podczas gdy Théoden (Bernard Hill) jednoczy wojowników Rohanu. Jednak siły ludzi nie są wystarczające, aby oprzeć się uzbrojonym legionom wroga, które powoli zalewają kraj. Każde zwycięstwo pociąga za sobą dużo ofiar. " textAlignment="JUSTIFY" wrapText="true" />
                                              <Label layoutX="187.0" layoutY="163.0" text="reżyseria" />
-                                             <Label layoutX="297.0" layoutY="163.0" text="James Mangold" />
+                                             <Label layoutX="297.0" layoutY="163.0" text="Peter Jackson" />
                                              <Label layoutX="187.0" layoutY="185.0" text="produkcja" />
-                                             <Label layoutX="297.0" layoutY="185.0" text="USA" />
+                                             <Label layoutX="297.0" layoutY="185.0" text="Nowa Zelandia, USA" />
                                              <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
-                                             <Label layoutX="297.0" layoutY="210.0" text="Przygodowy" />
+                                             <Label layoutX="297.0" layoutY="210.0" text="Przygodowy, Fantasy" />
                                              <Button graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
                                           </children>
                                        </Pane>
                                        <Pane layoutX="2.0" layoutY="608.0" prefHeight="297.0" prefWidth="952.0">
                                           <children>
-                                             <Label layoutX="187.0" layoutY="14.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA">
+                                             <Label layoutX="187.0" layoutY="14.0" text="GWIEZDNE WOJNY: CZĘŚĆ VI - POWRÓT JEDI">
                                                 <font>
                                                    <Font size="24.0" />
                                                 </font>
@@ -445,7 +445,7 @@
                                                 <graphic>
                                                    <ImageView fitHeight="230.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
-                                                         <Image url="@../img/film2.jpg" />
+                                                         <Image url="@../img/7885578.6.jpg" />
                                                       </image>
                                                       <cursor>
                                                          <Cursor fx:constant="OPEN_HAND" />
@@ -453,7 +453,7 @@
                                                    </ImageView>
                                                 </graphic>
                                              </Button>
-                                             <Button id="rentMovie" alignment="BOTTOM_LEFT" blendMode="DARKEN" onMouseClicked="#onRentMovieButtonClicked" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                             <Button id="rentMovie3" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButtonClicked" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
                                                 <graphic>
                                                    <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                                                       <image>
@@ -475,7 +475,7 @@
                                                    </DropShadow>
                                                 </effect>
                                              </Button>
-                                             <Button id="addToFavorites" alignment="BOTTOM_LEFT" blendMode="DARKEN" onMouseClicked="#onAddToFavoritesButtonClicked" layoutX="735.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
+                                             <Button id="addToFavorites3" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" onMouseClicked="#onAddToFavoritesButtonClicked3" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
                                                 <graphic>
                                                    <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
@@ -509,7 +509,7 @@
                                                    <DropShadow />
                                                 </effect>
                                              </Button>
-                                             <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="6,5">
+                                             <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="8,4">
                                                 <graphic>
                                                    <ImageView fitHeight="36.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
@@ -522,19 +522,19 @@
                                                 </font>
                                              </Label>
                                              <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
-                                             <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="Jest rok 1969. Dwa najpotężniejsze mocarstwa świata - Stany Zjednoczone Ameryki Północnej i Związek Radziecki - rywalizują w wyścigu o podbój kosmosu. Emerytowany poszukiwacz przygód Indiana Jones (Harrison Ford) jest zaniepokojony obrotem spraw, gdy dowiaduje się, że rząd USA werbuje byłych nazistów do pomocy w przedsięwzięciu. Niedługo po tym Jones wraz ze swoją chrześnicą Heleną (Phoebe Waller-Bridge) stawia czoła Vollerowi (Mads Mikkelsen) i jego nazistowskiej organizacji. Grupa ta pragnie zdobyć legendarny artefakt, za pomocą którego chce podporządkować sobie świat według wyznawanych wartości." textAlignment="JUSTIFY" wrapText="true" />
+                                             <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="W niezwykle widowiskowym, finałowym rozdziale sagi Gwiezdnych Wojen, Luke Skywalker i Księżniczka Leia ratują Hana Solo uwięzionego na Tatooine przez najbardziej odrażającego gangstera w galaktyce zwanego Jabba the Hutt. Rebelianci wraz z plemieniem Ewoków walczą z siłami Imperium na zalesionym księżycu Endor. W tym samym czasie Imperator i Darth Vader próbują znaleźć sposób, by przeciągnąć Luke'a na ciemną stronę, a z kolei młody Skywalker desperacko stara się obudzić w swym ojcu dawno uśpionego ducha Jedi. " textAlignment="JUSTIFY" wrapText="true" />
                                              <Label layoutX="187.0" layoutY="163.0" text="reżyseria" />
-                                             <Label layoutX="297.0" layoutY="163.0" text="James Mangold" />
+                                             <Label layoutX="297.0" layoutY="163.0" text="Richard Marquand" />
                                              <Label layoutX="187.0" layoutY="185.0" text="produkcja" />
                                              <Label layoutX="297.0" layoutY="185.0" text="USA" />
                                              <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
-                                             <Label layoutX="297.0" layoutY="210.0" text="Przygodowy" />
+                                             <Label layoutX="297.0" layoutY="210.0" text="Przygodowy, Sci-Fi" />
                                              <Button graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
                                           </children>
                                        </Pane>
                                        <Pane layoutX="2.0" layoutY="905.0" prefHeight="297.0" prefWidth="952.0">
                                           <children>
-                                             <Label layoutX="187.0" layoutY="14.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA">
+                                             <Label layoutX="187.0" layoutY="14.0" text="TOY STORY">
                                                 <font>
                                                    <Font size="24.0" />
                                                 </font>
@@ -543,7 +543,7 @@
                                                 <graphic>
                                                    <ImageView fitHeight="230.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
-                                                         <Image url="@../img/film2.jpg" />
+                                                         <Image url="@../img/7322795.6.jpg" />
                                                       </image>
                                                       <cursor>
                                                          <Cursor fx:constant="OPEN_HAND" />
@@ -551,7 +551,7 @@
                                                    </ImageView>
                                                 </graphic>
                                              </Button>
-                                             <Button id="rentMovie" alignment="BOTTOM_LEFT" blendMode="DARKEN" onMouseClicked="#onRentMovieButtonClicked" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                             <Button id="rentMovie4" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButtonClicked" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
                                                 <graphic>
                                                    <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                                                       <image>
@@ -573,7 +573,7 @@
                                                    </DropShadow>
                                                 </effect>
                                              </Button>
-                                             <Button id="addToFavorites" alignment="BOTTOM_LEFT" blendMode="DARKEN" onMouseClicked="#onAddToFavoritesButtonClicked" layoutX="735.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
+                                             <Button id="addToFavorites4" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" onMouseClicked="#onAddToFavoritesButtonClicked4" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
                                                 <graphic>
                                                    <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
@@ -607,7 +607,7 @@
                                                    <DropShadow />
                                                 </effect>
                                              </Button>
-                                             <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="6,5">
+                                             <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="7,4">
                                                 <graphic>
                                                    <ImageView fitHeight="36.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
@@ -620,13 +620,13 @@
                                                 </font>
                                              </Label>
                                              <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
-                                             <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="Jest rok 1969. Dwa najpotężniejsze mocarstwa świata - Stany Zjednoczone Ameryki Północnej i Związek Radziecki - rywalizują w wyścigu o podbój kosmosu. Emerytowany poszukiwacz przygód Indiana Jones (Harrison Ford) jest zaniepokojony obrotem spraw, gdy dowiaduje się, że rząd USA werbuje byłych nazistów do pomocy w przedsięwzięciu. Niedługo po tym Jones wraz ze swoją chrześnicą Heleną (Phoebe Waller-Bridge) stawia czoła Vollerowi (Mads Mikkelsen) i jego nazistowskiej organizacji. Grupa ta pragnie zdobyć legendarny artefakt, za pomocą którego chce podporządkować sobie świat według wyznawanych wartości." textAlignment="JUSTIFY" wrapText="true" />
+                                             <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="Bohaterami tego filmu są zabawki z dziecięcego pokoju. Zabawki, które ożywają, gdy tylko ludzie odwrócą od nich wzrok. Zabawki nie tylko mówią, myślą i czują, ale tak samo się kłócą, śmieją, boją, są zazdrosne, oszukują i romansują, czy wręcz mają kłopoty z tożsamością. Prym wśród zabawek wiedzie kowboj Chudy , ulubiona zabawka Andy'ego. Ale w dniu urodzin chłopca w pokoju zabaw pojawi się ktoś nowy. Jego przybycie zburzy panujące tam porządki, sprowadzając ze sobą sporo zamieszania i nowych kłopotów." textAlignment="JUSTIFY" wrapText="true" />
                                              <Label layoutX="187.0" layoutY="163.0" text="reżyseria" />
-                                             <Label layoutX="297.0" layoutY="163.0" text="James Mangold" />
+                                             <Label layoutX="297.0" layoutY="163.0" text="John Lasseter" />
                                              <Label layoutX="187.0" layoutY="185.0" text="produkcja" />
                                              <Label layoutX="297.0" layoutY="185.0" text="USA" />
                                              <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
-                                             <Label layoutX="297.0" layoutY="210.0" text="Przygodowy" />
+                                             <Label layoutX="297.0" layoutY="210.0" text="Animacja, Familijny, Komedia" />
                                              <Button graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
                                           </children>
                                        </Pane>
