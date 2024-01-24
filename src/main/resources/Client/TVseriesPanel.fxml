@@ -333,7 +333,6 @@
                                                                 <Label layoutX="297.0" layoutY="185.0" text="USA" />
                                                                 <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
                                                                 <Label layoutX="297.0" layoutY="210.0" text="Komedia" />
-                                                                <Button fx:id="seeReviewUsersButton1" graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#onSeeReviewUsersButton1Clicked" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
                                                             </children>
 
                                                         </Pane>
@@ -432,7 +431,6 @@
                                                                 <Label layoutX="297.0" layoutY="185.0" text="Kanda" />
                                                                 <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
                                                                 <Label layoutX="297.0" layoutY="210.0" text="Animacja, Komedia, Przygodowy, Dla dzieci" />
-                                                                <Button fx:id="seeReviewUsersButton2" graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#onSeeReviewUsersButton2Clicked" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
                                                             </children>
                                                         </Pane>
                                                         <Pane layoutX="2.0" layoutY="937.0" prefHeight="297.0" prefWidth="952.0">
@@ -530,7 +528,6 @@
                                                                 <Label layoutX="297.0" layoutY="185.0" prefHeight="17.0" prefWidth="168.0" text="USA" />
                                                                 <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
                                                                 <Label layoutX="297.0" layoutY="210.0" text="Fantasy, Dramat, Przygodowy" />
-                                                                <Button graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
                                                             </children>
                                                         </Pane>
                                        <Pane layoutX="2.0" layoutY="632.0" prefHeight="297.0" prefWidth="952.0">
@@ -628,7 +625,6 @@
                                              <Label layoutX="297.0" layoutY="185.0" prefHeight="17.0" prefWidth="171.0" text="Stany Zjednoczone" />
                                              <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
                                              <Label layoutX="297.0" layoutY="210.0" prefHeight="17.0" prefWidth="103.0" text="Horror, Fantasy" />
-                                             <Button fx:id="seeReviewUsersButton21" graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#onSeeReviewUsersButton2Clicked" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
                                           </children>
                                        </Pane>
                                                     </children>
@@ -640,12 +636,6 @@
                                                 <Font name="Constantia" size="36.0" />
                                             </font>
                                         </Label>
-                                        <MenuButton fx:id="filterButtonRating" layoutX="14.0" layoutY="69.0" mnemonicParsing="false" onMouseClicked="#onFilterButtonRatingClicked" text="FilterOption">
-                                            <items>
-                                                <MenuItem mnemonicParsing="false" text="Najwyżej oceniane" />
-                                                <MenuItem mnemonicParsing="false" text="Najniżej oceniane" />
-                                            </items>
-                                        </MenuButton>
                                     </children></Pane>
                             </children>
                         </AnchorPane>

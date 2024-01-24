@@ -308,64 +308,82 @@ public class Settings {
 
     public void onGradeWatchedMoviesButtonClicked(MouseEvent mouseEvent) {
         // Pobierz listę wypożyczonych filmów użytkownika
-        List<String> rentedMovies = getRentedMovies();
+
+        List<Movie> allMovies = new ArrayList<>();
+        allMovies.addAll(ClientStart.getAcc().rentMovies);
+        allMovies.addAll(ClientStart.getAcc().rentTVseries);
 
         // Wybierz film do oceny
         TextInputDialog dialog = new TextInputDialog();
-        dialog.setTitle("Oceń film");
-        dialog.setHeaderText("Wybierz film do oceny z poniższej listy:\n" + String.join(", ", rentedMovies));
-        dialog.setContentText("Wprowadź tytuł filmu:");
+        dialog.setTitle("Oceń film lub serial");
 
-        Optional<String> result = dialog.showAndWait();
-        if (result.isPresent()) {
-            String movieTitle = result.get();
-            if(movieTitle.isEmpty()) {
-                showErrorDialog("Nie wprowadzono tytułu filmu.");
-                onGradeWatchedMoviesButtonClicked(mouseEvent);  // Ponownie otwórz okno dialogowe
-            } else if(rentedMovies.contains(movieTitle)) {
-                // Wprowadź komentarz
-                Dialog<String> commentDialog = new Dialog<>();
-                commentDialog.setTitle("Dodaj komentarz");
+        StringBuilder movieListBuilder = new StringBuilder();
+        for (Movie m : allMovies) {
+            movieListBuilder.append(m.title).append(", ");
+        }
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Wypozyczone filmy i seriale do oceny");
+        alert.setHeaderText(null);
 
-                GridPane grid = new GridPane();
-                grid.setHgap(10);
-                grid.setVgap(10);
-                grid.setPadding(new Insets(20, 150, 10, 10));
+        if (allMovies.isEmpty()) {
+            alert.setContentText("Brak wypozyczonych filmów i seriali do oceny");
+            alert.showAndWait();
+        } else {
+            dialog.setHeaderText("Wybierz film lub serial do oceny z poniższej listy:\n" + movieListBuilder.toString());
+            dialog.setContentText("Wprowadź tytuł filmu lub serialu:");
 
-                TextArea commentArea = new TextArea();
-                commentArea.setPromptText("Wprowadź swój komentarz tutaj.");
+            Optional<String> result = dialog.showAndWait();
+            if (result.isPresent()) {
+                String movieTitle = result.get();
+                if(movieTitle.isEmpty()) {
+                    showErrorDialog("Nie wprowadzono tytułu filmu lub serialu.");
+                    onGradeWatchedMoviesButtonClicked(mouseEvent);  // Ponownie otwórz okno dialogowe
+                } else if(allMovies.stream().anyMatch(m -> m.title.equals(movieTitle))) {
+                    // Wprowadź komentarz
+                    Dialog<String> commentDialog = new Dialog<>();
+                    commentDialog.setTitle("Dodaj komentarz");
 
-                grid.add(new Label("Komentarz:"), 0, 0);
-                grid.add(commentArea, 1, 0);
+                    GridPane grid = new GridPane();
+                    grid.setHgap(10);
+                    grid.setVgap(10);
+                    grid.setPadding(new Insets(20, 150, 10, 10));
 
-                commentDialog.getDialogPane().setContent(grid);
+                    TextArea commentArea = new TextArea();
+                    commentArea.setPromptText("Wprowadź swój komentarz tutaj.");
 
-                // Dodaj przyciski "Zapisz" i "Anuluj"
-                ButtonType saveButtonType = new ButtonType("Zapisz", ButtonBar.ButtonData.OK_DONE);
-                commentDialog.getDialogPane().getButtonTypes().addAll(saveButtonType, ButtonType.CANCEL);
+                    grid.add(new Label("Komentarz:"), 0, 0);
+                    grid.add(commentArea, 1, 0);
 
-                commentDialog.setResultConverter(dialogButton -> {
-                    if (dialogButton == saveButtonType) {
-                        return commentArea.getText();
+                    commentDialog.getDialogPane().setContent(grid);
+
+                    // Dodaj przyciski "Zapisz" i "Anuluj"
+                    ButtonType saveButtonType = new ButtonType("Zapisz", ButtonBar.ButtonData.OK_DONE);
+                    commentDialog.getDialogPane().getButtonTypes().addAll(saveButtonType, ButtonType.CANCEL);
+
+                    commentDialog.setResultConverter(dialogButton -> {
+                        if (dialogButton == saveButtonType) {
+                            return commentArea.getText();
+                        }
+                        return null;
+                    });
+
+                    Optional<String> commentResult = commentDialog.showAndWait();
+
+                    // Zapisz komentarz dla wybranego filmu
+                    if (commentResult.isPresent()) {
+                        saveComment(movieTitle, commentResult.get());
                     }
-                    return null;
-                });
-
-                Optional<String> commentResult = commentDialog.showAndWait();
-
-                // Zapisz komentarz dla wybranego filmu
-                if (commentResult.isPresent()) {
-                    saveComment(movieTitle, commentResult.get());
+                } else {
+                    showErrorDialog("Wybrany film lub serial nie jest na liście wypożyczonych filmów i seriali.");
+                    onGradeWatchedMoviesButtonClicked(mouseEvent);  // Ponownie otwórz okno dialogowe
                 }
-            } else {
-                showErrorDialog("Wybrany film nie jest na liście wypożyczonych filmów.");
-                onGradeWatchedMoviesButtonClicked(mouseEvent);  // Ponownie otwórz okno dialogowe
             }
         }
+
     }
 
     private void saveComment(String movieTitle, String comment) {
         // Tutaj powinieneś zapisać komentarz użytkownika dla wybranego filmu w bazie danych lub innym źródle danych
-        System.out.println("Komentarz do filmu \"" + movieTitle + "\": " + comment);
+        System.out.println("Komentarz do filmu lub serialu \"" + movieTitle + "\": " + comment);
     }
 }
