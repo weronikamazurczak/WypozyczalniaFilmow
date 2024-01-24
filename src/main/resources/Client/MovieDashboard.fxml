@@ -608,7 +608,7 @@
                                        <image>
                                           <Image url="@../img/user.png" />
                                        </image></ImageView>
-                                    <Label layoutY="12.0" text="IMIE NAZWISKO">
+                                    <Label layoutY="12.0" text="Student Student">
                                        <font>
                                           <Font name="Constantia Bold" size="14.0" />
                                        </font>
