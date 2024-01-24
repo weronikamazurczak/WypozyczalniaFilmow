@@ -12,7 +12,7 @@ public class MovieQuery {
     }
 
     public void getAllMoviesByAccountId(int userId) throws SQLException {
-        // SQL query to fetch movies rented or marked as favourite by the user
+
         String sql = "SELECT DISTINCT M.idMovie, M.title " +
                 "FROM Movie M " +
                 "LEFT JOIN Rent R ON M.idMovie = R.idMovie " +
@@ -27,12 +27,12 @@ public class MovieQuery {
             int movieId = resultSet.getInt("idMovie");
             String title = resultSet.getString("title");
 
-            // Process the movie data as needed, for example, printing out
+
             System.out.println("Movie ID: " + movieId + " Title: " + title);
         }
     }
     public void getAllFavouriteMoviesByAccountId(int userId) throws SQLException {
-        // SQL query to fetch movies rented or marked as favourite by the user
+
         String sql = "SELECT DISTINCT M.idMovie, M.title " +
                 "FROM Movie M " +
                 "LEFT JOIN FavouriteMovie FM ON M.idMovie = FM.idMovie " +
@@ -47,12 +47,12 @@ public class MovieQuery {
             int movieId = resultSet.getInt("idMovie");
             String title = resultSet.getString("title");
 
-            // Process the movie data as needed, for example, printing out
+
             System.out.println("Movie ID: " + movieId + " Title: " + title);
         }
     }
     public void getMovieByMovieID(int movieId) throws SQLException {
-        // SQL query to fetch all the details of a movie by its ID
+
         String sql = "SELECT * FROM Movie WHERE idMovie = ?";
 
         PreparedStatement preparedStatement = dataBaseConnection.prepareStatement(sql);
@@ -61,15 +61,131 @@ public class MovieQuery {
         ResultSet resultSet = preparedStatement.executeQuery();
 
         if (resultSet.next()) {
-            // Assuming you want to print all the information
+
             System.out.println("Movie ID: " + resultSet.getInt("idMovie"));
             System.out.println("Director ID: " + resultSet.getInt("idFilmDirector"));
             System.out.println("Script ID: " + resultSet.getInt("idScript"));
             System.out.println("Title: " + resultSet.getString("title"));
             System.out.println("Description: " + resultSet.getString("description"));
-            // ... print other fields as required
+
         } else {
             System.out.println("No movie found with ID: " + movieId);
         }
+    }
+    public boolean addNewMovie(String title, String description, String production, String genre,
+                               String worldPremiereTime, String polandPremiereTime, String imgTitle,
+                               int numberOfEpisodes, int idFilmDirector, int idScript) throws SQLException {
+
+        String sql = "INSERT INTO Movie (title, description, production, genre, worldPremiereTime, " +
+                "polandPremiereTime, imgTitle, numberOfEpisodes, idFilmDirector, idScript) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+        PreparedStatement preparedStatement = dataBaseConnection.prepareStatement(sql);
+
+        preparedStatement.setString(1, title);
+        preparedStatement.setString(2, description);
+        preparedStatement.setString(3, production);
+        preparedStatement.setString(4, genre);
+        preparedStatement.setString(5, worldPremiereTime);
+        preparedStatement.setString(6, polandPremiereTime);
+        preparedStatement.setString(7, imgTitle);
+        preparedStatement.setInt(8, numberOfEpisodes);
+        preparedStatement.setInt(9, idFilmDirector);
+        preparedStatement.setInt(10, idScript);
+
+        int rowsAffected = preparedStatement.executeUpdate();
+
+        return rowsAffected > 0;
+    }
+
+    public boolean deleteMovieByID(int movieId) throws SQLException {
+        dataBaseConnection.setAutoCommit(false);
+
+        try {
+
+            if(deleteAllRentByMovieID(movieId) &&
+            deleteAllFavouriteMovieByID(movieId)){
+                String sqlDeleteMovie = "DELETE FROM Movie WHERE idMovie = ?";
+                PreparedStatement stmtDeleteMovie = dataBaseConnection.prepareStatement(sqlDeleteMovie);
+                stmtDeleteMovie.setInt(1, movieId);
+                int affectedRows = stmtDeleteMovie.executeUpdate();
+
+
+                if (affectedRows > 0) {
+                    dataBaseConnection.commit();
+                    return true;
+                } else {
+
+                    dataBaseConnection.rollback();
+                    return false;
+                }
+            }
+            else{
+                return false;
+            }
+
+
+        } catch (SQLException e) {
+
+            dataBaseConnection.rollback();
+            throw e;
+        } finally {
+
+            dataBaseConnection.setAutoCommit(true);
+        }
+
+    }
+
+    public boolean editMovie(int movieId, String newTitle, String newDescription, String newProduction,
+                             String newGenre, String newWorldPremiereTime, String newPolandPremiereTime,
+                             String newImgTitle, int newNumberOfEpisodes, int newIdFilmDirector,
+                             int newIdScript) throws SQLException {
+
+        String sql = "UPDATE Movie SET title = ?, description = ?, production = ?, genre = ?, " +
+                "worldPremiereTime = ?, polandPremiereTime = ?, imgTitle = ?, numberOfEpisodes = ?, " +
+                "idFilmDirector = ?, idScript = ? WHERE idMovie = ?";
+
+        PreparedStatement preparedStatement = dataBaseConnection.prepareStatement(sql);
+
+        preparedStatement.setString(1, newTitle);
+        preparedStatement.setString(2, newDescription);
+        preparedStatement.setString(3, newProduction);
+        preparedStatement.setString(4, newGenre);
+        preparedStatement.setString(5, newWorldPremiereTime);
+        preparedStatement.setString(6, newPolandPremiereTime);
+        preparedStatement.setString(7, newImgTitle);
+        preparedStatement.setInt(8, newNumberOfEpisodes);
+        preparedStatement.setInt(9, newIdFilmDirector);
+        preparedStatement.setInt(10, newIdScript);
+        preparedStatement.setInt(11, movieId);
+
+        int rowsAffected = preparedStatement.executeUpdate();
+
+        return rowsAffected > 0;
+    }
+
+
+    public boolean deleteAllFavouriteMovieByID(int movieId) throws SQLException {
+
+        String sql = "DELETE FROM FavouriteMovie WHERE idMovie = ?";
+
+        PreparedStatement preparedStatement = dataBaseConnection.prepareStatement(sql);
+        preparedStatement.setInt(1, movieId);
+
+        int rowsAffected = preparedStatement.executeUpdate();
+
+        return rowsAffected > 0;
+    }
+
+    public boolean deleteAllRentByMovieID(int movieId) throws SQLException {
+
+        String sql = "DELETE FROM Rent WHERE idMovie = ?";
+
+        PreparedStatement preparedStatement = dataBaseConnection.prepareStatement(sql);
+        preparedStatement.setInt(1, movieId);
+
+        int rowsAffected = preparedStatement.executeUpdate();
+
+        return rowsAffected > 0;
     }
 }
