@@ -3,15 +3,17 @@ package ClientServer.QueryHandler;
 import java.sql.*;
 
 public class QueryHandler {
-   //private Connection dataBaseConnection;
+
    private final UserQuery userQuery;
    private final MovieQuery movieQuery;
    private final ReviewQuery reviewQuery;
+   private final RentQuery rentQuery;
    public QueryHandler(Connection dataBaseConnection) throws SQLException {
-//      this.dataBaseConnection = dataBaseConnection;
-      this.userQuery = new UserQuery(dataBaseConnection);
-      this.movieQuery = new MovieQuery(dataBaseConnection);
+
+       this.userQuery = new UserQuery(dataBaseConnection);
+       this.movieQuery = new MovieQuery(dataBaseConnection);
        this.reviewQuery = new ReviewQuery(dataBaseConnection);
+       this.rentQuery = new RentQuery(dataBaseConnection);
    }
    public void testQuery() throws SQLException {
       movieQuery.getAllMoviesByAccountId(2);
@@ -29,5 +31,9 @@ public class QueryHandler {
 
    public ReviewQuery getReviewQuery() {
       return reviewQuery;
+   }
+
+   public RentQuery getRentQuery() {
+      return rentQuery;
    }
 }
