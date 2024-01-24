@@ -155,8 +155,69 @@ public class MoviesPanel {
         else
             System.out.println("Ten film został już dodany do ulubionych.");
     }
-    public void onRentMovieButtonClicked(MouseEvent mouseEvent) {
-        acc.rentMovie("Film 1");
-    }
 
+    public void onRentMovieButtonClicked(MouseEvent mouseEvent) {
+        List<String> actors = new ArrayList<>();
+        actors.add("Frodo Baggins");
+        Movie movie = new Movie(0,"INDIANA JONES I ARTEFAKT PRZEZNACZENIA","Przygodowy","James Mangold",actors,1981,"");
+        boolean test = false;
+        for (Movie m:acc.rentMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.rentMovies.add(movie);
+        else
+            System.out.println("Ten film został już wypozyczony.");
+    }
+    public void onRentMovieButtonClicked2(MouseEvent mouseEvent) {
+        List<String> actors = new ArrayList<>();
+        actors.add("Frodo Baggins");
+        Movie movie = new Movie(1,"WŁADCA PIERŚCIENI: POWRÓT KRÓLA","Przygodowy, Fantasy","Peter Jackson",actors,2003,"");
+        boolean test = false;
+        for (Movie m:acc.rentMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.rentMovies.add(movie);
+        else
+            System.out.println("Ten film został już wypozyczony.");
+    }
+    public void onRentMovieButtonClicked3(MouseEvent mouseEvent) {
+        List<String> actors = new ArrayList<>();
+        actors.add("Frodo Baggins");
+        Movie movie = new Movie(2,"GWIEZDNE WOJNY: CZĘŚĆ VI - POWRÓT JEDI","Przygodowy, Sci-Fi","Richard Marquand",actors,1983,"");
+        boolean test = false;
+        for (Movie m:acc.rentMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.rentMovies.add(movie);
+        else
+            System.out.println("Ten film został już wypozyczony.");
+    }
+    public void onRentMovieButtonClicked4(MouseEvent mouseEvent) {
+        List<String> actors = new ArrayList<>();
+        actors.add("Frodo Baggins");
+        Movie movie = new Movie(3,"TOY STORY","Animacja, Familijny, Komedia","John Lasseter",actors,2003,"");
+        boolean test = false;
+        for (Movie m:acc.rentMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.rentMovies.add(movie);
+        else
+            System.out.println("Ten film został już wypozyczony.");
+    }
 }

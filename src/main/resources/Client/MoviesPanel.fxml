@@ -355,7 +355,7 @@
                                                    </ImageView>
                                                 </graphic>
                                              </Button>
-                                             <Button id="rentMovie2" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButtonClicked" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                             <Button id="rentMovie2" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButtonClicked2" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
                                                 <graphic>
                                                    <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                                                       <image>
@@ -453,7 +453,7 @@
                                                    </ImageView>
                                                 </graphic>
                                              </Button>
-                                             <Button id="rentMovie3" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButtonClicked" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                             <Button id="rentMovie3" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButtonClicked3" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
                                                 <graphic>
                                                    <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                                                       <image>
@@ -551,7 +551,7 @@
                                                    </ImageView>
                                                 </graphic>
                                              </Button>
-                                             <Button id="rentMovie4" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButtonClicked" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                             <Button id="rentMovie4" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButtonClicked4" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
                                                 <graphic>
                                                    <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                                                       <image>

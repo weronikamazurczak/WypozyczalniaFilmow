@@ -277,15 +277,25 @@ public class Settings {
 
     public void onHistorySectionButtonClicked(MouseEvent mouseEvent) {
         // Pobierz listę wypożyczonych filmów użytkownika
-        List<String> rentedMovies = getRentedMovies();
+
+        StringBuilder contentTextBuilder = new StringBuilder();
+
+        for (Movie m : ClientStart.getAcc().rentMovies) {
+            contentTextBuilder.append(m.title).append("\n\n");
+        }
 
         Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("Wypożyczone filmy");
+        alert.setTitle("Wypozyczone filmy");
         alert.setHeaderText(null);
-        alert.setContentText(String.join("\n", rentedMovies));
 
+        if (ClientStart.getAcc().rentMovies.isEmpty()) {
+            alert.setContentText("Brak wypozyczonych filmów");
+        } else {
+            alert.setContentText(contentTextBuilder.toString());
+        }
         alert.showAndWait();
     }
+
 
     private List<String> getRentedMovies() {
         // Tutaj powinieneś pobrać listę wypożyczonych filmów użytkownika z bazy danych lub innego źródła danych
