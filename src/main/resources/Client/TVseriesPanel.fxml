@@ -437,7 +437,7 @@
                                                         </Pane>
                                                         <Pane layoutX="2.0" layoutY="937.0" prefHeight="297.0" prefWidth="952.0">
                                                             <children>
-                                                                <Label layoutX="187.0" layoutY="14.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA">
+                                                                <Label layoutX="187.0" layoutY="14.0" text="GRA O TRON">
                                                                     <font>
                                                                         <Font size="24.0" />
                                                                     </font>
@@ -446,7 +446,7 @@
                                                                     <graphic>
                                                                         <ImageView fitHeight="230.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
                                                                             <image>
-                                                                                <Image url="@../img/film2.jpg" />
+                                                                                <Image url="@../img/graotron.jpg" />
                                                                             </image>
                                                                             <cursor>
                                                                                 <Cursor fx:constant="OPEN_HAND" />
@@ -454,7 +454,7 @@
                                                                         </ImageView>
                                                                     </graphic>
                                                                 </Button>
-                                                                <Button id="rentMovie" alignment="BOTTOM_LEFT" onMouseClicked="#onRentMovieButton1Clicked" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
+                                                                <Button id="rentMovie" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="780.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#onRentMovieButton1Clicked" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #61bc84;" text="Wypożycz" textFill="WHITE">
                                                                     <graphic>
                                                                         <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                                                                             <image>
@@ -476,7 +476,7 @@
                                                                         </DropShadow>
                                                                     </effect>
                                                                 </Button>
-                                                                <Button id="addToFavorites" alignment="BOTTOM_LEFT" blendMode="DARKEN" onMouseClicked="#onAddToFavoritesButton2Clicked" layoutX="735.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
+                                                                <Button id="addToFavorites" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" onMouseClicked="#onAddToFavoritesButton4Clicked" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
                                                                     <graphic>
                                                                         <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
                                                                             <image>
@@ -510,7 +510,7 @@
                                                                         <DropShadow />
                                                                     </effect>
                                                                 </Button>
-                                                                <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="6,5">
+                                                                <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="8,5">
                                                                     <graphic>
                                                                         <ImageView fitHeight="36.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                                                             <image>
@@ -523,19 +523,19 @@
                                                                     </font>
                                                                 </Label>
                                                                 <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
-                                                                <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="Jest rok 1969. Dwa najpotężniejsze mocarstwa świata - Stany Zjednoczone Ameryki Północnej i Związek Radziecki - rywalizują w wyścigu o podbój kosmosu. Emerytowany poszukiwacz przygód Indiana Jones (Harrison Ford) jest zaniepokojony obrotem spraw, gdy dowiaduje się, że rząd USA werbuje byłych nazistów do pomocy w przedsięwzięciu. Niedługo po tym Jones wraz ze swoją chrześnicą Heleną (Phoebe Waller-Bridge) stawia czoła Vollerowi (Mads Mikkelsen) i jego nazistowskiej organizacji. Grupa ta pragnie zdobyć legendarny artefakt, za pomocą którego chce podporządkować sobie świat według wyznawanych wartości." textAlignment="JUSTIFY" wrapText="true" />
+                                                                <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="W królestwie Westeros, gdzie intrygi, zdrada i walka o władzę są na porządku dziennym, siedem rodzin szlacheckich zmaga się o kontrolę nad Żelaznym Tronem. W epicznej grze o władzę pojawiają się bohaterowie o różnych motywacjach – od honorowych rycerzy po sprytne intrygantki. Wśród nich znajduje się Jon Snow, nieślubny syn Starka, Daenerys Targaryen, ostatnia przedstawicielka rodu smoków, i Tyrion Lannister, błyskotliwy imp, którego dowcipne riposty są równie ostry jak jego umysł. W międzyczasie zbliża się zima, a wraz z nią nadciąga zagrożenie ze Strefy Północy, gdzie obudziły się mityczne istoty zmarłe i tajemniczy Nocny Król dąży do zniszczenia świata." textAlignment="JUSTIFY" wrapText="true" />
                                                                 <Label layoutX="187.0" layoutY="163.0" text="reżyseria" />
-                                                                <Label layoutX="297.0" layoutY="163.0" text="James Mangold" />
+                                                                <Label layoutX="297.0" layoutY="163.0" prefHeight="17.0" prefWidth="184.0" text="David Benioff i Dan Weiss" />
                                                                 <Label layoutX="187.0" layoutY="185.0" text="produkcja" />
-                                                                <Label layoutX="297.0" layoutY="185.0" text="USA" />
+                                                                <Label layoutX="297.0" layoutY="185.0" prefHeight="17.0" prefWidth="168.0" text="USA" />
                                                                 <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
-                                                                <Label layoutX="297.0" layoutY="210.0" text="Przygodowy" />
+                                                                <Label layoutX="297.0" layoutY="210.0" text="Fantasy, Dramat, Przygodowy" />
                                                                 <Button graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
                                                             </children>
                                                         </Pane>
                                        <Pane layoutX="2.0" layoutY="632.0" prefHeight="297.0" prefWidth="952.0">
                                           <children>
-                                             <Label layoutX="187.0" layoutY="14.0" text="PSI PATROL">
+                                             <Label layoutX="187.0" layoutY="14.0" text="STRANGER THINGS">
                                                 <font>
                                                    <Font size="24.0" />
                                                 </font>
@@ -544,7 +544,7 @@
                                                 <graphic>
                                                    <ImageView fitHeight="230.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
-                                                         <Image url="@../img/serial2.jpg" />
+                                                         <Image url="@../img/plakat-stranger-things.jpg" />
                                                       </image>
                                                       <cursor>
                                                          <Cursor fx:constant="OPEN_HAND" />
@@ -574,7 +574,7 @@
                                                    </DropShadow>
                                                 </effect>
                                              </Button>
-                                             <Button id="addToFavorites" fx:id="addToFavoritesButton21" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" onMouseClicked="#onAddToFavoritesButton2Clicked" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
+                                             <Button id="addToFavorites" fx:id="addToFavoritesButton21" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" onMouseClicked="#onAddToFavoritesButton3Clicked" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Dodaj do ulubionych">
                                                 <graphic>
                                                    <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
@@ -608,7 +608,7 @@
                                                    <DropShadow />
                                                 </effect>
                                              </Button>
-                                             <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="6,2">
+                                             <Label id="noteLabel" layoutX="54.0" layoutY="244.0" prefHeight="29.0" prefWidth="68.0" text="7,3">
                                                 <graphic>
                                                    <ImageView fitHeight="36.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                                       <image>
@@ -621,13 +621,13 @@
                                                 </font>
                                              </Label>
                                              <Separator layoutX="-1.0" layoutY="274.0" prefHeight="18.0" prefWidth="955.0" />
-                                             <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="&quot;Psi Patrol&quot; to serial ukazujący perypetie sześciorga bohaterskich szczeniąt: Marshalla, Chase’a, Rocky’ego, Zumy, Rubble’a i Skye, które pod przywództwem dziesięcioletniego Rydera wyruszają na ratunek potrzebującym. Żadna praca nie jest zbyt duża, a żaden psiak zbyt mały, aby ruszyć do akcji, kiedy ktoś prosi o pomoc." textAlignment="JUSTIFY" wrapText="true" />
+                                             <Label layoutX="187.0" layoutY="50.0" prefHeight="99.0" prefWidth="740.0" text="W tajemniczym miasteczku Hawkins w Indianie, grupa dzieciaków – Mike, Eleven, Dustin i Lucas – przypadkowo wpada na mroczny świat, gdzie znikają ludzie, a tajemnicze zjawiska nadprzyrodzone stają się rzeczywistością. Wraz z przyjaciółmi, spragnionymi przygód naukowcami i dziwaczną dziewczynką o nadzwyczajnych mocach, próbują rozwikłać zagadkę tajemniczego eksperymentu rządowego i uratować swoje miasto przed złowieszczymi istotami z innego wymiaru." textAlignment="JUSTIFY" wrapText="true" />
                                              <Label layoutX="187.0" layoutY="163.0" text="reżyseria" />
-                                             <Label layoutX="297.0" layoutY="163.0" text="Spin Master Entertainment Nickelodeon Productions" />
+                                             <Label layoutX="297.0" layoutY="163.0" prefHeight="17.0" prefWidth="163.0" text="Matt Duffer i Ross Duffer" />
                                              <Label layoutX="187.0" layoutY="185.0" text="produkcja" />
-                                             <Label layoutX="297.0" layoutY="185.0" text="Kanda" />
+                                             <Label layoutX="297.0" layoutY="185.0" prefHeight="17.0" prefWidth="171.0" text="Stany Zjednoczone" />
                                              <Label layoutX="188.0" layoutY="210.0" text="gatunek" />
-                                             <Label layoutX="297.0" layoutY="210.0" text="Animacja, Komedia, Przygodowy, Dla dzieci" />
+                                             <Label layoutX="297.0" layoutY="210.0" prefHeight="17.0" prefWidth="103.0" text="Horror, Fantasy" />
                                              <Button fx:id="seeReviewUsersButton21" graphicTextGap="0.0" layoutX="127.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#onSeeReviewUsersButton2Clicked" text="Zobacz rezenzje naszych użytkowników" textOverrun="LEADING_WORD_ELLIPSIS" />
                                           </children>
                                        </Pane>

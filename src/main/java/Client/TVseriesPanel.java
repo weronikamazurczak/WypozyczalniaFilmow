@@ -1,12 +1,15 @@
 package Client;
 
 import BaseClasses.Account;
+import BaseClasses.Movie;
 import ClientServer.ClientStart;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TVseriesPanel {
     Account acc = ClientStart.getAcc();
@@ -90,7 +93,21 @@ public class TVseriesPanel {
     }
 
     public void addToFavoritesButton1Clicked(MouseEvent mouseEvent) {
-        acc.addToFavorites("Serial 1");
+
+        List<String> actors = new ArrayList<>();
+        actors.add("Harrison Ford");
+        Movie movie = new Movie(0,"PRZYJACIELE","Komedia","David Crane, Marta Kauffman",actors,1981,"");
+        boolean test = false;
+        for (Movie m:acc.favouriteTVseries) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.favouriteTVseries.add(movie);
+        else
+            System.out.println("Ten serial został już dodany do ulubionych.");
     }
 
     public void onSeeReviewUsersButton1Clicked(MouseEvent mouseEvent) {
@@ -101,9 +118,59 @@ public class TVseriesPanel {
     }
 
     public void onAddToFavoritesButton2Clicked(MouseEvent mouseEvent) {
-        acc.addToFavorites("Serial 2");
+
+        List<String> actors = new ArrayList<>();
+        actors.add("Harrison Ford");
+        Movie movie = new Movie(1,"PSI PATROL","Animacja, Komedia, Przygodowy, Dla dzieci","Spin Master Entertainment Nickelodeon Productions",actors,1981,"");
+        boolean test = false;
+        for (Movie m:acc.favouriteTVseries) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.favouriteTVseries.add(movie);
+        else
+            System.out.println("Ten serial został już dodany do ulubionych.");
     }
 
     public void onSeeReviewUsersButton2Clicked(MouseEvent mouseEvent) {
+    }
+
+    public void onAddToFavoritesButton3Clicked(MouseEvent mouseEvent) {
+
+        List<String> actors = new ArrayList<>();
+        actors.add("Harrison Ford");
+        Movie movie = new Movie(2,"STRANGER THINGS","Horror, Fantasy","Matt Duffer i Ross Duffer",actors,1981,"");
+        boolean test = false;
+        for (Movie m:acc.favouriteTVseries) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.favouriteTVseries.add(movie);
+        else
+            System.out.println("Ten serial został już dodany do ulubionych.");
+    }
+
+    public void onAddToFavoritesButton4Clicked(MouseEvent mouseEvent) {
+
+        List<String> actors = new ArrayList<>();
+        actors.add("Harrison Ford");
+        Movie movie = new Movie(3,"GRA O TRON","Fantasy, Dramat, Przygodowy","David Benioff i Dan Weiss",actors,1981,"");
+        boolean test = false;
+        for (Movie m:acc.favouriteTVseries) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.favouriteTVseries.add(movie);
+        else
+            System.out.println("Ten serial został już dodany do ulubionych.");
     }
 }

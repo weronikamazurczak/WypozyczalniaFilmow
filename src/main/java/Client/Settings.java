@@ -190,16 +190,20 @@ public class Settings {
 
         StringBuilder contentTextBuilder = new StringBuilder();
 
-        for (Movie m : ClientStart.getAcc().favouriteMovies) {
+        List<Movie> allMovies = new ArrayList<>();
+        allMovies.addAll(ClientStart.getAcc().favouriteMovies);
+        allMovies.addAll(ClientStart.getAcc().favouriteTVseries);
+
+        for (Movie m : allMovies) {
             contentTextBuilder.append(m.title).append("\n");
         }
 
         Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("Ulubione filmy");
+        alert.setTitle("Ulubione filmy i seriale");
         alert.setHeaderText(null);
 
-        if (ClientStart.getAcc().favouriteMovies.isEmpty()) {
-            alert.setContentText("Brak ulubionych filmów");
+        if (allMovies.isEmpty()) {
+            alert.setContentText("Brak ulubionych filmów i serialu");
         } else {
             alert.setContentText(contentTextBuilder.toString());
         }

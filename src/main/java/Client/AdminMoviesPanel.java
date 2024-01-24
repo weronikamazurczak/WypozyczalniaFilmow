@@ -1,5 +1,6 @@
 package Client;
 
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -8,13 +9,12 @@ import javafx.stage.FileChooser;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.function.Consumer;
 
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TextInputDialog;
+
 
 public class AdminMoviesPanel {
     public void onHomeButtonMovieDashboardClicked(MouseEvent mouseEvent) throws IOException {
@@ -152,6 +152,7 @@ public class AdminMoviesPanel {
         System.out.println("Usunięto film.");
     }
 
+
     // Ogólna metoda do usuwania elementów
     private void removeItem(String title, String message, Runnable removeAction) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -190,8 +191,8 @@ public class AdminMoviesPanel {
                 }
 
                 // Wybierz nowy gatunek
-                List<String> genres = Arrays.asList("Komedia", "Dramat", "Akcja", "Horror");
-                ChoiceDialog<String> genreDialog = new ChoiceDialog<>("Komedia", genres);
+                List<String> genres = Arrays.asList("Akcja","Przygodowy", "Romans", "Dramat", "Horror", "Obyczajowy", "Dokumentalny", "Dla dzieci", "Przyrodniczy", "Komedia", "Historyczny","Fantasy");
+                ChoiceDialog<String> genreDialog = new ChoiceDialog<>("Akcja", genres);
                 genreDialog.setTitle(title);
                 genreDialog.setHeaderText("Wybierz nowy gatunek:");
                 genreDialog.setContentText("Gatunki:");
@@ -225,3 +226,4 @@ public class AdminMoviesPanel {
     }
 
 }
+

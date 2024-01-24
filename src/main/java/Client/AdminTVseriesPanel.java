@@ -190,8 +190,8 @@ public class AdminTVseriesPanel {
                 }
 
                 // Wybierz nowy gatunek
-                List<String> genres = Arrays.asList("Komedia", "Dramat", "Akcja", "Horror");
-                ChoiceDialog<String> genreDialog = new ChoiceDialog<>("Komedia", genres);
+                List<String> genres = Arrays.asList("Akcja","Przygodowy", "Romans", "Dramat", "Horror", "Obyczajowy", "Dokumentalny", "Dla dzieci", "Przyrodniczy", "Komedia", "Historyczny","Fantasy");
+                ChoiceDialog<String> genreDialog = new ChoiceDialog<>("Akcja", genres);
                 genreDialog.setTitle(title);
                 genreDialog.setHeaderText("Wybierz nowy gatunek:");
                 genreDialog.setContentText("Gatunki:");
