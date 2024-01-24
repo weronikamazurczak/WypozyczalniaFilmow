@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 // Klasa reprezentująca film
-class Movie {
+public class Movie {
     public int id;
     public String title;
     public String genre;
