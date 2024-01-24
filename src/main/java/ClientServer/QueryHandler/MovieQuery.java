@@ -188,4 +188,6 @@ public class MovieQuery {
 
         return rowsAffected > 0;
     }
+
+
 }
