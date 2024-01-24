@@ -118,7 +118,7 @@ public class ReviewQuery {
     }
 
     public boolean editReviewByUserAndMovie(int accountId, int movieId, String newTitle, String newDescription, double newRate, Timestamp newTimeRecession) throws SQLException {
-        // SQL query to update a review
+  
         String sqlUpdateReview = "UPDATE Review SET title = ?, description = ?, rate = ?, timeRecession = ? " +
                 "WHERE idAccount = ? AND idReview IN (SELECT idReviews FROM MovieReview WHERE idMovie = ?)";
 

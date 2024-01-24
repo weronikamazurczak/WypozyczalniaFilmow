@@ -99,32 +99,43 @@ public class MovieQuery {
     }
 
     public boolean deleteMovieByID(int movieId) throws SQLException {
+        boolean isSuccess = false;
+
         dataBaseConnection.setAutoCommit(false);
 
         try {
 
-            if(deleteAllRentByMovieID(movieId) &&
-            deleteAllFavouriteMovieByID(movieId)){
-                String sqlDeleteMovie = "DELETE FROM Movie WHERE idMovie = ?";
-                PreparedStatement stmtDeleteMovie = dataBaseConnection.prepareStatement(sqlDeleteMovie);
-                stmtDeleteMovie.setInt(1, movieId);
-                int affectedRows = stmtDeleteMovie.executeUpdate();
-
-
-                if (affectedRows > 0) {
-                    dataBaseConnection.commit();
-                    return true;
-                } else {
-
-                    dataBaseConnection.rollback();
-                    return false;
-                }
-            }
-            else{
+            if (!deleteReviewAndMovieReviewByMovieId(movieId)) {
+                dataBaseConnection.rollback();
                 return false;
             }
 
 
+            if (!deleteAllRentByMovieID(movieId)) {
+                dataBaseConnection.rollback();
+                return false;
+            }
+
+
+            if (!deleteAllFavouriteMovieByID(movieId)) {
+                dataBaseConnection.rollback();
+                return false;
+            }
+
+
+            String sqlDeleteMovie = "DELETE FROM Movie WHERE idMovie = ?";
+            PreparedStatement stmtDeleteMovie = dataBaseConnection.prepareStatement(sqlDeleteMovie);
+            stmtDeleteMovie.setInt(1, movieId);
+            int affectedRows = stmtDeleteMovie.executeUpdate();
+
+
+            if (affectedRows > 0) {
+                dataBaseConnection.commit();
+                isSuccess = true;
+            } else {
+
+                dataBaseConnection.rollback();
+            }
         } catch (SQLException e) {
 
             dataBaseConnection.rollback();
@@ -134,7 +145,9 @@ public class MovieQuery {
             dataBaseConnection.setAutoCommit(true);
         }
 
+        return isSuccess;
     }
+
 
     public boolean editMovie(int movieId, String newTitle, String newDescription, String newProduction,
                              String newGenre, String newWorldPremiereTime, String newPolandPremiereTime,
@@ -189,5 +202,49 @@ public class MovieQuery {
         return rowsAffected > 0;
     }
 
+    public boolean deleteReviewAndMovieReviewByMovieId(int movieId) throws SQLException {
+        boolean isSuccess = false;
 
+        // Start transaction block
+        dataBaseConnection.setAutoCommit(false);
+
+        try {
+
+            String sqlDeleteMovieReview = "DELETE FROM MovieReview WHERE idMovie = ?";
+            PreparedStatement preparedStatementMovieReview = dataBaseConnection.prepareStatement(sqlDeleteMovieReview);
+
+            preparedStatementMovieReview.setInt(1, movieId);
+            int movieReviewRowsAffected = preparedStatementMovieReview.executeUpdate();
+
+
+            if (movieReviewRowsAffected > 0) {
+                String sqlDeleteReview = "DELETE FROM Review WHERE idReview IN (SELECT idReviews FROM MovieReview WHERE idMovie = ?)";
+                PreparedStatement preparedStatementReview = dataBaseConnection.prepareStatement(sqlDeleteReview);
+
+                preparedStatementReview.setInt(1, movieId);
+                int reviewRowsAffected = preparedStatementReview.executeUpdate();
+
+
+                if (reviewRowsAffected > 0) {
+                    dataBaseConnection.commit();
+                    isSuccess = true;
+                } else {
+
+                    dataBaseConnection.commit();
+                }
+            } else {
+
+                dataBaseConnection.rollback();
+            }
+        } catch (SQLException e) {
+
+            dataBaseConnection.rollback();
+            throw e;
+        } finally {
+
+            dataBaseConnection.setAutoCommit(true);
+        }
+
+        return isSuccess;
+    }
 }
