@@ -3,6 +3,8 @@ package Client;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
 
 import java.io.IOException;
 
@@ -79,39 +81,207 @@ public class GenresPanel {
         PrimaryStageSingleton.INSTANCE.show();
     }
 
-    public void onActionButtonClicked(MouseEvent mouseEvent) {
+    public void onActionButtonClicked(MouseEvent mouseEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Akcja");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+            if (genresContainer != null) {
+                genresContainer.getChildren().add(text);
+                PrimaryStageSingleton.INSTANCE.setScene(scene);
+                PrimaryStageSingleton.INSTANCE.show();
+            }
     }
 
-    public void onDramaButtonClicked(MouseEvent mouseEvent) {
+    public void onDramaButtonClicked(MouseEvent mouseEvent)  throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Dramat");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+        if (genresContainer != null) {
+            genresContainer.getChildren().add(text);
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.show();
+        }
     }
 
-    public void onDocumentaryButtonClicked(MouseEvent mouseEvent) {
+    public void onDocumentaryButtonClicked(MouseEvent mouseEvent)  throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Dokumentalny");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+        if (genresContainer != null) {
+            genresContainer.getChildren().add(text);
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.show();
+        }
     }
 
-    public void onComedyButtonClicked(MouseEvent mouseEvent) {
+    public void onComedyButtonClicked(MouseEvent mouseEvent)  throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Komedia");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+        if (genresContainer != null) {
+            genresContainer.getChildren().add(text);
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.show();
+        }
     }
 
-    public void onAdventureButtonClicked(MouseEvent mouseEvent) {
+    public void onAdventureButtonClicked(MouseEvent mouseEvent)  throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Przygodowy");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+        if (genresContainer != null) {
+            genresContainer.getChildren().add(text);
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.show();
+        }
     }
 
-    public void onHorrorButtonClicked(MouseEvent mouseEvent) {
+    public void onHorrorButtonClicked(MouseEvent mouseEvent)  throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Horror");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+        if (genresContainer != null) {
+            genresContainer.getChildren().add(text);
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.show();
+        }
     }
 
-    public void onKidsButtonClicked(MouseEvent mouseEvent) {
+    public void onKidsButtonClicked(MouseEvent mouseEvent)  throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Dla dzieci");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+        if (genresContainer != null) {
+            genresContainer.getChildren().add(text);
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.show();
+        }
     }
 
-    public void onHistoryButtonClciked(MouseEvent mouseEvent) {
+    public void onHistoryButtonClciked(MouseEvent mouseEvent)  throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Historyczny");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+        if (genresContainer != null) {
+            genresContainer.getChildren().add(text);
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.show();
+        }
     }
 
-    public void onRomanceButtonClicked(MouseEvent mouseEvent) {
+    public void onRomanceButtonClicked(MouseEvent mouseEvent)  throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Romans");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+        if (genresContainer != null) {
+            genresContainer.getChildren().add(text);
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.show();
+        }
     }
 
-    public void onCommedyOfMannersButtonClicked(MouseEvent mouseEvent) {
+    public void onCommedyOfMannersButtonClicked(MouseEvent mouseEvent)  throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Obyczajowy");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+        if (genresContainer != null) {
+            genresContainer.getChildren().add(text);
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.show();
+        }
     }
 
-    public void onNatureButtonClciked(MouseEvent mouseEvent) {
+    public void onNatureButtonClciked(MouseEvent mouseEvent)  throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Przyrodniczy");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+        if (genresContainer != null) {
+            genresContainer.getChildren().add(text);
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.show();
+        }
     }
 
-    public void onFantasyButtonClicked(MouseEvent mouseEvent) {
+    public void onFantasyButtonClicked(MouseEvent mouseEvent)  throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("GenresPanel.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        Pane genresContainer = (Pane) root.lookup("#GenresContent");
+        Text text = new Text("Fantasy");
+        text.setLayoutX(30);
+        text.setLayoutY(30);
+
+        if (genresContainer != null) {
+            genresContainer.getChildren().add(text);
+            PrimaryStageSingleton.INSTANCE.setScene(scene);
+            PrimaryStageSingleton.INSTANCE.show();
+        }
     }
 }

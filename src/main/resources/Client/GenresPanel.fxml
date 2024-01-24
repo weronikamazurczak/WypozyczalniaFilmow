@@ -139,7 +139,7 @@
                                             <graphic>
                                                 <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../img/seriesIcon.png" />
+                                                        <Image url="@../img/genreIcon.png" />
                                                     </image>
                                                     <viewport>
                                                         <Rectangle2D height="40.0" width="40.0" />
@@ -257,9 +257,9 @@
                                     <CheckBox fx:id="fantasyButton" layoutX="276.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#onFantasyButtonClicked" text="Fantasy" />
                                  </children>
                               </Pane>
-                              <Pane layoutX="14.0" layoutY="288.0" prefHeight="426.0" prefWidth="893.0" style="-fx-background-color: #c1c1;">
+                              <Pane fx:id="GenresContent" layoutX="14.0" layoutY="288.0" prefHeight="426.0" prefWidth="893.0" style="-fx-background-color: #c1c1;">
                                  <children>
-                                    <Label layoutX="336.0" layoutY="205.0" text="Tu sie beda ywswietlac te wybrane" />
+                                    <Label layoutX="336.0" layoutY="205.0" text="Wybierz gatunek!" />
                                  </children>
                               </Pane>
                            </children></Pane>
