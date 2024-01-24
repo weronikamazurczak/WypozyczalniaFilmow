@@ -33,7 +33,7 @@ public class UserQuery {
 
 
     private boolean checkIfNameAccountExists(String nameAccount) throws SQLException {
-        // Zapytanie SQL sprawdzające, czy nameAccount już istnieje
+
         String sql = "SELECT COUNT(*) FROM Account WHERE nameAccount = ?";
 
 
@@ -44,7 +44,7 @@ public class UserQuery {
         ResultSet resultSet = preparedStatement.executeQuery();
         if (resultSet.next()) {
             int count = resultSet.getInt(1);
-            return count > 0; // Zwraca true, jeśli istnieje przynajmniej jedno konto o podanej wartości nameAccount
+            return count > 0;
         }
         return false;
     }

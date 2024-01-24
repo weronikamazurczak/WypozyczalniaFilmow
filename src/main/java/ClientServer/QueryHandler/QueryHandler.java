@@ -8,12 +8,15 @@ public class QueryHandler {
    private final MovieQuery movieQuery;
    private final ReviewQuery reviewQuery;
    private final RentQuery rentQuery;
+   private final FavouriteMovieQuery favouriteMovieQuery;
+
    public QueryHandler(Connection dataBaseConnection) throws SQLException {
 
        this.userQuery = new UserQuery(dataBaseConnection);
        this.movieQuery = new MovieQuery(dataBaseConnection);
        this.reviewQuery = new ReviewQuery(dataBaseConnection);
        this.rentQuery = new RentQuery(dataBaseConnection);
+       this.favouriteMovieQuery = new FavouriteMovieQuery(dataBaseConnection);
    }
    public void testQuery() throws SQLException {
       movieQuery.getAllMoviesByAccountId(2);
@@ -35,5 +38,9 @@ public class QueryHandler {
 
    public RentQuery getRentQuery() {
       return rentQuery;
+   }
+
+   public FavouriteMovieQuery getFavouriteMovieQuery() {
+      return favouriteMovieQuery;
    }
 }

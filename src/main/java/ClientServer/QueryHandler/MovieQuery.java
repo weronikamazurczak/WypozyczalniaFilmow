@@ -203,9 +203,9 @@ public class MovieQuery {
     }
 
     public boolean deleteReviewAndMovieReviewByMovieId(int movieId) throws SQLException {
-        boolean isSuccess = false;
 
-        // Start transaction block
+
+
         dataBaseConnection.setAutoCommit(false);
 
         try {
@@ -227,7 +227,7 @@ public class MovieQuery {
 
                 if (reviewRowsAffected > 0) {
                     dataBaseConnection.commit();
-                    isSuccess = true;
+                    return true;
                 } else {
 
                     dataBaseConnection.commit();
@@ -245,6 +245,6 @@ public class MovieQuery {
             dataBaseConnection.setAutoCommit(true);
         }
 
-        return isSuccess;
+        return false;
     }
 }

@@ -13,7 +13,7 @@ public class ReviewQuery {
         this.dataBaseConnection=dataBaseConnection;
     }
     public boolean addReviewByUserAndMovie(int accountId, int movieId, String title, String description, double rate, Timestamp timeRecession) throws SQLException {
-        boolean isSuccess = false;
+
 
 
         dataBaseConnection.setAutoCommit(false);
@@ -49,7 +49,7 @@ public class ReviewQuery {
 
                     if (movieReviewRowsAffected > 0) {
                         dataBaseConnection.commit();
-                        isSuccess = true;
+                       return true;
                     } else {
 
                         dataBaseConnection.rollback();
@@ -69,7 +69,7 @@ public class ReviewQuery {
             dataBaseConnection.setAutoCommit(true);
         }
 
-        return isSuccess;
+        return false;
     }
 
     public boolean deleteReviewByUserAndMovie(int accountId, int movieId) throws SQLException {
@@ -118,7 +118,7 @@ public class ReviewQuery {
     }
 
     public boolean editReviewByUserAndMovie(int accountId, int movieId, String newTitle, String newDescription, double newRate, Timestamp newTimeRecession) throws SQLException {
-  
+
         String sqlUpdateReview = "UPDATE Review SET title = ?, description = ?, rate = ?, timeRecession = ? " +
                 "WHERE idAccount = ? AND idReview IN (SELECT idReviews FROM MovieReview WHERE idMovie = ?)";
 
