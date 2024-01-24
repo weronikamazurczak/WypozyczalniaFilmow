@@ -303,7 +303,7 @@
                                                <content>
                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label fx:id="movieIDlabel" layoutX="65.0" layoutY="113.0" text="1" />
+                                                         <Label fx:id="movieIDlabel" layoutX="65.0" layoutY="113.0" text="0" />
                                                             </children>
                                                    </AnchorPane>
                                                </content>
@@ -387,7 +387,7 @@
                                                             <graphic>
                                                                <ImageView fx:id="posterID2" fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                     <Image url="@../img/film2.jpg" />
+                                                                     <Image url="@../img/7494142.3.jpg" />
                                                                   </image>
                                                                   <cursor>
                                                                      <Cursor fx:constant="OPEN_HAND" />
@@ -403,7 +403,7 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label fx:id="movieNameID2" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
+                                                         <Label fx:id="movieNameID2" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="WŁADCA PIERŚCIENI: POWRÓT KRÓLA" wrapText="true">
                                                             <font>
                                                                <Font size="16.0" />
                                                             </font>
@@ -416,7 +416,7 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label fx:id="genreID2" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
+                                                         <Label fx:id="genreID2" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy, Fantasy" wrapText="true">
                                                             <font>
                                                                <Font size="16.0" />
                                                             </font>
@@ -444,7 +444,7 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label fx:id="movieIDlabel3" layoutX="65.0" layoutY="113.0" text="1" />
+                                                         <Label fx:id="movieIDlabel3" layoutX="65.0" layoutY="113.0" text="2" />
                                                       </children>
                                                    </AnchorPane>
                                                 </content>
@@ -457,7 +457,7 @@
                                                             <graphic>
                                                                <ImageView fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                     <Image url="@../img/film2.jpg" />
+                                                                     <Image url="@../img/7885578.6.jpg" />
                                                                   </image>
                                                                   <cursor>
                                                                      <Cursor fx:constant="OPEN_HAND" />
@@ -473,7 +473,7 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label fx:id="movieNameID3" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
+                                                         <Label fx:id="movieNameID3" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="GWIEZDNE WOJNY: CZĘŚĆ VI - POWRÓT JEDI" wrapText="true">
                                                             <font>
                                                                <Font size="16.0" />
                                                             </font>
@@ -486,7 +486,7 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label fx:id="genreID3" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
+                                                         <Label fx:id="genreID3" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy, Sci-Fi" wrapText="true">
                                                             <font>
                                                                <Font size="16.0" />
                                                             </font>
@@ -514,7 +514,7 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label fx:id="movieIDlabel4" layoutX="65.0" layoutY="113.0" text="1" />
+                                                         <Label fx:id="movieIDlabel4" layoutX="65.0" layoutY="113.0" text="3" />
                                                       </children>
                                                    </AnchorPane>
                                                 </content>
@@ -527,7 +527,7 @@
                                                             <graphic>
                                                                <ImageView fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                     <Image url="@../img/film2.jpg" />
+                                                                     <Image url="@../img/7322795.6.jpg" />
                                                                   </image>
                                                                   <cursor>
                                                                      <Cursor fx:constant="OPEN_HAND" />
@@ -543,7 +543,7 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label fx:id="movieNameID4" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
+                                                         <Label fx:id="movieNameID4" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="TOY STORY" wrapText="true">
                                                             <font>
                                                                <Font size="16.0" />
                                                             </font>
@@ -556,7 +556,7 @@
                                                 <content>
                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                       <children>
-                                                         <Label fx:id="genreID4" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
+                                                         <Label fx:id="genreID4" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Animacja, Familijny, Komedia" wrapText="true">
                                                             <font>
                                                                <Font size="16.0" />
                                                             </font>

@@ -301,7 +301,7 @@
                                                                     <content>
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                                             <children>
-                                                                                <Label fx:id="seriesIDlabel1" layoutX="65.0" layoutY="113.0" text="1" />
+                                                                                <Label fx:id="seriesIDlabel1" layoutX="65.0" layoutY="113.0" text="0" />
                                                                             </children>
                                                                         </AnchorPane>
                                                                     </content>
@@ -314,7 +314,7 @@
                                                                                     <graphic>
                                                                                         <ImageView fx:id="posterID1" fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                                                                                             <image>
-                                                                                                <Image url="@../img/serial2.jpg" />
+                                                                                                <Image url="@../img/serial1.jpg" />
                                                                                             </image>
                                                                                             <cursor>
                                                                                                 <Cursor fx:constant="OPEN_HAND" />
@@ -330,7 +330,7 @@
                                                                     <content>
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                                             <children>
-                                                                                <Label fx:id="seriesNameID1" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="PSI PATROL" wrapText="true">
+                                                                                <Label fx:id="seriesNameID1" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="PRZYJACIELE" wrapText="true">
                                                                                     <font>
                                                                                         <Font size="16.0" />
                                                                                     </font>
@@ -343,7 +343,7 @@
                                                                     <content>
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                                             <children>
-                                                                                <Label fx:id="genreID1" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Dla dzieci" wrapText="true">
+                                                                                <Label fx:id="genreID1" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Komedia" wrapText="true">
                                                                                     <font>
                                                                                         <Font size="16.0" />
                                                                                     </font>
@@ -385,7 +385,7 @@
                                                                                     <graphic>
                                                                                         <ImageView fx:id="posterID2" fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                                                                                             <image>
-                                                                                                <Image url="@../img/film2.jpg" />
+                                                                                                <Image url="@../img/serial2.jpg" />
                                                                                             </image>
                                                                                             <cursor>
                                                                                                 <Cursor fx:constant="OPEN_HAND" />
@@ -401,7 +401,7 @@
                                                                     <content>
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                                             <children>
-                                                                                <Label fx:id="seriesNameID2" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
+                                                                                <Label fx:id="seriesNameID2" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="PSI PATROL" wrapText="true">
                                                                                     <font>
                                                                                         <Font size="16.0" />
                                                                                     </font>
@@ -414,7 +414,7 @@
                                                                     <content>
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                                             <children>
-                                                                                <Label fx:id="genreID2" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
+                                                                                <Label fx:id="genreID2" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Animacja, Komedia, Przygodowy, Dla dzieci" wrapText="true">
                                                                                     <font>
                                                                                         <Font size="16.0" />
                                                                                     </font>
@@ -442,7 +442,7 @@
                                                                     <content>
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                                             <children>
-                                                                                <Label fx:id="seriesIDlabel3" layoutX="65.0" layoutY="113.0" text="1" />
+                                                                                <Label fx:id="seriesIDlabel3" layoutX="65.0" layoutY="113.0" text="2" />
                                                                             </children>
                                                                         </AnchorPane>
                                                                     </content>
@@ -455,7 +455,7 @@
                                                                                     <graphic>
                                                                                         <ImageView fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                                                                                             <image>
-                                                                                                <Image url="@../img/film2.jpg" />
+                                                                                                <Image url="@../img/plakat-stranger-things.jpg" />
                                                                                             </image>
                                                                                             <cursor>
                                                                                                 <Cursor fx:constant="OPEN_HAND" />
@@ -471,7 +471,7 @@
                                                                     <content>
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                                             <children>
-                                                                                <Label fx:id="seriesNameID3" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
+                                                                                <Label fx:id="seriesNameID3" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="STRANGER THINGS" wrapText="true">
                                                                                     <font>
                                                                                         <Font size="16.0" />
                                                                                     </font>
@@ -484,7 +484,7 @@
                                                                     <content>
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                                             <children>
-                                                                                <Label fx:id="genreID3" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
+                                                                                <Label fx:id="genreID3" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Horror, Fantasy" wrapText="true">
                                                                                     <font>
                                                                                         <Font size="16.0" />
                                                                                     </font>
@@ -512,7 +512,7 @@
                                                                     <content>
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                                             <children>
-                                                                                <Label fx:id="seriesIDlabel4" layoutX="65.0" layoutY="113.0" text="1" />
+                                                                                <Label fx:id="seriesIDlabel4" layoutX="65.0" layoutY="113.0" text="3" />
                                                                             </children>
                                                                         </AnchorPane>
                                                                     </content>
@@ -525,7 +525,7 @@
                                                                                     <graphic>
                                                                                         <ImageView fitHeight="165.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
                                                                                             <image>
-                                                                                                <Image url="@../img/film2.jpg" />
+                                                                                                <Image url="@../img/graotron.jpg" />
                                                                                             </image>
                                                                                             <cursor>
                                                                                                 <Cursor fx:constant="OPEN_HAND" />
@@ -541,7 +541,7 @@
                                                                     <content>
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                                             <children>
-                                                                                <Label fx:id="seriesNameID4" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA" wrapText="true">
+                                                                                <Label fx:id="seriesNameID4" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="GRA O TRON" wrapText="true">
                                                                                     <font>
                                                                                         <Font size="16.0" />
                                                                                     </font>
@@ -554,7 +554,7 @@
                                                                     <content>
                                                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="174.0">
                                                                             <children>
-                                                                                <Label fx:id="genreID4" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Przygodowy" wrapText="true">
+                                                                                <Label fx:id="genreID4" layoutX="12.0" layoutY="64.0" prefHeight="115.0" prefWidth="137.0" text="Fantasy, Dramat, Przygodowy" wrapText="true">
                                                                                     <font>
                                                                                         <Font size="16.0" />
                                                                                     </font>
