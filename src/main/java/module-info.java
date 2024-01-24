@@ -15,6 +15,7 @@ module WypozyczalniaFilmow {
     requires junit;
     exports BaseClasses.Test;
     exports ClientServer.Test;
+    exports Client.Test;
     opens Client to javafx.fxml, javafx.graphics;
     exports Client;
 }
