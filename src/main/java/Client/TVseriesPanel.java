@@ -13,8 +13,6 @@ import java.util.List;
 
 public class TVseriesPanel {
     Account acc = ClientStart.getAcc();
-    public void onFilterButtonRatingClicked(MouseEvent mouseEvent) {
-    }
 
     public void onHomeButtonMovieDashboardClicked(MouseEvent mouseEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("MovieDashboard.fxml"));
@@ -124,9 +122,6 @@ public class TVseriesPanel {
             System.out.println("Ten serial został już dodany do ulubionych.");
     }
 
-    public void onSeeReviewUsersButton1Clicked(MouseEvent mouseEvent) {
-    }
-
     public void onRentMovieButton2Clicked(MouseEvent mouseEvent) {
 
         List<String> actors = new ArrayList<>();
@@ -161,9 +156,6 @@ public class TVseriesPanel {
             acc.favouriteTVseries.add(movie);
         else
             System.out.println("Ten serial został już dodany do ulubionych.");
-    }
-
-    public void onSeeReviewUsersButton2Clicked(MouseEvent mouseEvent) {
     }
 
     public void onRentMovieButton3Clicked(MouseEvent mouseEvent) {
