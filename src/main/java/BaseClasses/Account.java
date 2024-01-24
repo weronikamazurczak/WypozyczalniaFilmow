@@ -45,4 +45,7 @@ public class Account {
         this.availableMovies = availableMovies;
         this.rentHistory = rentHistory;
     }
+    public Account(){
+
+    }
 }

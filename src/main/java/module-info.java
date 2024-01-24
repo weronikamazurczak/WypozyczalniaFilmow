@@ -12,7 +12,9 @@ module WypozyczalniaFilmow {
     requires org.slf4j;
     requires java.sql;
     requires com.oracle.database.jdbc;
-
+    requires junit;
+    exports BaseClasses.Test;
+    exports ClientServer.Test;
     opens Client to javafx.fxml, javafx.graphics;
     exports Client;
 }
