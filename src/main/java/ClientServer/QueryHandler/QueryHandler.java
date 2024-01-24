@@ -13,6 +13,11 @@ public class QueryHandler {
       this.movieQuery = new MovieQuery(dataBaseConnection);
        this.reviewQuery = new ReviewQuery(dataBaseConnection);
    }
+   public void testQuery() throws SQLException {
+      movieQuery.getAllMoviesByAccountId(2);
+      movieQuery.getMovieByMovieID(1);
+      movieQuery.getAllFavouriteMoviesByAccountId(1);
+   }
 
    public UserQuery getUserQuery() {
       return userQuery;

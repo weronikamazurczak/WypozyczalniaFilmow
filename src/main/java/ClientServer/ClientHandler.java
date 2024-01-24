@@ -32,7 +32,7 @@ public class ClientHandler implements Runnable {
             if (dataBaseConnection != null) {
                 System.out.println("Connected with connection #");
                 queryHandler = new QueryHandler(dataBaseConnection);
-                queryHandler.getMovieQuery().getAllMoviesByAccountId(1);
+                queryHandler.testQuery();
             }
         } catch (IOException | SQLException e) {
             e.printStackTrace();
