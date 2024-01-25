@@ -90,7 +90,7 @@ public class TVseriesPanel {
 
         List<String> actors = new ArrayList<>();
         actors.add("Harrison Ford");
-        Movie movie = new Movie(0,"PRZYJACIELE","Komedia","David Crane, Marta Kauffman",actors,1981,"");
+        Movie movie = new Movie(0,"PRZYJACIELE","Komedia","David Crane, Marta Kauffman",actors,1981,"Pełen humoru serial opowiadający o szóstce przyjaciół mieszkających w Nowym Jorku: Monica - ma obsesję na punkcie czystości i bycia najlepszym, Rachel - rozpuszczona dziewczyna z bogatego domu, która uczy się samodzielności, Phoebe - trudno zrozumieć jej abstrakcyjne poglądy i zachowanie, Joey - niezbyt inteligentny podrywacz, Chandler - żartuje ze wszystkiego, swoje wypowiedzi zabarwione humorem wtrąca przy każdej okazji oraz Ross - jest paleontologiem, fascynuje się nauką i ma pecha do kobiet.");
         boolean test = false;
         for (Movie m:acc.rentTVseries) {
             if(m.id == movie.id) {
@@ -108,7 +108,7 @@ public class TVseriesPanel {
 
         List<String> actors = new ArrayList<>();
         actors.add("Harrison Ford");
-        Movie movie = new Movie(0,"PRZYJACIELE","Komedia","David Crane, Marta Kauffman",actors,1981,"");
+        Movie movie = new Movie(0,"PRZYJACIELE","Komedia","David Crane, Marta Kauffman",actors,1990,"Pełen humoru serial opowiadający o szóstce przyjaciół mieszkających w Nowym Jorku: Monica - ma obsesję na punkcie czystości i bycia najlepszym, Rachel - rozpuszczona dziewczyna z bogatego domu, która uczy się samodzielności, Phoebe - trudno zrozumieć jej abstrakcyjne poglądy i zachowanie, Joey - niezbyt inteligentny podrywacz, Chandler - żartuje ze wszystkiego, swoje wypowiedzi zabarwione humorem wtrąca przy każdej okazji oraz Ross - jest paleontologiem, fascynuje się nauką i ma pecha do kobiet.");
         boolean test = false;
         for (Movie m:acc.favouriteTVseries) {
             if(m.id == movie.id) {
@@ -126,7 +126,7 @@ public class TVseriesPanel {
 
         List<String> actors = new ArrayList<>();
         actors.add("Harrison Ford");
-        Movie movie = new Movie(1,"PSI PATROL","Animacja, Komedia, Przygodowy, Dla dzieci","Spin Master Entertainment Nickelodeon Productions",actors,1981,"");
+        Movie movie = new Movie(1,"PSI PATROL","Animacja, Komedia, Przygodowy, Dla dzieci","Spin Master Entertainment Nickelodeon Productions",actors,1999,"\"Psi Patrol\" to serial ukazujący perypetie sześciorga bohaterskich szczeniąt: Marshalla, Chase’a, Rocky’ego, Zumy, Rubble’a i Skye, które pod przywództwem dziesięcioletniego Rydera wyruszają na ratunek potrzebującym. Żadna praca nie jest zbyt duża, a żaden psiak zbyt mały, aby ruszyć do akcji, kiedy ktoś prosi o pomoc.");
         boolean test = false;
         for (Movie m:acc.rentTVseries) {
             if(m.id == movie.id) {
@@ -144,7 +144,7 @@ public class TVseriesPanel {
 
         List<String> actors = new ArrayList<>();
         actors.add("Harrison Ford");
-        Movie movie = new Movie(1,"PSI PATROL","Animacja, Komedia, Przygodowy, Dla dzieci","Spin Master Entertainment Nickelodeon Productions",actors,1981,"");
+        Movie movie = new Movie(1,"PSI PATROL","Animacja, Komedia, Przygodowy, Dla dzieci","Spin Master Entertainment Nickelodeon Productions",actors,2010,"W tajemniczym miasteczku Hawkins w Indianie, grupa dzieciaków – Mike, Eleven, Dustin i Lucas – przypadkowo wpada na mroczny świat, gdzie znikają ludzie, a tajemnicze zjawiska nadprzyrodzone stają się rzeczywistością. Wraz z przyjaciółmi, spragnionymi przygód naukowcami i dziwaczną dziewczynką o nadzwyczajnych mocach, próbują rozwikłać zagadkę tajemniczego eksperymentu rządowego i uratować swoje miasto przed złowieszczymi istotami z innego wymiaru.");
         boolean test = false;
         for (Movie m:acc.favouriteTVseries) {
             if(m.id == movie.id) {
@@ -162,7 +162,7 @@ public class TVseriesPanel {
 
         List<String> actors = new ArrayList<>();
         actors.add("Harrison Ford");
-        Movie movie = new Movie(2,"STRANGER THINGS","Horror, Fantasy","Matt Duffer i Ross Duffer",actors,1981,"");
+        Movie movie = new Movie(2,"STRANGER THINGS","Horror, Fantasy","Matt Duffer i Ross Duffer",actors,2015,"W tajemniczym miasteczku Hawkins w Indianie, grupa dzieciaków – Mike, Eleven, Dustin i Lucas – przypadkowo wpada na mroczny świat, gdzie znikają ludzie, a tajemnicze zjawiska nadprzyrodzone stają się rzeczywistością. Wraz z przyjaciółmi, spragnionymi przygód naukowcami i dziwaczną dziewczynką o nadzwyczajnych mocach, próbują rozwikłać zagadkę tajemniczego eksperymentu rządowego i uratować swoje miasto przed złowieszczymi istotami z innego wymiaru.");
         boolean test = false;
         for (Movie m:acc.rentTVseries) {
             if(m.id == movie.id) {
@@ -180,7 +180,7 @@ public class TVseriesPanel {
 
         List<String> actors = new ArrayList<>();
         actors.add("Harrison Ford");
-        Movie movie = new Movie(2,"STRANGER THINGS","Horror, Fantasy","Matt Duffer i Ross Duffer",actors,1981,"");
+        Movie movie = new Movie(2,"STRANGER THINGS","Horror, Fantasy","Matt Duffer i Ross Duffer",actors,2009,"\"Psi Patrol\" to serial ukazujący perypetie sześciorga bohaterskich szczeniąt: Marshalla, Chase’a, Rocky’ego, Zumy, Rubble’a i Skye, które pod przywództwem dziesięcioletniego Rydera wyruszają na ratunek potrzebującym. Żadna praca nie jest zbyt duża, a żaden psiak zbyt mały, aby ruszyć do akcji, kiedy ktoś prosi o pomoc.");
         boolean test = false;
         for (Movie m:acc.favouriteTVseries) {
             if(m.id == movie.id) {
@@ -197,7 +197,7 @@ public class TVseriesPanel {
     public void onRentMovieButton4Clicked(MouseEvent mouseEvent) {
         List<String> actors = new ArrayList<>();
         actors.add("Harrison Ford");
-        Movie movie = new Movie(3,"GRA O TRON","Fantasy, Dramat, Przygodowy","David Benioff i Dan Weiss",actors,1981,"");
+        Movie movie = new Movie(3,"GRA O TRON","Fantasy, Dramat, Przygodowy","David Benioff i Dan Weiss",actors,2017,"W królestwie Westeros, gdzie intrygi, zdrada i walka o władzę są na porządku dziennym, siedem rodzin szlacheckich zmaga się o kontrolę nad Żelaznym Tronem. W epicznej grze o władzę pojawiają się bohaterowie o różnych motywacjach – od honorowych rycerzy po sprytne intrygantki. Wśród nich znajduje się Jon Snow, nieślubny syn Starka, Daenerys Targaryen, ostatnia przedstawicielka rodu smoków, i Tyrion Lannister, błyskotliwy imp, którego dowcipne riposty są równie ostry jak jego umysł. W międzyczasie zbliża się zima, a wraz z nią nadciąga zagrożenie ze Strefy Północy, gdzie obudziły się mityczne istoty zmarłe i tajemniczy Nocny Król dąży do zniszczenia świata.");
         boolean test = false;
         for (Movie m:acc.rentTVseries) {
             if(m.id == movie.id) {
@@ -216,7 +216,7 @@ public class TVseriesPanel {
 
         List<String> actors = new ArrayList<>();
         actors.add("Harrison Ford");
-        Movie movie = new Movie(3,"GRA O TRON","Fantasy, Dramat, Przygodowy","David Benioff i Dan Weiss",actors,1981,"");
+        Movie movie = new Movie(3,"GRA O TRON","Fantasy, Dramat, Przygodowy","David Benioff i Dan Weiss",actors,2005,"W królestwie Westeros, gdzie intrygi, zdrada i walka o władzę są na porządku dziennym, siedem rodzin szlacheckich zmaga się o kontrolę nad Żelaznym Tronem. W epicznej grze o władzę pojawiają się bohaterowie o różnych motywacjach – od honorowych rycerzy po sprytne intrygantki. Wśród nich znajduje się Jon Snow, nieślubny syn Starka, Daenerys Targaryen, ostatnia przedstawicielka rodu smoków, i Tyrion Lannister, błyskotliwy imp, którego dowcipne riposty są równie ostry jak jego umysł. W międzyczasie zbliża się zima, a wraz z nią nadciąga zagrożenie ze Strefy Północy, gdzie obudziły się mityczne istoty zmarłe i tajemniczy Nocny Król dąży do zniszczenia świata.");
         boolean test = false;
         for (Movie m:acc.favouriteTVseries) {
             if(m.id == movie.id) {
