@@ -51,4 +51,8 @@ public class QueryHandler {
    public FilmDirectorQuery getFilmDirectoryQuery() {
       return filmDirectorQuery;
    }
+
+   public ScriptQuery getScriptQuery() {
+      return scriptQuery;
+   }
 }
