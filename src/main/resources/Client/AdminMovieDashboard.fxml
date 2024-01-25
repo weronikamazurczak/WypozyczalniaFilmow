@@ -297,7 +297,7 @@
                                     </Label>
                                     <Label layoutX="123.0" layoutY="62.0" text="gatunek: Dramat" />
                                     <Separator layoutX="67.0" layoutY="157.0" prefWidth="200.0" />
-                                 <Button layoutX="123.0" layoutY="121.0" mnemonicParsing="false" style="-fx-background-color: #EE6C4D;" text="Usuń" textFill="WHITE" />
+                                 <Button layoutX="123.0" layoutY="121.0" mnemonicParsing="false" onMouseClicked="#onRemoveMovieTop1" style="-fx-background-color: #EE6C4D;" text="Usuń" textFill="WHITE" />
                                  </children>
                               </Pane>
                               <Pane layoutX="770.0" layoutY="416.0" prefHeight="160.0" prefWidth="271.0">
@@ -330,7 +330,7 @@
                                     </Label>
                                     <Label layoutX="123.0" layoutY="62.0" text="gatunek: Komedia" />
                                     <Separator layoutX="71.0" layoutY="159.0" prefWidth="200.0" />
-                                 <Button layoutX="126.0" layoutY="123.0" mnemonicParsing="false" style="-fx-background-color: #EE6C4D;" text="Usuń" textFill="WHITE" />
+                                 <Button layoutX="126.0" layoutY="123.0" mnemonicParsing="false" onMouseClicked="#onRemoveMovieTop2" style="-fx-background-color: #EE6C4D;" text="Usuń" textFill="WHITE" />
                                  </children>
                               </Pane>
                               <Pane layoutX="770.0" layoutY="592.0" prefHeight="160.0" prefWidth="271.0">
@@ -363,7 +363,7 @@
                                     </Label>
                                     <Label layoutX="123.0" layoutY="62.0" text="gatunek: Kryminał" />
                                     <Separator layoutX="71.0" layoutY="159.0" prefWidth="200.0" />
-                                 <Button layoutX="130.0" layoutY="123.0" mnemonicParsing="false" style="-fx-background-color: #EE6C4D;" text="Usuń" textFill="WHITE" />
+                                 <Button layoutX="130.0" layoutY="123.0" mnemonicParsing="false" onMouseClicked="#onRemoveMovieTop3" style="-fx-background-color: #EE6C4D;" text="Usuń" textFill="WHITE" />
                                  </children>
                               </Pane>
                               <Pane layoutX="858.0" layoutY="34.0" prefHeight="39.0" prefWidth="175.0">
@@ -391,7 +391,7 @@
                                        <Image url="@../img/television_1742728.png" />
                                     </image>
                                  </ImageView>
-                                 <Label layoutX="126.0" layoutY="64.0" text="0">
+                                 <Label layoutX="126.0" layoutY="64.0" text="7">
                                     <font>
                                        <Font size="50.0" />
                                     </font>
@@ -411,7 +411,7 @@
                                        <Font name="Constantia Italic" size="24.0" />
                                     </font>
                                  </Label>
-                                 <Label layoutX="122.0" layoutY="63.0" text="0">
+                                 <Label layoutX="122.0" layoutY="63.0" text="4">
                                     <font>
                                        <Font size="50.0" />
                                     </font>
@@ -430,7 +430,7 @@
                                        <Font name="Constantia Italic" size="24.0" />
                                     </font>
                                  </Label>
-                                 <Label layoutX="124.0" layoutY="70.0" text="0">
+                                 <Label layoutX="124.0" layoutY="70.0" text="1">
                                     <font>
                                        <Font size="50.0" />
                                     </font>
