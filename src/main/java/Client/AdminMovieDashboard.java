@@ -2,9 +2,12 @@ package Client;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
+import java.util.Optional;
 
 public class AdminMovieDashboard {
     public void onHomeButtonMovieDashboardClicked(MouseEvent mouseEvent) throws IOException {
@@ -110,4 +113,36 @@ public class AdminMovieDashboard {
         PrimaryStageSingleton.INSTANCE.setTitle("AdminManagementPanel");
         PrimaryStageSingleton.INSTANCE.show();
     }
+
+    public void onRemoveMovieTop1(MouseEvent mouseEvent){
+        removeItem("Usuń film", "Czy na pewno chcesz usunąć ten film?", this::removeMovie);
+    }
+
+    public void onRemoveMovieTop2(MouseEvent mouseEvent){
+        removeItem("Usuń film", "Czy na pewno chcesz usunąć ten film?", this::removeMovie);
+    }
+
+    public void onRemoveMovieTop3(MouseEvent mouseEvent){
+        removeItem("Usuń film", "Czy na pewno chcesz usunąć ten film?", this::removeMovie);
+    }
+
+    private void removeMovie() {
+        // Tutaj powinieneś dodać logikę do usunięcia filmu
+        System.out.println("Usunięto film.");
+    }
+
+    // Ogólna metoda do usuwania elementów
+    private void removeItem(String title, String message, Runnable removeAction) {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.get() == ButtonType.OK){
+            // Usuń element
+            removeAction.run();
+        }
+    }
+
 }

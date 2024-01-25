@@ -195,7 +195,7 @@ public class Settings {
         allMovies.addAll(ClientStart.getAcc().favouriteTVseries);
 
         for (Movie m : allMovies) {
-            contentTextBuilder.append(m.title).append("\n");
+            contentTextBuilder.append(m.title).append("\n\n");
         }
 
         Alert alert = new Alert(AlertType.INFORMATION);
@@ -319,7 +319,7 @@ public class Settings {
 
         StringBuilder movieListBuilder = new StringBuilder();
         for (Movie m : allMovies) {
-            movieListBuilder.append(m.title).append(", ");
+            movieListBuilder.append(m.title).append("\n\n ");
         }
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Wypozyczone filmy i seriale do oceny");

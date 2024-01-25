@@ -1,5 +1,6 @@
 package Client;
 
+import BaseClasses.Movie;
 import ClientServer.ClientStart;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -9,6 +10,8 @@ import javafx.scene.input.MouseEvent;
 import BaseClasses.Account;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DescriptionTopViewFilm1 {
     public Button moviesButtonMovieDashboard;
@@ -87,10 +90,38 @@ public class DescriptionTopViewFilm1 {
     }
 
     public void onAddToFavoritesButtonClicked(MouseEvent mouseEvent) {
-        acc.addToFavorites("Film 1");
+
+        List<String> actors = new ArrayList<>();
+        actors.add("Harrison Ford");
+        Movie movie = new Movie(4,"SKAZANI NA SHAWSHANK","Dramat","Frank Darabont",actors,1995,"");
+        boolean test = false;
+        for (Movie m:acc.favouriteMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.favouriteMovies.add(movie);
+        else
+            System.out.println("Ten film został już dodany do ulubionych.");
     }
 
     public void onRentMovieButtonClicked(MouseEvent mouseEvent) {
-        acc.rentMovie("Film 1");
+
+        List<String> actors = new ArrayList<>();
+        actors.add("Frodo Baggins");
+        Movie movie = new Movie(4,"SKAZANI NA SHAWSHANK","Dramat","Frank Darabont",actors,1995,"");
+        boolean test = false;
+        for (Movie m:acc.rentMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.rentMovies.add(movie);
+        else
+            System.out.println("Ten film został już wypozyczony.");
     }
 }

@@ -312,8 +312,8 @@
                                                    <CheckBox fx:id="commedyOfMannersButton" layoutX="276.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#onCommedyOfMannersButtonClicked" text="Obyczajowy" />
                                                    <CheckBox fx:id="natureButton" layoutX="276.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#onNatureButtonClciked" text="Przyrodniczy" />
                                                    <CheckBox fx:id="fantasyButton" layoutX="276.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#onFantasyButtonClicked" text="Fantasy" />
-                                             <Button layoutX="528.0" layoutY="52.0" mnemonicParsing="false" text="Dodaj gatunek " />
-                                             <Button layoutX="528.0" layoutY="106.0" mnemonicParsing="false" text="Usuń gatunek" />
+                                             <Button layoutX="528.0" layoutY="52.0" mnemonicParsing="false" onMouseClicked="#onAddGenres" text="Dodaj gatunek " />
+                                             <Button layoutX="528.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#onRemoveGenres" text="Usuń gatunek" />
                                                </children>
                                            </Pane>
                                                 </children>

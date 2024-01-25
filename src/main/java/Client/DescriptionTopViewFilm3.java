@@ -1,12 +1,15 @@
 package Client;
 
 import BaseClasses.Account;
+import BaseClasses.Movie;
 import ClientServer.ClientStart;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DescriptionTopViewFilm3 {
     Account acc = ClientStart.getAcc();
@@ -83,11 +86,37 @@ public class DescriptionTopViewFilm3 {
     }
 
     public void onAddToFavoritesButtonClicked(MouseEvent mouseEvent) {
-        acc.addToFavorites("Film 3");
+
+        List<String> actors = new ArrayList<>();
+        actors.add("Frodo Baggins");
+        Movie movie = new Movie(6,"ZIELONA MILA","Kryminał","Frank Darabont",actors,2000,"");
+        boolean test = false;
+        for (Movie m:acc.favouriteMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.favouriteMovies.add(movie);
+        else
+            System.out.println("Ten film został już dodany do ulubionych.");
     }
 
     public void onRentMovieButtonClicked(MouseEvent mouseEvent) {
-        Account acc = ClientStart.getAcc();
-        acc.rentMovie("Film 3");
+        List<String> actors = new ArrayList<>();
+        actors.add("Frodo Baggins");
+        Movie movie = new Movie(6,"ZIELONA MILA","Kryminał","Frank Darabont",actors,2000,"");
+        boolean test = false;
+        for (Movie m:acc.rentMovies) {
+            if(m.id == movie.id) {
+                test = true;
+                break;
+            }
+        }
+        if(!test)
+            acc.rentMovies.add(movie);
+        else
+            System.out.println("Ten film został już wypozyczony.");
     }
 }
