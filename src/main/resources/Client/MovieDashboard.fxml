@@ -247,47 +247,19 @@
                                                 <Image url="@../img/fire_popular_films.png" />
                                              </image>
                                           </ImageView>
-                                          <ImageView fitWidth="65.0" layoutX="86.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fitWidth="65.0" layoutX="88.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
                                                 <Image url="@../img/new_1145648.png" />
                                              </image>
                                           </ImageView>
-                                          <Label layoutX="163.0" layoutY="568.0" prefHeight="37.0" prefWidth="255.0" text="Ostatnio dodane">
+                                          <Label layoutX="165.0" layoutY="412.0" prefHeight="37.0" prefWidth="255.0" text="Ostatnio dodane">
                                              <font>
                                                 <Font name="Constantia" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Pane layoutX="17.0" layoutY="93.0" prefHeight="455.0" prefWidth="709.0">
+                                          <Pane layoutX="17.0" layoutY="93.0" prefHeight="227.0" prefWidth="709.0">
                                              <children>
-                                                <Pane prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
-                                                   <children>
-                                                      <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
-                                                         <graphic>
-                                                            <ImageView id="topViewButton1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../img/film1.jpg" />
-                                                               </image>
-                                                            </ImageView>
-                                                         </graphic>
-                                                      </Button>
-                                                      <Label layoutX="10.0" layoutY="158.0" prefHeight="17.0" prefWidth="107.0" text="REBEL MOON - CZĘŚĆ 1: DZIECKO OGNIA">
-                                                         <font>
-                                                            <Font name="Constantia Bold" size="12.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <Label layoutX="10.0" layoutY="178.0" prefHeight="17.0" prefWidth="107.0" text="2023">
-                                                         <font>
-                                                            <Font name="Constantia Bold" size="12.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.30000001192092896" />
-                                                         </color></DropShadow>
-                                                   </effect></Pane>
-                                                <Pane layoutY="228.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
+                                                <Pane layoutY="7.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
                                                    <children>
                                                       <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
                                                          <graphic>
@@ -316,36 +288,7 @@
                                                          </color></DropShadow>
                                                    </effect>
                                                 </Pane>
-                                                <Pane layoutX="169.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
-                                                   <children>
-                                                      <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
-                                                         <graphic>
-                                                            <ImageView id="topViewButton1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../img/film2.jpg" />
-                                                               </image>
-                                                            </ImageView>
-                                                         </graphic>
-                                                      </Button>
-                                                      <Label layoutX="10.0" layoutY="158.0" prefHeight="17.0" prefWidth="107.0" text="INDIANA JONES">
-                                                         <font>
-                                                            <Font name="Constantia Bold" size="12.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <Label layoutX="10.0" layoutY="178.0" prefHeight="17.0" prefWidth="107.0" text="2023">
-                                                         <font>
-                                                            <Font name="Constantia Bold" size="12.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.30000001192092896" />
-                                                         </color></DropShadow>
-                                                   </effect>
-                                                </Pane>
-                                                <Pane layoutX="169.0" layoutY="228.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
+                                                <Pane layoutX="399.0" layoutY="7.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
                                                    <children>
                                                       <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
                                                          <graphic>
@@ -374,96 +317,9 @@
                                                          </color></DropShadow>
                                                    </effect>
                                                 </Pane>
-                                                <Pane layoutX="343.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
+                                                <Pane layoutX="202.0" layoutY="7.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
                                                    <children>
-                                                      <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
-                                                         <graphic>
-                                                            <ImageView id="topViewButton1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../img/film3.png" />
-                                                               </image>
-                                                            </ImageView>
-                                                         </graphic>
-                                                      </Button>
-                                                      <Label layoutX="10.0" layoutY="158.0" prefHeight="17.0" prefWidth="107.0" text="BIEDNE ISTOTY">
-                                                         <font>
-                                                            <Font name="Constantia Bold" size="12.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <Label layoutX="10.0" layoutY="178.0" prefHeight="17.0" prefWidth="107.0" text="2023">
-                                                         <font>
-                                                            <Font name="Constantia Bold" size="12.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.30000001192092896" />
-                                                         </color></DropShadow>
-                                                   </effect>
-                                                </Pane>
-                                                <Pane layoutX="343.0" layoutY="228.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
-                                                   <children>
-                                                      <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
-                                                         <graphic>
-                                                            <ImageView id="topViewButton1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../img/film4.png" />
-                                                               </image>
-                                                            </ImageView>
-                                                         </graphic>
-                                                      </Button>
-                                                      <Label layoutX="10.0" layoutY="158.0" prefHeight="17.0" prefWidth="107.0" text="BARBIE">
-                                                         <font>
-                                                            <Font name="Constantia Bold" size="12.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <Label layoutX="10.0" layoutY="178.0" prefHeight="17.0" prefWidth="107.0" text="2023">
-                                                         <font>
-                                                            <Font name="Constantia Bold" size="12.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.30000001192092896" />
-                                                         </color></DropShadow>
-                                                   </effect>
-                                                </Pane>
-                                                <Pane layoutX="522.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
-                                                   <children>
-                                                      <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
-                                                         <graphic>
-                                                            <ImageView id="topViewButton1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@../img/film5.png" />
-                                                               </image>
-                                                            </ImageView>
-                                                         </graphic>
-                                                      </Button>
-                                                      <Label layoutX="10.0" layoutY="158.0" prefHeight="17.0" prefWidth="107.0" text="2001: ODYSEJA KOSMICZNA">
-                                                         <font>
-                                                            <Font name="Constantia Bold" size="12.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <Label layoutX="10.0" layoutY="178.0" prefHeight="17.0" prefWidth="107.0" text="1968">
-                                                         <font>
-                                                            <Font name="Constantia Bold" size="12.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                   <effect>
-                                                      <DropShadow>
-                                                         <color>
-                                                            <Color opacity="0.30000001192092896" />
-                                                         </color></DropShadow>
-                                                   </effect>
-                                                </Pane>
-                                                <Pane layoutX="522.0" layoutY="228.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
-                                                   <children>
-                                                      <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
+                                                      <Button id="popularFilm1" layoutX="4.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
                                                          <graphic>
                                                             <ImageView id="topViewButton1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                                                <image>
@@ -490,7 +346,154 @@
                                                          </color></DropShadow>
                                                    </effect>
                                                 </Pane>
+                                             <Pane layoutX="568.0" layoutY="6.0" prefHeight="202.0" prefWidth="127.0" style="-fx-background-color: #fff;">
+                                                <children>
+                                                   <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;" />
+                                                   <Label layoutX="10.0" layoutY="158.0" prefHeight="17.0" prefWidth="107.0" text="2001: ODYSEJA KOSMICZNA">
+                                                      <font>
+                                                         <Font name="Constantia Bold" size="12.0" />
+                                                      </font>
+                                                   </Label>
+                                                   <Label layoutX="10.0" layoutY="178.0" prefHeight="17.0" prefWidth="107.0" text="1968">
+                                                      <font>
+                                                         <Font name="Constantia Bold" size="12.0" />
+                                                      </font>
+                                                   </Label>
+                                                      <ImageView id="topViewButton1" fitHeight="160.0" fitWidth="108.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../img/film5.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                </children>
+                                                <effect>
+                                                   <DropShadow>
+                                                      <color>
+                                                         <Color opacity="0.30000001192092896" />
+                                                      </color>
+                                                   </DropShadow>
+                                                </effect>
+                                             </Pane>
                                              </children>
+                                          </Pane>
+                                          <Pane layoutX="17.0" layoutY="492.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
+                                             <children>
+                                                <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
+                                                   <graphic>
+                                                      <ImageView id="topViewButton1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../img/film1.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label layoutX="10.0" layoutY="158.0" prefHeight="17.0" prefWidth="107.0" text="REBEL MOON - CZĘŚĆ 1: DZIECKO OGNIA">
+                                                   <font>
+                                                      <Font name="Constantia Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="10.0" layoutY="178.0" prefHeight="17.0" prefWidth="107.0" text="2023">
+                                                   <font>
+                                                      <Font name="Constantia Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <effect>
+                                                <DropShadow>
+                                                   <color>
+                                                      <Color opacity="0.30000001192092896" />
+                                                   </color>
+                                             </DropShadow>
+                                             </effect>
+                                       </Pane>
+                                          <Pane layoutX="406.0" layoutY="492.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
+                                             <children>
+                                                <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
+                                                   <graphic>
+                                                      <ImageView id="topViewButton1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../img/film2.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label layoutX="10.0" layoutY="158.0" prefHeight="17.0" prefWidth="107.0" text="INDIANA JONES">
+                                                   <font>
+                                                      <Font name="Constantia Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="10.0" layoutY="178.0" prefHeight="17.0" prefWidth="107.0" text="2023">
+                                                   <font>
+                                                      <Font name="Constantia Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <effect>
+                                                <DropShadow>
+                                                   <color>
+                                                      <Color opacity="0.30000001192092896" />
+                                                   </color>
+                                             </DropShadow>
+                                             </effect>
+                                          </Pane>
+                                          <Pane layoutX="599.0" layoutY="492.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
+                                             <children>
+                                                <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
+                                                   <graphic>
+                                                      <ImageView id="topViewButton1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../img/film3.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label layoutX="10.0" layoutY="158.0" prefHeight="17.0" prefWidth="107.0" text="BIEDNE ISTOTY">
+                                                   <font>
+                                                      <Font name="Constantia Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="10.0" layoutY="178.0" prefHeight="17.0" prefWidth="107.0" text="2023">
+                                                   <font>
+                                                      <Font name="Constantia Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <effect>
+                                                <DropShadow>
+                                                   <color>
+                                                      <Color opacity="0.30000001192092896" />
+                                                   </color>
+                                             </DropShadow>
+                                             </effect>
+                                          </Pane>
+                                          <Pane layoutX="203.0" layoutY="492.0" prefHeight="200.0" prefWidth="127.0" style="-fx-background-color: #fff;">
+                                             <children>
+                                                <Button id="popularFilm1" layoutX="3.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="90.0" style="-fx-background-color: #fff;">
+                                                   <graphic>
+                                                      <ImageView id="topViewButton1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../img/film4.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Label layoutX="10.0" layoutY="158.0" prefHeight="17.0" prefWidth="107.0" text="BARBIE">
+                                                   <font>
+                                                      <Font name="Constantia Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="10.0" layoutY="178.0" prefHeight="17.0" prefWidth="107.0" text="2023">
+                                                   <font>
+                                                      <Font name="Constantia Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <effect>
+                                                <DropShadow>
+                                                   <color>
+                                                      <Color opacity="0.30000001192092896" />
+                                                   </color>
+                                             </DropShadow>
+                                             </effect>
                                           </Pane>
                                        </children>
                                     </Pane>

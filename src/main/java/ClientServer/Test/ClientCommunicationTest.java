@@ -17,48 +17,30 @@ public class ClientCommunicationTest {
 
     @Before
     public void setUp() {
-        // Inicjalizacja obiektu ClientCommunication przed każdym testem
         clientCommunication = new ClientCommunication(SERVER_ADDRESS, SERVER_PORT);
     }
 
     @Test
     public void sendRequest_shouldNotThrowException() {
-        // Przygotowanie danych
         Request request = new Request(/*...*/);
 
-        // Wywołanie metody, którą chcemy przetestować
         clientCommunication.sendRequest(request);
-
-        // Sprawdzenie, czy metoda nie zgłasza wyjątku
-        // Jeśli nie wystąpi wyjątek, test jest uznany za zdany
     }
 
     @Test
     public void closeConnection_shouldNotThrowException() {
-        // Wywołanie metody, którą chcemy przetestować
         clientCommunication.closeConnection();
-
-        // Sprawdzenie, czy metoda nie zgłasza wyjątku
-        // Jeśli nie wystąpi wyjątek, test jest uznany za zdany
     }
-
-    // Przykład testu, który wymaga połączenia z serwerem (test integracyjny)
     @Test
     public void sendRequest_receiveResponse_shouldNotThrowException() {
-        // Przygotowanie danych
         Request request = new Request(/*...*/);
 
-        // Wywołanie metody, którą chcemy przetestować
         clientCommunication.sendRequest(request);
         Response response = clientCommunication.receiveResponse();
-
-        // Sprawdzenie, czy metody nie zgłaszają wyjątków
-        // Jeśli nie wystąpi wyjątek, test jest uznany za zdany
     }
 
     @After
     public void tearDown() {
-        // Zamknięcie połączenia po każdym teście
         clientCommunication.closeConnection();
     }
 }
