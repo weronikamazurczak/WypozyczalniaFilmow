@@ -184,31 +184,14 @@ public class Settings {
         System.out.println("Usunięto konto dla dzieci.");
     }
 
-    public void onViewFavouritesClicked(MouseEvent mouseEvent) {
-        // Pobierz listę ulubionych filmów użytkownika
-
-
-        StringBuilder contentTextBuilder = new StringBuilder();
-
-        List<Movie> allMovies = new ArrayList<>();
-        allMovies.addAll(ClientStart.getAcc().favouriteMovies);
-        allMovies.addAll(ClientStart.getAcc().favouriteTVseries);
-
-        for (Movie m : allMovies) {
-            contentTextBuilder.append(m.title).append("\n");
-        }
-
-        Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("Ulubione filmy i seriale");
-        alert.setHeaderText(null);
-
-        if (allMovies.isEmpty()) {
-            alert.setContentText("Brak ulubionych filmów i serialu");
-        } else {
-            alert.setContentText(contentTextBuilder.toString());
-        }
-
-        alert.showAndWait();
+    public void onViewFavouritesClicked(MouseEvent mouseEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("FavouritesMoviesPanel.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        PrimaryStageSingleton.INSTANCE.setScene(scene);
+        PrimaryStageSingleton.INSTANCE.setTitle("FavouritesMovies");
+        FavouritesMoviesPanel controller = fxmlLoader.getController();
+        controller.setUp();
+        PrimaryStageSingleton.INSTANCE.show();
 
     }
 
@@ -275,29 +258,16 @@ public class Settings {
         alert.showAndWait();
     }
 
-    public void onHistorySectionButtonClicked(MouseEvent mouseEvent) {
-        // Pobierz listę wypożyczonych filmów użytkownika
+    public void onHistorySectionButtonClicked(MouseEvent mouseEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("RentMoviesPanel.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        PrimaryStageSingleton.INSTANCE.setScene(scene);
+        PrimaryStageSingleton.INSTANCE.setTitle("RentMoviesPanel");
+        RentMoviesPanel controller = fxmlLoader.getController();
+        controller.setUp();
+        PrimaryStageSingleton.INSTANCE.show();
 
-        StringBuilder contentTextBuilder = new StringBuilder();
 
-        List<Movie> allMovies = new ArrayList<>();
-        allMovies.addAll(ClientStart.getAcc().rentMovies);
-        allMovies.addAll(ClientStart.getAcc().rentTVseries);
-
-        for (Movie m : allMovies) {
-            contentTextBuilder.append(m.title).append("\n\n");
-        }
-
-        Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("Wypozyczone filmy i seriale");
-        alert.setHeaderText(null);
-
-        if (allMovies.isEmpty()) {
-            alert.setContentText("Brak wypozyczonych filmów i seriali");
-        } else {
-            alert.setContentText(contentTextBuilder.toString());
-        }
-        alert.showAndWait();
     }
 
 
@@ -385,5 +355,25 @@ public class Settings {
     private void saveComment(String movieTitle, String comment) {
         // Tutaj powinieneś zapisać komentarz użytkownika dla wybranego filmu w bazie danych lub innym źródle danych
         System.out.println("Komentarz do filmu lub serialu \"" + movieTitle + "\": " + comment);
+    }
+
+    public void onViewFavouritesSeriesClicked(MouseEvent mouseEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("FavouritesPanelsPanel.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        PrimaryStageSingleton.INSTANCE.setScene(scene);
+        PrimaryStageSingleton.INSTANCE.setTitle("FavouritesSeriesPanel");
+        FavouritesSeriesPanel controller = fxmlLoader.getController();
+        controller.setUp();
+        PrimaryStageSingleton.INSTANCE.show();
+    }
+
+    public void onHistorySeriesSectionButtonClicked(MouseEvent mouseEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LoginForm.class.getResource("RentMoviesPanel.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        PrimaryStageSingleton.INSTANCE.setScene(scene);
+        PrimaryStageSingleton.INSTANCE.setTitle("RentMoviesPanel");
+        RentMoviesPanel controller = fxmlLoader.getController();
+        controller.setUp();
+        PrimaryStageSingleton.INSTANCE.show();
     }
 }
