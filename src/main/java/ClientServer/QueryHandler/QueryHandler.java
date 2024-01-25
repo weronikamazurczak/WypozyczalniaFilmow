@@ -47,12 +47,13 @@ public class QueryHandler {
    public FavouriteMovieQuery getFavouriteMovieQuery() {
       return favouriteMovieQuery;
    }
-
+   public ScriptQuery getScriptQuery() {
+      return scriptQuery;
+   }
    public FilmDirectorQuery getFilmDirectoryQuery() {
       return filmDirectorQuery;
    }
 
-   public ScriptQuery getScriptQuery() {
-      return scriptQuery;
-   }
+
+
 }
