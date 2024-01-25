@@ -69,30 +69,31 @@ public class MovieQuery {
             System.out.println("No movie found with ID: " + movieId);
         }
     }
-    public boolean addNewMovie(String title, String description, String production, String genre,
-                               String worldPremiereTime, String polandPremiereTime, String imgTitle,
-                               int numberOfEpisodes, int idFilmDirector, int idScript) throws SQLException {
+    public void addNewMovie(int idMovie, String title, String description, String production, String genre,
+                            String worldPremiereTime, String polandPremiereTime, String imgTitle,
+                            int numberOfEpisodes,String addTimeToService, int idFilmDirector, int idScript) throws SQLException {
 
-        String sql = "INSERT INTO Movie (title, description, production, genre, worldPremiereTime, " +
-                "polandPremiereTime, imgTitle, numberOfEpisodes, idFilmDirector, idScript) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO Movie (idMovie, title, description, production, genre, worldPremiereTime, " +
+                "polandPremiereTime, imgTittle, numberOfEpisodes, addTimeToService, idFilmDirector, idScript) " +
+                "VALUES (?, ? ,?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         PreparedStatement preparedStatement = dataBaseConnection.prepareStatement(sql);
 
-        preparedStatement.setString(1, title);
-        preparedStatement.setString(2, description);
-        preparedStatement.setString(3, production);
-        preparedStatement.setString(4, genre);
-        preparedStatement.setString(5, worldPremiereTime);
-        preparedStatement.setString(6, polandPremiereTime);
-        preparedStatement.setString(7, imgTitle);
-        preparedStatement.setInt(8, numberOfEpisodes);
-        preparedStatement.setInt(9, idFilmDirector);
-        preparedStatement.setInt(10, idScript);
+        preparedStatement.setInt(1, idMovie);
+        preparedStatement.setString(2, title);
+        preparedStatement.setString(3, description);
+        preparedStatement.setString(4, production);
+        preparedStatement.setString(5, genre);
+        preparedStatement.setString(6, worldPremiereTime);
+        preparedStatement.setString(7, polandPremiereTime);
+        preparedStatement.setString(8, imgTitle);
+        preparedStatement.setInt(9, numberOfEpisodes);
+        preparedStatement.setString(10, addTimeToService);
+        preparedStatement.setInt(11, idFilmDirector);
+        preparedStatement.setInt(12, idScript);
 
         int rowsAffected = preparedStatement.executeUpdate();
 
-        return rowsAffected > 0;
     }
 
     public boolean deleteMovieByID(int movieId) throws SQLException {

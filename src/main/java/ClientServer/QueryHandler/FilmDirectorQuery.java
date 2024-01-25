@@ -10,17 +10,15 @@ public class FilmDirectorQuery {
 
 
 
-    public boolean addFilmDirector(String name, String surname, Date birthdate, String nationality) throws SQLException {
-        String sql = "INSERT INTO FilmDirector (name, surname, birthdate, nationality) VALUES (?, ?, ?, ?)";
+    public void addFilmDirector(int idFilmDirector, String name) throws SQLException {
+        String sql = "INSERT INTO FilmDirector (idFilmDirector,name) VALUES (?,?)";
 
         try (PreparedStatement preparedStatement = dataBaseConnection.prepareStatement(sql)) {
-            preparedStatement.setString(1, name);
-            preparedStatement.setString(2, surname);
-            preparedStatement.setDate(3, birthdate);
-            preparedStatement.setString(4, nationality);
+            preparedStatement.setInt(1, idFilmDirector);
+            preparedStatement.setString(2, name);
+
 
             int rowsAffected = preparedStatement.executeUpdate();
-            return rowsAffected > 0;
         } catch (SQLException e) {
             throw e;
         }

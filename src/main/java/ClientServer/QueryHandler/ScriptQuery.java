@@ -9,17 +9,15 @@ public class ScriptQuery {
     public ScriptQuery(Connection dataBaseConnection) throws SQLException {
         this.dataBaseConnection=dataBaseConnection;
     }
-    public boolean addScript(String title, String author, Date writtenDate, String genre) throws SQLException {
-        String sql = "INSERT INTO Script (title, author, writtenDate, genre) VALUES (?, ?, ?, ?)";
+    public void addScript(int idScript, String name) throws SQLException {
+        String sql = "INSERT INTO Script (idScript,name) VALUES (?,?)";
 
         try (PreparedStatement preparedStatement = dataBaseConnection.prepareStatement(sql)) {
-            preparedStatement.setString(1, title);
-            preparedStatement.setString(2, author);
-            preparedStatement.setDate(3, writtenDate);
-            preparedStatement.setString(4, genre);
+            preparedStatement.setInt(1, idScript);
+            preparedStatement.setString(2, name);
+
 
             int rowsAffected = preparedStatement.executeUpdate();
-            return rowsAffected > 0;
         } catch (SQLException e) {
             throw e;
         }
