@@ -10,6 +10,7 @@ public class QueryHandler {
    private final RentQuery rentQuery;
    private final FavouriteMovieQuery favouriteMovieQuery;
    private final FilmDirectorQuery filmDirectorQuery;
+   private final ScriptQuery scriptQuery;
 
    public QueryHandler(Connection dataBaseConnection) throws SQLException {
 
@@ -19,6 +20,7 @@ public class QueryHandler {
        this.rentQuery = new RentQuery(dataBaseConnection);
        this.favouriteMovieQuery = new FavouriteMovieQuery(dataBaseConnection);
        this.filmDirectorQuery = new FilmDirectorQuery(dataBaseConnection);
+       this.scriptQuery = new ScriptQuery(dataBaseConnection);
    }
    public void testQuery() throws SQLException {
       movieQuery.getAllMoviesByAccountId(2);

@@ -3,7 +3,7 @@ package ClientServer.QueryHandler;
 import java.sql.*;
 
 public class MovieQuery {
-    private Connection dataBaseConnection;
+    private final Connection dataBaseConnection;
     public MovieQuery(Connection dataBaseConnection) throws SQLException {
         this.dataBaseConnection=dataBaseConnection;
     }

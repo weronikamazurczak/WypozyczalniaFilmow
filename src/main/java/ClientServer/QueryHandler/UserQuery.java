@@ -3,7 +3,7 @@ package ClientServer.QueryHandler;
 import java.sql.*;
 
 public class UserQuery {
-    private Connection dataBaseConnection;
+    private final Connection dataBaseConnection;
     public UserQuery(Connection dataBaseConnection) throws SQLException {
         this.dataBaseConnection=dataBaseConnection;
     }

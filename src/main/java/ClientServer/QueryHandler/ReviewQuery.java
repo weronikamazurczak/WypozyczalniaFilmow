@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.sql.Timestamp;
 
 public class ReviewQuery {
-    private Connection dataBaseConnection;
+    private final Connection dataBaseConnection;
     ReviewQuery(Connection dataBaseConnection){
         this.dataBaseConnection=dataBaseConnection;
     }

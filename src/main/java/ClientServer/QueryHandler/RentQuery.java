@@ -3,7 +3,7 @@ package ClientServer.QueryHandler;
 import java.sql.*;
 
 public class RentQuery {
-    private Connection dataBaseConnection;
+    private final Connection dataBaseConnection;
     public RentQuery(Connection dataBaseConnection) throws SQLException {
         this.dataBaseConnection=dataBaseConnection;
     }
