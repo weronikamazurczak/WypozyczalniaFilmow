@@ -8,9 +8,7 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.ChoiceDialog;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.FileChooser;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
@@ -90,6 +88,81 @@ public class AdminGenresPanel {
         PrimaryStageSingleton.INSTANCE.show();
     }
 
+
+    public void onAddGenres(MouseEvent mouseEvent) {
+        addGenre("Dodaj gatunek", "Wprowadź nowy gatunek:", this::addNewGenre);
+    }
+
+    private void addNewGenre(String newGenre) {
+        // Tutaj powinieneś dodać logikę do dodania nowego gatunku
+        System.out.println("Dodano nowy gatunek: " + newGenre);
+    }
+
+    private void addGenre(String title, String message, Consumer<String> editAction){
+        TextInputDialog dialog = new TextInputDialog();
+        dialog.setTitle(title);
+        dialog.setHeaderText(null);
+        dialog.setContentText(message);
+
+        Optional<String> result = dialog.showAndWait();
+        if (result.isPresent()) {
+            String newValue = result.get();
+            if (!newValue.isEmpty()) {
+                // Edytuj wartość
+                editAction.accept(newValue);
+            } else {
+                showErrorDialog("Nie wprowadzono wartości.");
+                addGenre(title, message, editAction);
+            }
+        }
+    }
+
+    private void showErrorDialog(String errorMessage) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Błąd");
+        alert.setHeaderText(null);
+        alert.setContentText(errorMessage);
+        alert.showAndWait();
+    }
+
+    public void onRemoveGenres(MouseEvent mouseEvent) {
+        removeItem("Usuń gatunek", "Czy na pewno chcesz usunąć ten gatunek?", this::chooseGenre, this::removeGenre);
+    }
+
+    private void chooseGenre(String newGenre) {
+        // Tutaj powinieneś dodać logikę do edycji gatunku filmu
+        System.out.println("Wybrano gatunek: " + newGenre);
+    }
+
+    private void removeGenre() {
+        // Tutaj powinieneś dodać logikę do usunięcia filmu
+        System.out.println("Powodzenie usunięcia gatunku.");
+    }
+
+    private void removeItem(String title, String message, Consumer<String> chooseGenreAction, Runnable removeAction) {
+        // Wybierz nowy gatunek
+        List<String> genres = Arrays.asList("Akcja","Przygodowy", "Romans", "Dramat", "Horror", "Obyczajowy", "Dokumentalny", "Dla dzieci", "Przyrodniczy", "Komedia", "Historyczny","Fantasy");
+        ChoiceDialog<String> genreDialog = new ChoiceDialog<>("Akcja", genres);
+        genreDialog.setTitle(title);
+        genreDialog.setHeaderText("Wybierz gatunek do usunięcia:");
+        genreDialog.setContentText("Gatunki:");
+
+        String Genre = genreDialog.showAndWait().orElse("");
+        if(!Genre.isEmpty()) {
+            // Usuń gatunek
+            chooseGenreAction.accept(Genre);
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle(title);
+            alert.setHeaderText(null);
+            alert.setContentText(message);
+
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.get() == ButtonType.OK){
+                // Usuń element
+                removeAction.run();
+            }
+        }
+    }
     public void onManagementButtonMovieDashboardClicked(MouseEvent mouseEvent) {
     }
 
@@ -137,4 +210,6 @@ public class AdminGenresPanel {
 
     public void onFantasyButtonClicked(MouseEvent mouseEvent) {
     }
+
+
 }

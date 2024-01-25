@@ -17,10 +17,10 @@ public class ClientTest {
     public void setUp() {
         client = new Client();
         client.setId(1);
-        client.setName("John");
-        client.setSurname("Doe");
-        client.setEmail("john.doe@example.com");
-        client.setPassword("securepassword");
+        client.setName("Jan");
+        client.setSurname("Kowalski");
+        client.setEmail("jan.k@mail.com");
+        client.setPassword("haslohaslo");
         client.setBirthdate(new Date());
         client.setSex('M');
         client.setAccount(new Account());
@@ -28,17 +28,17 @@ public class ClientTest {
 
     @Test
     public void testLoginWithCorrectCredentials() {
-        assertTrue(client.login("john.doe@example.com", "securepassword"));
+        assertTrue(client.login("jan.k@mail.com", "haslohaslo"));
     }
 
     @Test
     public void testLoginWithIncorrectEmail() {
-        assertFalse(client.login("wrongemail@example.com", "securepassword"));
+        assertFalse(client.login("k.jan@mail.com", "haslohaslo"));
     }
 
     @Test
     public void testLoginWithIncorrectPassword() {
-        assertFalse(client.login("john.doe@example.com", "wrongpassword"));
+        assertFalse(client.login("jan.k@mail.com", "haslohaslo"));
     }
 
     @Test

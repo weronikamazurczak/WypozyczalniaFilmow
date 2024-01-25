@@ -182,40 +182,6 @@
                                         <InnerShadow />
                                     </effect>
                                 </Button>
-                                <Button fx:id="settingsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="635.0" mnemonicParsing="false" onMouseClicked="#onSettingsButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Ustawienia">
-                                    <graphic>
-                                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@../img/setting.png" />
-                                            </image>
-                                            <viewport>
-                                                <Rectangle2D height="40.0" width="40.0" />
-                                            </viewport>
-                                        </ImageView>
-                                    </graphic>
-                                    <textFill>
-                                        <LinearGradient endX="1.0" endY="1.0">
-                                            <stops>
-                                                <Stop>
-                                                    <color>
-                                                        <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
-                                                    </color>
-                                                </Stop>
-                                                <Stop offset="1.0">
-                                                    <color>
-                                                        <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
-                                                    </color>
-                                                </Stop>
-                                            </stops>
-                                        </LinearGradient>
-                                    </textFill>
-                                    <font>
-                                        <Font size="20.0" />
-                                    </font>
-                                    <effect>
-                                        <InnerShadow />
-                                    </effect>
-                                </Button>
                                 <Button fx:id="logoutButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="693.0" mnemonicParsing="false" onMouseClicked="#onLogoutButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Wyloguj">
                                     <graphic>
                                         <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
