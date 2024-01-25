@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.FavouritesMoviesPanel">
+    <children>
+        <Pane prefHeight="800.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="800.0" prefWidth="1200.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Pane layoutX="-5.0" prefHeight="800.0" prefWidth="250.0" style="-fx-background-color: #FFF;">
+                                    <children>
+                                        <ImageView fitHeight="150.0" fitWidth="146.0" layoutX="52.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/Wavy_Ppl-05_Single-11.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Label layoutX="29.0" layoutY="189.0" prefHeight="35.0" prefWidth="193.0" text="Movie APP">
+                                            <font>
+                                                <Font name="Constantia" size="40.0" />
+                                            </font>
+                                            <textFill>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                    <stops>
+                                                        <Stop>
+                                                            <color>
+                                                                <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                                            </color>
+                                                        </Stop>
+                                                        <Stop offset="1.0">
+                                                            <color>
+                                                                <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                                            </color>
+                                                        </Stop>
+                                                    </stops>
+                                                </LinearGradient>
+                                            </textFill>
+                                        </Label>
+                                        <Button fx:id="homeButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#onHomeButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Strona główna">
+                                            <graphic>
+                                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../img/homeIcon.png" />
+                                                    </image>
+                                                    <viewport>
+                                                        <Rectangle2D height="40.0" width="40.0" />
+                                                    </viewport>
+                                                </ImageView>
+                                            </graphic>
+                                            <textFill>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                    <stops>
+                                                        <Stop>
+                                                            <color>
+                                                                <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                                            </color>
+                                                        </Stop>
+                                                        <Stop offset="1.0">
+                                                            <color>
+                                                                <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                                            </color>
+                                                        </Stop>
+                                                    </stops>
+                                                </LinearGradient>
+                                            </textFill>
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="moviesButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#onMoviesButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Filmy">
+                                            <graphic>
+                                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../img/filmIcon.png" />
+                                                    </image>
+                                                    <viewport>
+                                                        <Rectangle2D height="40.0" width="40.0" />
+                                                    </viewport>
+                                                </ImageView>
+                                            </graphic>
+                                            <textFill>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                    <stops>
+                                                        <Stop>
+                                                            <color>
+                                                                <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                                            </color>
+                                                        </Stop>
+                                                        <Stop offset="1.0">
+                                                            <color>
+                                                                <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                                            </color>
+                                                        </Stop>
+                                                    </stops>
+                                                </LinearGradient>
+                                            </textFill>
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="serialsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="381.0" mnemonicParsing="false" onMouseClicked="#onSerialsButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Seriale">
+                                            <graphic>
+                                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../img/seriesIcon.png" />
+                                                    </image>
+                                                    <viewport>
+                                                        <Rectangle2D height="40.0" width="40.0" />
+                                                    </viewport>
+                                                </ImageView>
+                                            </graphic>
+                                            <textFill>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                    <stops>
+                                                        <Stop>
+                                                            <color>
+                                                                <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                                            </color>
+                                                        </Stop>
+                                                        <Stop offset="1.0">
+                                                            <color>
+                                                                <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                                            </color>
+                                                        </Stop>
+                                                    </stops>
+                                                </LinearGradient>
+                                            </textFill>
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="genreButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="439.0" mnemonicParsing="false" onMouseClicked="#onGenreButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Gatunki">
+                                            <graphic>
+                                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../img/genreIcon.png" />
+                                                    </image>
+                                                    <viewport>
+                                                        <Rectangle2D height="40.0" width="40.0" />
+                                                    </viewport>
+                                                </ImageView>
+                                            </graphic>
+                                            <textFill>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                    <stops>
+                                                        <Stop>
+                                                            <color>
+                                                                <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                                            </color>
+                                                        </Stop>
+                                                        <Stop offset="1.0">
+                                                            <color>
+                                                                <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                                            </color>
+                                                        </Stop>
+                                                    </stops>
+                                                </LinearGradient>
+                                            </textFill>
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="settingsButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="629.0" mnemonicParsing="false" onMouseClicked="#onSettingsButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Ustawienia">
+                                            <graphic>
+                                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../img/setting.png" />
+                                                    </image>
+                                                    <viewport>
+                                                        <Rectangle2D height="40.0" width="40.0" />
+                                                    </viewport>
+                                                </ImageView>
+                                            </graphic>
+                                            <textFill>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                    <stops>
+                                                        <Stop>
+                                                            <color>
+                                                                <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                                            </color>
+                                                        </Stop>
+                                                        <Stop offset="1.0">
+                                                            <color>
+                                                                <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                                            </color>
+                                                        </Stop>
+                                                    </stops>
+                                                </LinearGradient>
+                                            </textFill>
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Button>
+                                        <Button id="logoutButtonMovieDashboard" fx:id="logoutButtonMovieDashboard" alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="693.0" mnemonicParsing="false" onMouseClicked="#onLogoutButtonMovieDashboardClicked" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: fff;" text="Wyloguj">
+                                            <graphic>
+                                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../img/log-out.png" />
+                                                    </image>
+                                                    <viewport>
+                                                        <Rectangle2D height="40.0" width="40.0" />
+                                                    </viewport>
+                                                </ImageView>
+                                            </graphic>
+                                            <textFill>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                    <stops>
+                                                        <Stop>
+                                                            <color>
+                                                                <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                                            </color>
+                                                        </Stop>
+                                                        <Stop offset="1.0">
+                                                            <color>
+                                                                <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                                            </color>
+                                                        </Stop>
+                                                    </stops>
+                                                </LinearGradient>
+                                            </textFill>
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </Pane>
+                                <Pane id="PanelSV" layoutX="245.0" prefHeight="800.0" prefWidth="955.0" style="-fx-background-color: #fff;">
+                                    <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Ulubione filmy">
+                                 <font>
+                                    <Font name="Constantia" size="36.0" />
+                                 </font>
+                              </Label>
+                           <Pane layoutX="8.0" layoutY="129.0" prefHeight="284.0" prefWidth="939.0">
+                              <children>
+                                 <Button id="addToFavorites" fx:id="DeleteFromFavourites" alignment="BOTTOM_LEFT" blendMode="DARKEN" layoutX="735.0" mnemonicParsing="false" onMouseClicked="#onAddToFavoritesButtonClicked" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: #f8f8ff;" text="Usun z ulubionych">
+                                    <graphic>
+                                       <ImageView fitHeight="40.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@../img/favourite.png" />
+                                          </image>
+                                          <viewport>
+                                             <Rectangle2D height="40.0" width="40.0" />
+                                          </viewport>
+                                       </ImageView>
+                                    </graphic>
+                                    <textFill>
+                                       <LinearGradient endX="1.0" endY="1.0">
+                                          <stops>
+                                             <Stop>
+                                                <color>
+                                                   <Color red="0.4313725531101227" green="0.364705890417099" blue="0.8745098114013672" />
+                                                </color>
+                                             </Stop>
+                                             <Stop offset="1.0">
+                                                <color>
+                                                   <Color red="0.9882352948188782" green="0.46666666865348816" blue="0.6784313917160034" />
+                                                </color>
+                                             </Stop>
+                                          </stops>
+                                       </LinearGradient>
+                                    </textFill>
+                                    <font>
+                                       <Font name="System Bold Italic" size="14.0" />
+                                    </font>
+                                    <effect>
+                                       <DropShadow />
+                                    </effect>
+                                 </Button>
+                                 <Separator layoutX="-1.0" layoutY="274.0" prefHeight="256.0" prefWidth="955.0" />
+                                 <Label id="Description" fx:id="Description" layoutX="289.0" layoutY="50.0" prefHeight="226.0" prefWidth="635.0" text="Jest rok 1969. Dwa najpotężniejsze mocarstwa świata - Stany Zjednoczone Ameryki Północnej i Związek Radziecki - rywalizują w wyścigu o podbój kosmosu. Emerytowany poszukiwacz przygód Indiana Jones (Harrison Ford) jest zaniepokojony obrotem spraw, gdy dowiaduje się, że rząd USA werbuje byłych nazistów do pomocy w przedsięwzięciu. Niedługo po tym Jones wraz ze swoją chrześnicą Heleną (Phoebe Waller-Bridge) stawia czoła Vollerowi (Mads Mikkelsen) i jego nazistowskiej organizacji. Grupa ta pragnie zdobyć legendarny artefakt, za pomocą którego chce podporządkować sobie świat według wyznawanych wartości." textAlignment="JUSTIFY" wrapText="true">
+                                    <font>
+                                       <Font size="14.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="genreLabel" layoutX="-1.0" layoutY="451.0" text="gatunek" />
+                                 <Label fx:id="YearLaber" layoutY="477.0" text="Rok:" />
+                                 <Text id="Year" fx:id="Year" layoutX="65.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                                 <ImageView id="photo" fx:id="Photo" fitHeight="405.0" fitWidth="274.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@../img/film2.jpg" />
+                                    </image>
+                                    <cursor>
+                                       <Cursor fx:constant="OPEN_HAND" />
+                                    </cursor>
+                                 </ImageView>
+                              </children>
+                           </Pane>
+                           <Label id="Title" fx:id="Title" layoutX="204.0" layoutY="75.0" text="INDIANA JONES I ARTEFAKT PRZEZNACZENIA">
+                              <font>
+                                 <Font size="24.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="directorLabel" layoutX="5.0" layoutY="541.0" text="reżyseria" />
+                           <Label id="Director" fx:id="Director" layoutX="72.0" layoutY="541.0" text="James Mangold" />
+                           <Label id="Genre" fx:id="Genre" layoutX="72.0" layoutY="584.0" text="Przygodowy" />
+                           <Button fx:id="GoRight" layoutX="838.0" layoutY="730.0" mnemonicParsing="false" onAction="#onRight" text="-&gt;" />
+                           <Button fx:id="GoLeft" layoutX="140.0" layoutY="730.0" mnemonicParsing="false" onAction="#onLeft" text="&lt;-" />
+      
+                                    </children>
+                     </Pane>
+                            </children>
+                        </AnchorPane>
+                </Pane>
+            </children></Pane>
+    </children>
+</AnchorPane>
